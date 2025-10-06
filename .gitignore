@@ -8,3 +8,15 @@
 .cxx
 /buildSrc/build/
 /.idea/
+
+# Allure/Jacoco (build artifacts, not final reports)
+**/build/allure-results/
+**/build/allure-report/
+**/build/reports/
+**/build/jacoco/
+**/outputs/androidTest-results/
+
+# Android/Gradle artifacts across modules
+**/.gradle/
+**/.cxx/
+**/.externalNativeBuild/
