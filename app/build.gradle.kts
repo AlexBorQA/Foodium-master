@@ -76,6 +76,10 @@ android {
     packagingOptions {
         exclude("META-INF/*.kotlin_module")
     }
+
+    testOptions {
+        unitTests.isIncludeAndroidResources = true
+    }
 }
 
 tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().configureEach {
@@ -144,9 +148,29 @@ dependencies {
     // Android Testing
     androidTestImplementation(Testing.extJUnit)
     androidTestImplementation(Testing.espresso)
+    androidTestImplementation(Testing.runner)
+    androidTestImplementation(Testing.rules)
+    androidTestImplementation(Testing.coreKtx)
+
+    // Additional unit test tools
+    testImplementation("org.robolectric:robolectric:4.6.1")
+    testImplementation("androidx.test:core:1.3.0")
 }
 
 ktlint {
     android.set(true)
     outputColorName.set("RED")
+}
+
+// Copy debug APK to app/prod after assembleDebug
+val copyDebugApkToProd by tasks.register<org.gradle.api.tasks.Copy>("copyDebugApkToProd") {
+    val apk = layout.buildDirectory.file("outputs/apk/debug/app-debug.apk")
+    from(apk)
+    into("$projectDir/prod")
+}
+
+afterEvaluate {
+    tasks.named("assembleDebug").configure {
+        finalizedBy(copyDebugApkToProd)
+    }
 }
