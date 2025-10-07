@@ -41,7 +41,7 @@ android {
         versionCode = 1
         versionName = "1.0"
 
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner = "dev.shreyaspatil.foodium.CustomTestRunner"
 
         javaCompileOptions {
             annotationProcessorOptions {
@@ -151,6 +151,10 @@ dependencies {
     androidTestImplementation(Testing.runner)
     androidTestImplementation(Testing.rules)
     androidTestImplementation(Testing.coreKtx)
+    androidTestImplementation(Testing.espressoContrib)
+    androidTestImplementation(Hilt.hiltAndroid)
+    androidTestImplementation(Hilt.hiltTesting)
+    kaptAndroidTest(Hilt.daggerCompiler)
 
     // Additional unit test tools
     testImplementation("org.robolectric:robolectric:4.6.1")

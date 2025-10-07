@@ -82,6 +82,14 @@ esac
 
 CLASSPATH=$APP_HOME/gradle/wrapper/gradle-wrapper.jar
 
+# Force JAVA_HOME to JDK 11
+if command -v /usr/libexec/java_home >/dev/null 2>&1; then
+  J11_HOME=$(/usr/libexec/java_home -v 11 2>/dev/null)
+  if [ -n "$J11_HOME" ]; then
+    export JAVA_HOME="$J11_HOME"
+  fi
+fi
+
 # Determine the Java command to use to start the JVM.
 if [ -n "$JAVA_HOME" ]; then
   if [ -x "$JAVA_HOME/jre/sh/java" ]; then

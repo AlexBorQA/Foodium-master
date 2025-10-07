@@ -9,3 +9,5 @@ export JAVA_HOME=$(/usr/libexec/java_home -v 11)
 open app/build/reports/tests/testDebugUnitTest/index.html || true
 
 
+
+

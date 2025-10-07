@@ -4,6 +4,7 @@ object Testing {
     const val jUnit = "junit:junit:4.13"
     const val extJUnit = "androidx.test.ext:junit:1.1.3"
     const val espresso = "androidx.test.espresso:espresso-core:3.4.0"
+    const val espressoContrib = "androidx.test.espresso:espresso-contrib:3.4.0"
     const val runner = "androidx.test:runner:1.4.0"
     const val rules = "androidx.test:rules:1.4.0"
     const val coreKtx = "androidx.test:core-ktx:1.4.0"
@@ -34,6 +35,7 @@ object Hilt {
     const val hiltCompiler = "androidx.hilt:hilt-compiler:1.0.0-alpha02"
     const val hiltViewModel = "androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha02"
     const val hiltAndroid = "com.google.dagger:hilt-android:2.31-alpha"
+    const val hiltTesting = "com.google.dagger:hilt-android-testing:2.31-alpha"
 }
 
 object Moshi {
