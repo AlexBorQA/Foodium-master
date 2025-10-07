@@ -178,3 +178,59 @@ afterEvaluate {
         finalizedBy(copyDebugApkToProd)
     }
 }
+
+// AndroidTest helper tasks (API-agnostic; target device is chosen via -PdeviceSerial or ANDROID_SERIAL)
+val deviceSerial = providers.gradleProperty("deviceSerial").orElse("emulator-5556")
+val adbPath = File(android.sdkDirectory, "platform-tools/adb").absolutePath
+
+tasks.register("disableDeviceAnimations") {
+    group = "verification"
+    description = "Disable window/transition/animator animations on the target device"
+    doLast {
+        exec { commandLine(adbPath, "-s", deviceSerial.get(), "shell", "settings", "put", "global", "window_animation_scale", "0") }
+        exec { commandLine(adbPath, "-s", deviceSerial.get(), "shell", "settings", "put", "global", "transition_animation_scale", "0") }
+        exec { commandLine(adbPath, "-s", deviceSerial.get(), "shell", "settings", "put", "global", "animator_duration_scale", "0") }
+    }
+}
+
+tasks.register("installDebugAndTestsOnDevice") {
+    group = "verification"
+    description = "Install app debug and androidTest APKs on the target device"
+    dependsOn("assembleDebug", "assembleDebugAndroidTest")
+    doLast {
+        val debugApk = layout.buildDirectory.file("outputs/apk/debug/app-debug.apk").get().asFile.absolutePath
+        val testApk = layout.buildDirectory.file("outputs/apk/androidTest/debug/app-debug-androidTest.apk").get().asFile.absolutePath
+        exec { commandLine(adbPath, "-s", deviceSerial.get(), "install", "-r", "-d", debugApk) }
+        exec { commandLine(adbPath, "-s", deviceSerial.get(), "install", "-r", "-d", testApk) }
+    }
+}
+
+tasks.register("runMainActivityTestOnDevice") {
+    group = "verification"
+    description = "Run MainActivityTest via instrumentation on the target device"
+    dependsOn("installDebugAndTestsOnDevice", "disableDeviceAnimations")
+    doLast {
+        exec {
+            commandLine(
+                adbPath,
+                "-s",
+                deviceSerial.get(),
+                "shell",
+                "am",
+                "instrument",
+                "-w",
+                "-r",
+                "-e",
+                "class",
+                "dev.shreyaspatil.foodium.ui.main.MainActivityTest",
+                "dev.shreyaspatil.foodium.test/dev.shreyaspatil.foodium.CustomTestRunner"
+            )
+        }
+    }
+}
+
+tasks.register("androidTestApi30") {
+    group = "verification"
+    description = "Disable animations, install APKs, and run MainActivityTest on the device (use -PdeviceSerial)"
+    dependsOn("runMainActivityTestOnDevice")
+}

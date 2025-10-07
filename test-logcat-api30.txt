@@ -1,0 +1,575 @@
+--------- beginning of system
+10-07 21:45:23.018   524   542 W Looper  : Drained
+10-07 21:45:23.069   524   604 W RuleEvaluation: Integrity rule files are not available.
+10-07 21:45:23.070   524   571 I PackageManager: Integrity check passed for file:///data/app/vmdl1910876279.tmp
+10-07 21:45:23.083   524   554 I ActivityManager: Force stopping dev.shreyaspatil.foodium.test appid=10074 user=-1: installPackageLI
+10-07 21:45:23.086   524   571 I PackageManager: Update package dev.shreyaspatil.foodium.test code path from /data/app/~~DX0CdS-HyjVsWWqk3cGfgQ==/dev.shreyaspatil.foodium.test-IVP2slD9ZIb6aV1YHgeBVg== to /data/app/~~trqtDHIgLXJVTL5f2MuI5w==/dev.shreyaspatil.foodium.test-yFD-RE05aRFwb8elHoJYdw==; Retain data and using new
+10-07 21:45:23.086   524   571 I PackageManager: Update package dev.shreyaspatil.foodium.test resource path from /data/app/~~DX0CdS-HyjVsWWqk3cGfgQ==/dev.shreyaspatil.foodium.test-IVP2slD9ZIb6aV1YHgeBVg== to /data/app/~~trqtDHIgLXJVTL5f2MuI5w==/dev.shreyaspatil.foodium.test-yFD-RE05aRFwb8elHoJYdw==; Retain data and using new
+10-07 21:45:23.136   524   571 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+10-07 21:45:23.137   524   571 D PackageManager: Clear ephemeral installer activity
+--------- beginning of main
+10-07 21:45:23.168   438   595 E installd: Couldn't opendir /data/app/vmdl1910876279.tmp: No such file or directory
+10-07 21:45:23.168   438   595 E installd: Failed to delete /data/app/vmdl1910876279.tmp: No such file or directory
+10-07 21:45:23.170   524   571 I ActivityManager: Force stopping dev.shreyaspatil.foodium.test appid=10074 user=0: pkg removed
+10-07 21:45:23.175  2153  2155 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
+10-07 21:45:23.199  1006  1006 I MediaProvider: Invalidating LocalCallingIdentity cache for package dev.shreyaspatil.foodium.test. Reason: package android.intent.action.PACKAGE_REMOVED
+10-07 21:45:23.207   524   598 I InputReader: Reconfiguring input devices, changes=KEYBOARD_LAYOUTS | 
+10-07 21:45:23.218   663   663 V AvrcpMediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_REMOVED
+10-07 21:45:23.240   524   554 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_REMOVED dat=package:dev.shreyaspatil.foodium.test flg=0x4000010 (has extras) } to com.google.android.gms/.games.chimera.GamesSystemBroadcastReceiverProxy
+10-07 21:45:23.241   524   554 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_REMOVED dat=package:dev.shreyaspatil.foodium.test flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+10-07 21:45:23.301  1006  1006 I MediaProvider: Invalidating LocalCallingIdentity cache for package dev.shreyaspatil.foodium.test. Reason: package android.intent.action.PACKAGE_ADDED
+10-07 21:45:23.314   524   598 I InputReader: Reconfiguring input devices, changes=KEYBOARD_LAYOUTS | 
+10-07 21:45:23.316   663   663 V AvrcpMediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_ADDED
+10-07 21:45:23.316   663   663 D AvrcpMediaPlayerList: Name of package changed: dev.shreyaspatil.foodium.test
+10-07 21:45:23.318  1557  1601 I PermissionControllerServiceImpl: Updating user sensitive for uid 10074
+10-07 21:45:23.325   524   524 I Telecom : DefaultDialerCache: Refreshing default dialer for user 0: now null: DDC.oR@AEw
+10-07 21:45:23.325   524   598 I InputReader: Reconfiguring input devices, changes=KEYBOARD_LAYOUTS | 
+10-07 21:45:23.325   524   554 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:dev.shreyaspatil.foodium.test flg=0x4000010 (has extras) } to com.android.packageinstaller/.PackageInstalledReceiver
+10-07 21:45:23.340   524   553 W TextServicesManagerService: no available spell checker services found
+10-07 21:45:23.342   524   554 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:dev.shreyaspatil.foodium.test flg=0x4000010 (has extras) } to com.google.android.gms/.games.chimera.GamesSystemBroadcastReceiverProxy
+10-07 21:45:23.343   524   554 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:dev.shreyaspatil.foodium.test flg=0x4000010 (has extras) } to com.google.android.gms/.gass.chimera.PackageChangeBroadcastReceiver
+10-07 21:45:23.346   524   554 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:dev.shreyaspatil.foodium.test flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+10-07 21:45:23.348   524   524 V BackupManagerConstants: getFullBackupIntervalMilliseconds(...) returns 86400000
+10-07 21:45:23.348   524   524 V BackupManagerConstants: getFullBackupRequiredNetworkType(...) returns 2
+10-07 21:45:23.348   524   524 V BackupManagerConstants: getFullBackupRequireCharging(...) returns true
+10-07 21:45:23.356   524   554 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_REPLACED dat=package:dev.shreyaspatil.foodium.test flg=0x4000010 (has extras) } to com.google.android.gms/.gass.chimera.PackageChangeBroadcastReceiver
+10-07 21:45:23.357   524   554 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_REPLACED dat=package:dev.shreyaspatil.foodium.test flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+10-07 21:45:23.394   524   553 W Searchables: No global search activity found
+10-07 21:45:23.408   524   553 W VoiceInteractionManager: no available voice recognition services found for user 0
+10-07 21:45:23.404   524   553 W Searchables: No global search activity found
+10-07 21:45:23.492  1090  2131 I Fitness : FitCleanupIntentOperation received Intent android.intent.action.PACKAGE_REMOVED [CONTEXT service_id=17 ]
+10-07 21:45:23.507  1326  2137 I Auth    : [SupervisedAccountIntentOperation] onHandleIntent(): android.intent.action.PACKAGE_ADDED
+10-07 21:45:23.507  1326  2137 I Auth    : [SupervisedAccountIntentOperation] This operation is disabled
+10-07 21:45:23.507  1326  2137 I ChromeSync: [Sync,SyncIntentOperation] Handling the intent: Intent { act=android.intent.action.PACKAGE_ADDED dat=package:dev.shreyaspatil.foodium.test flg=0x4000010 cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+10-07 21:45:23.551  1326  2080 W SQLiteLog: (28) double-quoted string literal: "dev.shreyaspatil.foodium.test"
+10-07 21:45:23.567   841   841 D CarrierSvcBindHelper: No carrier app for: 0
+10-07 21:45:23.587   841   841 D CarrierSvcBindHelper: No carrier app for: 0
+10-07 21:45:23.591  1326  2137 I ChromeSync: [Persistence,AffiliationManager] One of affiliation or grouping data for android://P__4PTFfP2dG52tXapPV8njOOQZ_LK12DKun0SlUMvfklvVpGz9ol1YR4PHpOCvf7y6dkvQqcEcQh2jh7ahj9g==@dev.shreyaspatil.foodium.test/ was not found. Marking affiliation data as stale...
+10-07 21:45:23.608   524   542 W Looper  : Slow delivery took 207ms android.fg h=android.os.Handler c=<recycled PooledLambda@a2b1ebc> m=0
+10-07 21:45:23.623  1326  2138 I FontsPackageChangeOp: Package dev.shreyaspatil.foodium.test has no metadata
+10-07 21:45:23.702   841   841 D CarrierConfigLoader: mHandler: 9 phoneId: 0
+10-07 21:45:23.736  1326  1341 I gle.android.gm: Background concurrent copying GC freed 40191(2157KB) AllocSpace objects, 6(248KB) LOS objects, 49% free, 6987KB/13MB, paused 38us total 312.490ms
+10-07 21:45:23.892   524   542 W Looper  : Drained
+10-07 21:45:23.954   524  2162 I system_server: The ClassLoaderContext is a special shared library.
+10-07 21:45:23.956  1326  1759 I GCM-GMS : Registering GMS for direct boot.
+10-07 21:45:23.967   524  2162 I system_server: The ClassLoaderContext is a special shared library.
+10-07 21:45:23.978   524  2162 I chatty  : uid=1000(system) Binder:524_3 identical 1 line
+10-07 21:45:23.981   524  2162 I system_server: The ClassLoaderContext is a special shared library.
+10-07 21:45:23.990  1090  1515 E GCM     : Missing checkin config file
+10-07 21:45:23.996  1090  1515 W GCM     : GCM FAILED TO INITIALIZE - missing checkin
+10-07 21:45:23.997   524  2162 I system_server: The ClassLoaderContext is a special shared library.
+10-07 21:45:24.029  1326  1759 W GCM-GMS : Failed to get direct boot token: java.io.IOException: AUTHENTICATION_FAILED
+10-07 21:45:24.033   524  2162 I system_server: The ClassLoaderContext is a special shared library.
+10-07 21:45:24.038   524  2162 I PackageDexOptimizer: Running dexopt (dexoptNeeded=1) on: /data/app/~~trqtDHIgLXJVTL5f2MuI5w==/dev.shreyaspatil.foodium.test-yFD-RE05aRFwb8elHoJYdw==/base.apk pkg=dev.shreyaspatil.foodium.test isa=x86_64 dexoptFlags=boot_complete,debuggable,public,enable_hidden_api_checks targetFilter=verify oatDir=/data/app/~~trqtDHIgLXJVTL5f2MuI5w==/dev.shreyaspatil.foodium.test-yFD-RE05aRFwb8elHoJYdw==/oat classLoaderContext=PCL[]{PCL[/system/framework/android.test.base.jar]#PCL[/system/framework/android.test.mock.jar]{PCL[/system/framework/android.test.base.jar]}#PCL[/system/framework/android.test.runner.jar]{PCL[/system/framework/android.test.base.jar]#PCL[/system/framework/android.test.mock.jar]{PCL[/system/framework/android.test.base.jar]}}}
+10-07 21:45:24.040   438   595 V installd: DexInv: --- BEGIN '/data/app/~~trqtDHIgLXJVTL5f2MuI5w==/dev.shreyaspatil.foodium.test-yFD-RE05aRFwb8elHoJYdw==/base.apk' ---
+10-07 21:45:24.057  1090  1112 I .gms.persisten: Background young concurrent copying GC freed 143494(7330KB) AllocSpace objects, 10(392KB) LOS objects, 48% free, 8281KB/15MB, paused 367us total 154.011ms
+10-07 21:45:24.144  2165  2165 W dex2oat32: Unexpected CPU variant for X86 using defaults: x86_64
+10-07 21:45:24.145  2165  2165 I dex2oat32: /apex/com.android.art/bin/dex2oat32 --input-vdex-fd=-1 --output-vdex-fd=9 --updatable-bcp-packages-file=/system/etc/updatable-bcp-packages.txt --resolve-startup-const-strings=true --max-image-block-size=524288 --compiler-filter=verify --debuggable --classpath-dir=/data/app/~~trqtDHIgLXJVTL5f2MuI5w==/dev.shreyaspatil.foodium.test-yFD-RE05aRFwb8elHoJYdw== --class-loader-context=PCL[]{PCL[/system/framework/android.test.base.jar]#PCL[/system/framework/android.test.mock.jar]{PCL[/system/framework/android.test.base.jar]}#PCL[/system/framework/android.test.runner.jar]{PCL[/system/framework/android.test.base.jar]#PCL[/system/framework/android.test.mock.jar]{PCL[/system/framework/android.test.base.jar]}}} --generate-mini-debug-info --compact-dex-level=none --compilation-reason=boot
+10-07 21:45:24.152  2165  2165 I dex2oat32: setting boot class path to /apex/com.android.art/javalib/core-oj.jar:/apex/com.android.art/javalib/core-libart.jar:/apex/com.android.art/javalib/core-icu4j.jar:/apex/com.android.art/javalib/okhttp.jar:/apex/com.android.art/javalib/bouncycastle.jar:/apex/com.android.art/javalib/apache-xml.jar:/system/framework/framework.jar:/system/framework/ext.jar:/system/framework/telephony-common.jar:/system/framework/voip-common.jar:/system/framework/ims-common.jar:/system/framework/framework-atb-backward-compatibility.jar
+10-07 21:45:24.167  1326  1758 I GCM-GMS : Registering GMS 745476177629
+10-07 21:45:24.189  1090  1519 E GCM     : Missing checkin config file
+10-07 21:45:24.190  1090  1519 W GCM     : GCM FAILED TO INITIALIZE - missing checkin
+10-07 21:45:24.197  1326  1758 W GCM-GMS : Failed to get registration: java.io.IOException: AUTHENTICATION_FAILED
+10-07 21:45:24.705  1326  1758 I Icing   : Indexing com.google.android.gms-apps from com.google.android.gms [CONTEXT service_id=21 ]
+10-07 21:45:24.708  1326  1758 I Icing   : Indexing done com.google.android.gms-apps [CONTEXT service_id=21 ]
+10-07 21:45:24.784  1326  1758 I Icing   : Indexing com.google.android.gms-apps from com.google.android.gms [CONTEXT service_id=21 ]
+10-07 21:45:24.789  1326  1758 I Icing   : Indexing done com.google.android.gms-apps [CONTEXT service_id=21 ]
+10-07 21:45:25.530  2183  2184 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
+10-07 21:45:25.729  2193  2194 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
+10-07 21:45:25.928  2165  2165 I dex2oat32: Explicit concurrent copying GC freed 39978(6850KB) AllocSpace objects, 0(0B) LOS objects, 96% free, 63KB/1599KB, paused 29us total 24.437ms
+10-07 21:45:25.943  2165  2165 I dex2oat32: Explicit concurrent copying GC freed 454(175KB) AllocSpace objects, 0(0B) LOS objects, 95% free, 64KB/1600KB, paused 18us total 2.963ms
+10-07 21:45:26.019  2199  2199 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-07 21:45:26.023  2199  2199 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.profilebootclasspath"
+10-07 21:45:26.023  2199  2199 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_apex_image"
+10-07 21:45:26.023  2199  2199 I AndroidRuntime: Using default boot image
+10-07 21:45:26.023  2199  2199 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.disable_lock_profiling"
+10-07 21:45:26.023  2199  2199 I AndroidRuntime: Leaving lock profiling enabled
+10-07 21:45:26.024  2199  2199 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_generational_cc"
+10-07 21:45:26.028  2199  2199 I app_process: Core platform API reporting enabled, enforcing=false
+10-07 21:45:26.018  2199  2199 W app_process: type=1400 audit(0.0:31): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=10263 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+10-07 21:45:26.018  2199  2199 I chatty  : uid=2000(shell) app_process identical 2 lines
+10-07 21:45:26.018  2199  2199 W app_process: type=1400 audit(0.0:34): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=10263 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+10-07 21:45:26.311  2199  2199 D app_process: Time zone APEX ICU file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
+10-07 21:45:26.311  2199  2199 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt66l.dat
+10-07 21:45:26.318  2199  2199 W app_process: Unexpected CPU variant for X86 using defaults: x86_64
+10-07 21:45:26.330  2199  2199 I app_process: The ClassLoaderContext is a special shared library.
+10-07 21:45:26.365  2199  2199 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
+10-07 21:45:26.371  2199  2199 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+10-07 21:45:26.379   524   816 I ActivityManager: Force stopping dev.shreyaspatil.foodium appid=10075 user=0: start instr
+10-07 21:45:26.383   524   816 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10075; state: DISABLED
+10-07 21:45:26.383   524   555 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10075; state: ENABLED
+10-07 21:45:26.395   298   298 D Zygote  : Forked child process 2220
+10-07 21:45:26.397   524   555 I ActivityManager: Start proc 2220:dev.shreyaspatil.foodium/u0a75 for added application dev.shreyaspatil.foodium
+10-07 21:45:26.402  2220  2220 I aspatil.foodiu: Late-enabling -Xcheck:jni
+10-07 21:45:26.433  2165  2165 I dex2oat32: Explicit concurrent copying GC freed 14249(2588KB) AllocSpace objects, 0(0B) LOS objects, 95% free, 76KB/1612KB, paused 14us total 5.805ms
+10-07 21:45:26.434  2220  2220 I aspatil.foodiu: Unquickening 12 vdex files!
+10-07 21:45:26.437  2220  2220 W aspatil.foodiu: Unexpected CPU variant for X86 using defaults: x86_64
+10-07 21:45:26.462  2165  2165 I dex2oat32: dex2oat took 2.337s (4.286s cpu) (threads: 4) arena alloc=0B (0B) java alloc=76KB (78808B) native alloc=6942KB (7109152B) free=3423KB (3505712B)
+10-07 21:45:26.464   411   430 I adbd    : jdwp connection from 2220
+10-07 21:45:26.471   438   595 V installd: DexInv: --- END '/data/app/~~trqtDHIgLXJVTL5f2MuI5w==/dev.shreyaspatil.foodium.test-yFD-RE05aRFwb8elHoJYdw==/base.apk' (success) ---
+10-07 21:45:26.485   524  2162 I system_server: The ClassLoaderContext is a special shared library.
+10-07 21:45:26.524   524  2162 I chatty  : uid=1000(system) Binder:524_3 identical 4 lines
+10-07 21:45:26.532   524  2162 I system_server: The ClassLoaderContext is a special shared library.
+10-07 21:45:26.536  2220  2220 I aspatil.foodiu: The ClassLoaderContext is a special shared library.
+10-07 21:45:26.545  2220  2220 I aspatil.foodiu: The ClassLoaderContext is a special shared library.
+10-07 21:45:26.546   524  2162 I system_server: The ClassLoaderContext is a special shared library.
+10-07 21:45:26.549  2220  2220 I aspatil.foodiu: The ClassLoaderContext is a special shared library.
+10-07 21:45:26.552  2220  2220 W aspatil.foodiu: ClassLoaderContext classpath size mismatch. expected=0, found=3 (PCL[]{PCL[/system/framework/android.test.base.jar*315452938]#PCL[/system/framework/android.test.mock.jar*1904069966]{PCL[/system/framework/android.test.base.jar*315452938]}#PCL[/system/framework/android.test.runner.jar*2931394026]{PCL[/system/framework/android.test.base.jar*315452938]#PCL[/system/framework/android.test.mock.jar*1904069966]{PCL[/system/framework/android.test.base.jar*315452938]}}} | PCL[/system/framework/android.test.runner.jar*2931394026:/system/framework/android.test.mock.jar*1904069966:/system/framework/android.test.base.jar*315452938])
+10-07 21:45:26.553  2220  2220 W aspatil.foodiu: Found duplicate classes, falling back to extracting from APK : /data/app/~~trqtDHIgLXJVTL5f2MuI5w==/dev.shreyaspatil.foodium.test-yFD-RE05aRFwb8elHoJYdw==/base.apk
+10-07 21:45:26.553  2220  2220 W aspatil.foodiu: NOTE: This wastes RAM and hurts startup performance.
+10-07 21:45:26.553  2220  2220 W aspatil.foodiu: Found duplicated class when checking oat files: 'Ljunit/framework/Assert;' in /system/framework/android.test.base.jar and /data/app/~~trqtDHIgLXJVTL5f2MuI5w==/dev.shreyaspatil.foodium.test-yFD-RE05aRFwb8elHoJYdw==/base.apk
+10-07 21:45:26.557   524  2162 I system_server: The ClassLoaderContext is a special shared library.
+10-07 21:45:26.706   524  2162 I chatty  : uid=1000(system) Binder:524_3 identical 24 lines
+10-07 21:45:26.712   524  2162 I system_server: The ClassLoaderContext is a special shared library.
+10-07 21:45:26.714   524  2162 I PackageDexOptimizer: Running dexopt (dexoptNeeded=1) on: /data/app/~~z0vijbmd1U6wIY_xDtK7rQ==/dev.shreyaspatil.foodium-2yFiIPqPX8shBO8DnleQ2g==/base.apk pkg=dev.shreyaspatil.foodium isa=x86_64 dexoptFlags=boot_complete,debuggable,public,enable_hidden_api_checks targetFilter=verify oatDir=/data/app/~~z0vijbmd1U6wIY_xDtK7rQ==/dev.shreyaspatil.foodium-2yFiIPqPX8shBO8DnleQ2g==/oat classLoaderContext=PCL[]{}
+10-07 21:45:26.715   438   595 V installd: DexInv: --- BEGIN '/data/app/~~z0vijbmd1U6wIY_xDtK7rQ==/dev.shreyaspatil.foodium-2yFiIPqPX8shBO8DnleQ2g==/base.apk' ---
+10-07 21:45:26.732  2242  2242 W dex2oat32: Unexpected CPU variant for X86 using defaults: x86_64
+10-07 21:45:26.732  2242  2242 I dex2oat32: /apex/com.android.art/bin/dex2oat32 --input-vdex-fd=-1 --output-vdex-fd=9 --updatable-bcp-packages-file=/system/etc/updatable-bcp-packages.txt --resolve-startup-const-strings=true --max-image-block-size=524288 --compiler-filter=verify --debuggable --classpath-dir=/data/app/~~z0vijbmd1U6wIY_xDtK7rQ==/dev.shreyaspatil.foodium-2yFiIPqPX8shBO8DnleQ2g== --class-loader-context=PCL[]{} --generate-mini-debug-info --compact-dex-level=none --compilation-reason=boot
+10-07 21:45:26.734  2242  2242 I dex2oat32: setting boot class path to /apex/com.android.art/javalib/core-oj.jar:/apex/com.android.art/javalib/core-libart.jar:/apex/com.android.art/javalib/core-icu4j.jar:/apex/com.android.art/javalib/okhttp.jar:/apex/com.android.art/javalib/bouncycastle.jar:/apex/com.android.art/javalib/apache-xml.jar:/system/framework/framework.jar:/system/framework/ext.jar:/system/framework/telephony-common.jar:/system/framework/voip-common.jar:/system/framework/ims-common.jar:/system/framework/framework-atb-backward-compatibility.jar
+10-07 21:45:27.123  2220  2220 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+10-07 21:45:27.123  2220  2220 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+10-07 21:45:27.126  2220  2220 I aspatil.foodiu: The ClassLoaderContext is a special shared library.
+10-07 21:45:27.128  2220  2220 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+10-07 21:45:27.129  2220  2220 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+10-07 21:45:27.130  2220  2220 I aspatil.foodiu: The ClassLoaderContext is a special shared library.
+10-07 21:45:27.134  2220  2220 I chatty  : uid=10075(dev.shreyaspatil.foodium) identical 2 lines
+10-07 21:45:27.138  2220  2220 I aspatil.foodiu: The ClassLoaderContext is a special shared library.
+10-07 21:45:27.142  2220  2220 W aspatil.foodiu: ClassLoaderContext classpath size mismatch. expected=0, found=3 (PCL[]{PCL[/system/framework/android.test.base.jar*315452938]#PCL[/system/framework/android.test.mock.jar*1904069966]{PCL[/system/framework/android.test.base.jar*315452938]}#PCL[/system/framework/android.test.runner.jar*2931394026]{PCL[/system/framework/android.test.base.jar*315452938]#PCL[/system/framework/android.test.mock.jar*1904069966]{PCL[/system/framework/android.test.base.jar*315452938]}}} | PCL[/system/framework/android.test.runner.jar*2931394026:/system/framework/android.test.mock.jar*1904069966:/system/framework/android.test.base.jar*315452938]{PCL[/system/framework/android.test.base.jar*315452938]#PCL[/system/framework/android.test.mock.jar*1904069966]{PCL[/system/framework/android.test.base.jar*315452938]}#PCL[/system/framework/android.test.runner.jar*2931394026]{PCL[/system/framework/android.test.base.jar*315452938]#PCL[/system/framework/android.test.mock.jar*1904069966]{PCL[/system/framework/android.test.base.jar*315452938]}}};PCL[/system/framework/android.test.runner.jar*2931394026:/system/framework/android.test.mock.jar*1904069966:/system/framework/android.test.base.jar*315452938:/data/app/~~trqtDHIgLXJVTL5f2MuI5w==/dev.shreyaspatil.foodium.test-yFD-RE05aRFwb8elHoJYdw==/base.apk*193888258:/data/app/~~trqtDHIgLXJVTL5f2MuI5w==/dev.shreyaspatil.foodium.test-yFD-RE05aRFwb8elHoJYdw==/base.apk!classes2.dex*345074349:/data/app/~~trqtDHIgLXJVTL5f2MuI5w==/dev.shreyaspatil.foodium.test-yFD-RE05aRFwb8elHoJYdw==/base.apk!classes3.dex*226752590:/data/app/~~z0vijbmd1U6wIY_xDtK7rQ==/dev.shreyaspatil.foodium-2yFiIPqPX8shBO8DnleQ2g==/base.apk*895780407:/data/app/~~z0vijbmd1U6wIY_xDtK7rQ==/dev.shreyaspatil.foodium-2yFiIPqPX8shBO8DnleQ2g==/base.apk!classes2.dex*150442252:/data/app/~~z0vijbmd1U6wIY_xDtK7rQ==/dev.shreyaspatil.foodium-2yFiIPqPX8shBO8DnleQ2g==/base.apk!classes3.dex*2311034988])
+10-07 21:45:27.143  2220  2220 W aspatil.foodiu: Found duplicate classes, falling back to extracting from APK : /data/app/~~trqtDHIgLXJVTL5f2MuI5w==/dev.shreyaspatil.foodium.test-yFD-RE05aRFwb8elHoJYdw==/base.apk
+10-07 21:45:27.143  2220  2220 W aspatil.foodiu: NOTE: This wastes RAM and hurts startup performance.
+10-07 21:45:27.143  2220  2220 W aspatil.foodiu: Found duplicated class when checking oat files: 'L$r8$backportedMethods$utility$Byte$1$toUnsignedInt;' in /data/app/~~trqtDHIgLXJVTL5f2MuI5w==/dev.shreyaspatil.foodium.test-yFD-RE05aRFwb8elHoJYdw==/base.apk and /data/app/~~trqtDHIgLXJVTL5f2MuI5w==/dev.shreyaspatil.foodium.test-yFD-RE05aRFwb8elHoJYdw==/base.apk
+10-07 21:45:27.723  2220  2220 W aspatil.foodiu: Accessing hidden method Landroid/app/Instrumentation;->execStartActivity(Landroid/content/Context;Landroid/os/IBinder;Landroid/os/IBinder;Landroid/app/Activity;Landroid/content/Intent;ILandroid/os/Bundle;)Landroid/app/Instrumentation$ActivityResult; (greylist, linking, allowed)
+10-07 21:45:27.723  2220  2220 W aspatil.foodiu: Accessing hidden method Landroid/app/Instrumentation;->execStartActivity(Landroid/content/Context;Landroid/os/IBinder;Landroid/os/IBinder;Ljava/lang/String;Landroid/content/Intent;ILandroid/os/Bundle;)Landroid/app/Instrumentation$ActivityResult; (greylist, linking, allowed)
+10-07 21:45:27.731  2220  2220 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-07 21:45:27.733  2220  2220 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-07 21:45:27.735  2220  2220 I MultiDex: VM with version 2.1.0 has multidex support
+10-07 21:45:27.735  2220  2220 I MultiDex: Installing application
+10-07 21:45:27.735  2220  2220 I MultiDex: VM has multidex support, MultiDex support library is disabled.
+10-07 21:45:27.750  2220  2220 I MonitoringInstr: Instrumentation started!
+10-07 21:45:27.764  2220  2220 V TestEventClient: No service name argument was given (testDiscoveryService, testRunEventService or orchestratorService)
+10-07 21:45:27.770  2220  2220 I MonitoringInstr: No JSBridge.
+10-07 21:45:27.782  2242  2242 I dex2oat32: Explicit concurrent copying GC freed 30611(8690KB) AllocSpace objects, 0(0B) LOS objects, 96% free, 56KB/1592KB, paused 27us total 32.245ms
+10-07 21:45:27.785  2220  2248 I UsageTrackerFacilitator: Usage tracking enabled
+10-07 21:45:27.803  2220  2248 D TestExecutor: Adding listener androidx.test.internal.runner.listener.LogRunListener
+10-07 21:45:27.803  2220  2248 D TestExecutor: Adding listener androidx.test.internal.runner.listener.InstrumentationResultPrinter
+10-07 21:45:27.803  2220  2248 D TestExecutor: Adding listener androidx.test.internal.runner.listener.ActivityFinisherRunListener
+10-07 21:45:27.806  2220  2248 I TestRunner: run started: 3 tests
+10-07 21:45:27.806  2242  2242 I dex2oat32: Explicit concurrent copying GC freed 2792(930KB) AllocSpace objects, 0(0B) LOS objects, 96% free, 56KB/1592KB, paused 12us total 3.890ms
+10-07 21:45:27.813  2220  2248 I TestRunner: started: aboutMenu_opens_AboutActivity(dev.shreyaspatil.foodium.ui.main.MainActivityTest)
+10-07 21:45:27.823   524   545 D EventSequenceValidator: Transition from INTENT_FAILED to INTENT_STARTED
+10-07 21:45:27.823   524   743 I ActivityTaskManager: START u0 {flg=0x14000000 cmp=dev.shreyaspatil.foodium/.ui.main.MainActivity} from uid 10075
+10-07 21:45:27.830   420   420 I perfetto: ing_service_impl.cc:758 Configured tracing session 3, #sources:1, duration:5000 ms, #buffers:1, total buffer size:4096 KB, total sessions:1, uid:1071 session name: ""
+10-07 21:45:27.830   418   418 I perfetto: probes_producer.cc:230  Ftrace setup (target_buf=3)
+10-07 21:45:27.837   524   545 D EventSequenceValidator: Transition from INTENT_STARTED to ACTIVITY_LAUNCHED
+10-07 21:45:27.843   320   320 W EmuHWC2 : No layers, exit, buffer 0x0
+--------- beginning of kernel
+10-07 21:45:27.861     0     0 W perfetto: enabled ftrace
+10-07 21:45:27.858   320   320 I chatty  : uid=1000(system) composer@2.3-se identical 1 line
+10-07 21:45:27.875   320   320 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:27.883   418   418 I perfetto: ftrace_procfs.cc:176    enabled ftrace
+10-07 21:45:27.894  2220  2264 D libEGL  : loaded /vendor/lib64/egl/libEGL_emulation.so
+10-07 21:45:27.891   319   319 D goldfish-address-space: claimShared: Ask to claim region [0x3fcfd2000 0x3fd7bb000]
+10-07 21:45:27.894   320   320 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:27.902  2220  2264 D libEGL  : loaded /vendor/lib64/egl/libGLESv1_CM_emulation.so
+10-07 21:45:27.917  2220  2264 D libEGL  : loaded /vendor/lib64/egl/libGLESv2_emulation.so
+10-07 21:45:28.050  2242  2254 W dex2oat32: Verification of boolean kotlin.reflect.jvm.internal.impl.name.FqNamesUtilKt.isValidJavaFqName(java.lang.String) took 117.887ms (576.82 bytecodes/s) (1920B approximate peak alloc)
+10-07 21:45:28.056  2242  2253 W dex2oat32: Verification of void kotlin.reflect.jvm.internal.impl.metadata.builtins.BuiltInsProtoBuf.<clinit>() took 142.854ms (1680.03 bytecodes/s) (2688B approximate peak alloc)
+10-07 21:45:28.111  2242  2242 W dex2oat32: Verification of void kotlin.reflect.jvm.internal.impl.load.java.typeEnhancement.PredefinedEnhancementInfoKt.<clinit>() took 230.533ms (4090.51 bytecodes/s) (13784B approximate peak alloc)
+10-07 21:45:28.160  2242  2255 W dex2oat32: Verification of byte[] kotlin.reflect.jvm.internal.impl.protobuf.CodedInputStream.readRawBytesSlowPath(int) took 207.617ms (814.00 bytecodes/s) (3096B approximate peak alloc)
+10-07 21:45:28.175   320   320 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_native_sync_v3 ANDROID_EMU_native_sync_v4 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_YUV_Cache ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_sync_buffer_data ANDROID_EMU_read_color_buffer_dma GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+10-07 21:45:28.223  2220  2220 D LifecycleMonitor: Lifecycle status change: dev.shreyaspatil.foodium.ui.main.MainActivity@56cf475 in: PRE_ON_CREATE
+10-07 21:45:28.483  2220  2220 W aspatil.foodiu: Accessing hidden method Landroid/view/View;->computeFitSystemWindows(Landroid/graphics/Rect;Landroid/graphics/Rect;)Z (greylist, reflection, allowed)
+10-07 21:45:28.484  2220  2220 W aspatil.foodiu: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (greylist, reflection, allowed)
+10-07 21:45:28.588  2242  2242 I dex2oat32: Explicit concurrent copying GC freed 19955(2610KB) AllocSpace objects, 0(0B) LOS objects, 96% free, 59KB/1595KB, paused 21us total 18.555ms
+10-07 21:45:28.611  2220  2220 D LifecycleMonitor: Lifecycle status change: dev.shreyaspatil.foodium.ui.main.MainActivity@56cf475 in: CREATED
+10-07 21:45:28.633  2220  2220 I TetheringManager: registerTetheringEventCallback:dev.shreyaspatil.foodium
+10-07 21:45:28.642   524   743 D ConnectivityService: requestNetwork for uid/pid:10075/2220 NetworkRequest [ TRACK_DEFAULT id=17, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10075 AdministratorUids: [] RequestorUid: 10075 RequestorPackageName: dev.shreyaspatil.foodium] ]
+10-07 21:45:28.645   524   619 D ConnectivityService: NetReassign [17 : null → 100]
+10-07 21:45:28.646   524   614 D WifiNetworkFactory: got request NetworkRequest [ TRACK_DEFAULT id=17, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10075 AdministratorUids: [] RequestorUid: 10075 RequestorPackageName: dev.shreyaspatil.foodium] ] with score 20 and providerId 2
+10-07 21:45:28.647   524   614 D UntrustedWifiNetworkFactory: got request NetworkRequest [ TRACK_DEFAULT id=17, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10075 AdministratorUids: [] RequestorUid: 10075 RequestorPackageName: dev.shreyaspatil.foodium] ] with score 20 and providerId 2
+10-07 21:45:28.647   841   841 D PhoneSwitcherNetworkRequstListener: got request NetworkRequest [ TRACK_DEFAULT id=17, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10075 AdministratorUids: [] RequestorUid: 10075 RequestorPackageName: dev.shreyaspatil.foodium] ] with score 20 and providerId 2
+10-07 21:45:28.650  2220  2220 D LifecycleMonitor: Lifecycle status change: dev.shreyaspatil.foodium.ui.main.MainActivity@56cf475 in: STARTED
+10-07 21:45:28.677  2242  2242 I dex2oat32: dex2oat took 1.944s (2.913s cpu) (threads: 4) arena alloc=0B (0B) java alloc=59KB (61344B) native alloc=6239KB (6389200B) free=2060KB (2110064B)
+10-07 21:45:28.683   841   841 D Telephony: isEmergencyPreferredAccount: subId=1, activeData=1
+10-07 21:45:28.684   841   841 D Telephony: isEmergencyPreferredAccount: Device does not require preference.
+10-07 21:45:28.690  2220  2220 D LifecycleMonitor: Lifecycle status change: dev.shreyaspatil.foodium.ui.main.MainActivity@56cf475 in: RESUMED
+10-07 21:45:28.705   438   595 V installd: DexInv: --- END '/data/app/~~z0vijbmd1U6wIY_xDtK7rQ==/dev.shreyaspatil.foodium-2yFiIPqPX8shBO8DnleQ2g==/base.apk' (success) ---
+10-07 21:45:28.715   524  2162 I system_server: The ClassLoaderContext is a special shared library.
+10-07 21:45:28.962   524   619 D ConnectivityService: NetReassign [no changes]
+10-07 21:45:29.059   524  2162 I chatty  : uid=1000(system) Binder:524_3 identical 23 lines
+10-07 21:45:29.063   524  2162 I system_server: The ClassLoaderContext is a special shared library.
+10-07 21:45:29.069  2220  2262 D HostConnection: HostConnection::get() New Host Connection established 0x75567b3dc810, tid 2262
+10-07 21:45:29.081  2220  2262 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_native_sync_v3 ANDROID_EMU_native_sync_v4 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_YUV_Cache ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_sync_buffer_data ANDROID_EMU_read_color_buffer_dma GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+10-07 21:45:29.085   185   185 I hwservicemanager: getTransport: Cannot find entry android.hardware.configstore@1.0::ISurfaceFlingerConfigs/default in either framework or device manifest.
+10-07 21:45:29.086  2220  2262 W OpenGLRenderer: Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+10-07 21:45:29.087  2220  2262 D EGL_emulation: eglCreateContext: 0x75566b427c50: maj 3 min 0 rcv 3
+10-07 21:45:29.089  2220  2262 D EGL_emulation: eglMakeCurrent: 0x75566b427c50: ver 3 0 (tinfo 0x75560b4036c0) (first time)
+10-07 21:45:29.101   524  2162 I system_server: The ClassLoaderContext is a special shared library.
+10-07 21:45:29.111   524  2162 I system_server: The ClassLoaderContext is a special shared library.
+10-07 21:45:29.114   524   534 I system_server: Background concurrent copying GC freed 125407(6877KB) AllocSpace objects, 22(916KB) LOS objects, 49% free, 9960KB/19MB, paused 77us total 151.822ms
+10-07 21:45:29.114   319   319 D goldfish-address-space: claimShared: Ask to claim region [0x3fc7e9000 0x3fcfd2000]
+10-07 21:45:29.117   524  2162 I system_server: The ClassLoaderContext is a special shared library.
+10-07 21:45:29.117   185   185 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device manifest.
+10-07 21:45:29.117  2220  2262 I Gralloc4: mapper 4.x is not supported
+10-07 21:45:29.118  2220  2262 D HostConnection: createUnique: call
+10-07 21:45:29.118  2220  2262 D HostConnection: HostConnection::get() New Host Connection established 0x75567b3dfe10, tid 2262
+10-07 21:45:29.119  2220  2262 D goldfish-address-space: allocate: Ask for block of size 0x100
+10-07 21:45:29.119  2220  2262 D goldfish-address-space: allocate: ioctl allocate returned offset 0x3fbffe000 size 0x2000
+10-07 21:45:29.129  2220  2262 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_native_sync_v3 ANDROID_EMU_native_sync_v4 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_YUV_Cache ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_sync_buffer_data ANDROID_EMU_read_color_buffer_dma GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+10-07 21:45:29.129   524   535 W JavaBinder: BinderProxy is being destroyed but the application did not call unlinkToDeath to unlink all of its death recipients beforehand.  Releasing leaked death recipient: com.android.server.AlarmManagerService$2
+10-07 21:45:29.129   524   535 I BpBinder: onLastStrongRef automatically unlinking death recipients: <uncached descriptor>
+10-07 21:45:29.129   524   535 W JavaBinder: BinderProxy is being destroyed but the application did not call unlinkToDeath to unlink all of its death recipients beforehand.  Releasing leaked death recipient: com.android.server.AlarmManagerService$2
+10-07 21:45:29.129   524   535 I BpBinder: onLastStrongRef automatically unlinking death recipients: <uncached descriptor>
+10-07 21:45:29.144   524  2162 I system_server: The ClassLoaderContext is a special shared library.
+10-07 21:45:29.154   524   545 D EventSequenceValidator: Transition from ACTIVITY_LAUNCHED to ACTIVITY_FINISHED
+10-07 21:45:29.163   524  2162 I system_server: The ClassLoaderContext is a special shared library.
+10-07 21:45:29.168   524   553 D ArtManagerInternalImpl: /data/misc/iorapd/dev.shreyaspatil.foodium/1/dev.shreyaspatil.foodium.ui.main.MainActivity/compiled_traces/compiled_trace.pb doesn't exist
+10-07 21:45:29.170   524   553 I ActivityTaskManager: Displayed dev.shreyaspatil.foodium/.ui.main.MainActivity: +1s330ms
+10-07 21:45:29.172   524  2162 I system_server: The ClassLoaderContext is a special shared library.
+10-07 21:45:29.176   320   320 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:29.184   524  2162 I system_server: The ClassLoaderContext is a special shared library.
+10-07 21:45:29.191   524  2162 I system_server: The ClassLoaderContext is a special shared library.
+10-07 21:45:29.192   320   320 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:29.196   524  2162 I system_server: The ClassLoaderContext is a special shared library.
+10-07 21:45:29.204   524  2162 I system_server: The ClassLoaderContext is a special shared library.
+10-07 21:45:29.208   320   320 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:29.212   524  2162 I BackgroundDexOptService: Pinning optimized code {dev.shreyaspatil.foodium.test, dev.shreyaspatil.foodium}
+10-07 21:45:29.212   524  2162 D IorapForwardingService: onPackagesUpdated: dev.shreyaspatil.foodium.test
+10-07 21:45:29.212   524  2162 D IorapForwardingService: onPackagesUpdated: dev.shreyaspatil.foodium
+10-07 21:45:29.225   320   320 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:29.479   377  1145 W ServiceManager: Permission failure: android.permission.ACCESS_SURFACE_FLINGER from uid=10075 pid=2220
+10-07 21:45:29.479   377  1145 D PermissionCache: checking android.permission.ACCESS_SURFACE_FLINGER for uid=10075 => denied (1687 us)
+10-07 21:45:29.491   320   320 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:29.507   320   320 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:29.509  2220  2248 D EventInjectionStrategy: Creating injection strategy with input manager.
+10-07 21:45:29.509  2220  2248 W aspatil.foodiu: Accessing hidden method Landroid/hardware/input/InputManager;->getInstance()Landroid/hardware/input/InputManager; (greylist, reflection, allowed)
+10-07 21:45:29.510  2220  2248 W aspatil.foodiu: Accessing hidden method Landroid/hardware/input/InputManager;->injectInputEvent(Landroid/view/InputEvent;I)Z (greylist, reflection, allowed)
+10-07 21:45:29.510  2220  2248 W aspatil.foodiu: Accessing hidden field Landroid/hardware/input/InputManager;->INJECT_INPUT_EVENT_MODE_WAIT_FOR_FINISH:I (greylist, reflection, allowed)
+10-07 21:45:29.527  2220  2220 W aspatil.foodiu: Accessing hidden method Landroid/os/MessageQueue;->next()Landroid/os/Message; (greylist, reflection, allowed)
+10-07 21:45:29.527  2220  2220 W aspatil.foodiu: Accessing hidden field Landroid/os/MessageQueue;->mMessages:Landroid/os/Message; (greylist, reflection, allowed)
+10-07 21:45:29.528  2220  2220 W aspatil.foodiu: Accessing hidden method Landroid/os/Message;->recycleUnchecked()V (greylist, reflection, allowed)
+10-07 21:45:29.534  2220  2220 W aspatil.foodiu: Accessing hidden method Landroid/view/WindowManagerGlobal;->getInstance()Landroid/view/WindowManagerGlobal; (greylist, reflection, allowed)
+10-07 21:45:29.534  2220  2220 W aspatil.foodiu: Accessing hidden field Landroid/view/WindowManagerGlobal;->mViews:Ljava/util/ArrayList; (greylist, reflection, allowed)
+10-07 21:45:29.535  2220  2220 W aspatil.foodiu: Accessing hidden field Landroid/view/WindowManagerGlobal;->mParams:Ljava/util/ArrayList; (greylist, reflection, allowed)
+10-07 21:45:29.541  2220  2220 I ViewInteraction: Performing 'Wait for 500 milliseconds.' action on view view.getRootView() to equal view
+10-07 21:45:29.707   769  2055 D NetworkMonitor/101: PROBE_HTTP http://connectivitycheck.gstatic.com/generate_204 Probe failed with exception java.net.UnknownHostException: Unable to resolve host "connectivitycheck.gstatic.com": No address associated with hostname
+10-07 21:45:29.715   769  2054 D NetworkMonitor/101: PROBE_HTTPS https://www.google.com/generate_204 Probe failed with exception java.net.UnknownHostException: Unable to resolve host "www.google.com": No address associated with hostname
+10-07 21:45:29.717   769  2053 D NetworkMonitor/101: isCaptivePortal: isSuccessful()=false isPortal()=false RedirectUrl=null isPartialConnectivity()=false Time=30064ms
+10-07 21:45:29.720   524   619 D ConnectivityService: [101 CELLULAR] validation failed
+10-07 21:45:30.048  2220  2220 I ViewInteraction: Performing 'send keyCode: 82, metaState: 0 key event' action on view view.getRootView() to equal view
+10-07 21:45:30.068   524   631 W AS.SfxHelper: MediaPlayer IOException: java.io.FileNotFoundException: /system/media/audio/ui/Effect_Tick.ogg: open failed: ENOENT (No such file or directory)
+10-07 21:45:30.110  2220  2220 W aspatil.foodiu: Accessing hidden field Landroid/widget/AbsListView;->mIsChildViewEnabled:Z (greylist, reflection, allowed)
+10-07 21:45:30.125   320   320 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:30.141   320   320 I chatty  : uid=1000(system) composer@2.3-se identical 1 line
+10-07 21:45:30.157   320   320 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:30.166   319   319 D goldfish-address-space: claimShared: Ask to claim region [0x3fcfd2000 0x3fd066000]
+10-07 21:45:30.173   320   320 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:30.207   320   320 I chatty  : uid=1000(system) composer@2.3-se identical 2 lines
+10-07 21:45:30.223   320   320 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:30.237   319   319 D goldfish-address-space: claimShared: Ask to claim region [0x3fcfd2000 0x3fd066000]
+10-07 21:45:30.242   320   320 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:30.258   320   320 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:30.262  2220  2248 W aspatil.foodiu: Accessing hidden method Landroid/view/ViewConfiguration;->getDoubleTapMinTime()I (greylist, reflection, allowed)
+10-07 21:45:30.266  2220  2220 I ViewInteraction: Performing 'single click' action on view an instance of android.widget.TextView and view.getText() with or without transformation to match: is "About"
+10-07 21:45:30.382   524   545 D EventSequenceValidator: Transition from ACTIVITY_FINISHED to INTENT_STARTED
+10-07 21:45:30.383   524  1064 I ActivityTaskManager: START u0 {cmp=dev.shreyaspatil.foodium/.ui.about.AboutActivity} from uid 10075
+10-07 21:45:30.384   524   631 W AS.SfxHelper: MediaPlayer IOException: java.io.FileNotFoundException: /system/media/audio/ui/Effect_Tick.ogg: open failed: ENOENT (No such file or directory)
+10-07 21:45:30.387   420   420 I perfetto: ing_service_impl.cc:758 Configured tracing session 4, #sources:1, duration:5000 ms, #buffers:1, total buffer size:4096 KB, total sessions:2, uid:1071 session name: ""
+10-07 21:45:30.388   418   418 I perfetto: probes_producer.cc:230  Ftrace setup (target_buf=4)
+10-07 21:45:30.392   320   320 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:30.395   524   545 D EventSequenceValidator: Transition from INTENT_STARTED to INTENT_FAILED
+10-07 21:45:30.408   320   320 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:30.411  2220  2220 D LifecycleMonitor: Lifecycle status change: dev.shreyaspatil.foodium.ui.main.MainActivity@56cf475 in: PAUSED
+10-07 21:45:30.412   524  1064 W ActivityTaskManager: Tried to set launchTime (0) < mLastActivityLaunchTime (111607)
+10-07 21:45:30.423   320   320 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:30.436  2220  2220 D LifecycleMonitor: Lifecycle status change: dev.shreyaspatil.foodium.ui.about.AboutActivity@f6daf1d in: PRE_ON_CREATE
+10-07 21:45:30.441   320   320 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:30.458   320   320 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:30.517  2220  2220 D LifecycleMonitor: Lifecycle status change: dev.shreyaspatil.foodium.ui.about.AboutActivity@f6daf1d in: CREATED
+10-07 21:45:30.521  2220  2220 D LifecycleMonitor: Lifecycle status change: dev.shreyaspatil.foodium.ui.about.AboutActivity@f6daf1d in: STARTED
+10-07 21:45:30.523  2220  2220 D LifecycleMonitor: Lifecycle status change: dev.shreyaspatil.foodium.ui.about.AboutActivity@f6daf1d in: RESUMED
+10-07 21:45:30.542   320   320 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:30.557   320   320 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:30.566   319   319 D goldfish-address-space: claimShared: Ask to claim region [0x3fcfd2000 0x3fd7bb000]
+10-07 21:45:30.575   320   320 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:30.590   320   320 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:30.615   524   553 I ActivityTaskManager: Displayed dev.shreyaspatil.foodium/.ui.about.AboutActivity: +231ms
+10-07 21:45:30.625   320   320 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:30.641   320   320 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:30.651  2220  2220 D LifecycleMonitor: Lifecycle status change: dev.shreyaspatil.foodium.ui.main.MainActivity@56cf475 in: STOPPED
+10-07 21:45:30.657   320   320 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:30.691   320   320 I chatty  : uid=1000(system) composer@2.3-se identical 2 lines
+10-07 21:45:30.707   320   320 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:30.750  2220  2220 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle)}' assertion on view view.getId() is <2131296707/dev.shreyaspatil.foodium:id/textTitle>
+10-07 21:45:30.750  2220  2248 I TestRunner: finished: aboutMenu_opens_AboutActivity(dev.shreyaspatil.foodium.ui.main.MainActivityTest)
+10-07 21:45:30.758  2220  2220 I MonitoringInstr: Activities that are still in CREATED to STOPPED: 2
+10-07 21:45:30.758  2220  2220 I MonitoringInstr: Finishing activity: dev.shreyaspatil.foodium.ui.about.AboutActivity@f6daf1d
+10-07 21:45:30.762   377   569 D PermissionCache: checking android.permission.READ_FRAME_BUFFER for uid=1000 => granted (366 us)
+10-07 21:45:30.763   319   319 D goldfish-address-space: claimShared: Ask to claim region [0x3fc7e9000 0x3fcfd2000]
+10-07 21:45:30.779  2220  2220 I MonitoringInstr: Finishing activity: dev.shreyaspatil.foodium.ui.main.MainActivity@56cf475
+10-07 21:45:30.783  2220  2248 I MonitoringInstr: Unstopped activity count: 1
+10-07 21:45:30.785  2220  2220 D LifecycleMonitor: Lifecycle status change: dev.shreyaspatil.foodium.ui.about.AboutActivity@f6daf1d in: PAUSED
+10-07 21:45:30.790   320   320 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:30.801  2220  2220 D LifecycleMonitor: Lifecycle status change: dev.shreyaspatil.foodium.ui.main.MainActivity@56cf475 in: DESTROYED
+10-07 21:45:30.808   320   320 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:30.814   524  2278 D libEGL  : loaded /vendor/lib64/egl/libEGL_emulation.so
+10-07 21:45:30.820   524  2278 D libEGL  : loaded /vendor/lib64/egl/libGLESv1_CM_emulation.so
+10-07 21:45:30.826   320   320 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:30.827   524  2278 D libEGL  : loaded /vendor/lib64/egl/libGLESv2_emulation.so
+10-07 21:45:30.834  2220  2248 I MonitoringInstr: Unstopped activity count: 1
+10-07 21:45:30.838   319   319 D goldfish-address-space: claimShared: Ask to claim region [0x3fd7bb000 0x3fdfa4000]
+10-07 21:45:30.843   320   320 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:30.858   320   320 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:30.870   524  2278 D HostConnection: HostConnection::get() New Host Connection established 0x75567b3e4010, tid 2278
+10-07 21:45:30.876   320   320 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:30.880   524  2278 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_native_sync_v3 ANDROID_EMU_native_sync_v4 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_YUV_Cache ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_sync_buffer_data ANDROID_EMU_read_color_buffer_dma GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+10-07 21:45:30.883   185   185 I hwservicemanager: getTransport: Cannot find entry android.hardware.configstore@1.0::ISurfaceFlingerConfigs/default in either framework or device manifest.
+10-07 21:45:30.884   524  2278 W OpenGLRenderer: Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+10-07 21:45:30.885   524  2278 D EGL_emulation: eglCreateContext: 0x75566b436980: maj 3 min 0 rcv 3
+10-07 21:45:30.885  2220  2248 I MonitoringInstr: Unstopped activity count: 1
+10-07 21:45:30.886   524  2278 D EGL_emulation: eglMakeCurrent: 0x75566b436980: ver 3 0 (tinfo 0x75560b47b600) (first time)
+10-07 21:45:30.891   320   320 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:30.894  2220  2220 D LifecycleMonitor: Lifecycle status change: dev.shreyaspatil.foodium.ui.about.AboutActivity@f6daf1d in: STOPPED
+10-07 21:45:30.898  2220  2220 D LifecycleMonitor: Lifecycle status change: dev.shreyaspatil.foodium.ui.about.AboutActivity@f6daf1d in: DESTROYED
+10-07 21:45:30.909   320   320 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:30.925   320   320 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:30.937  2220  2248 I TestRunner: started: clickFirstItem_opens_PostDetailsActivity(dev.shreyaspatil.foodium.ui.main.MainActivityTest)
+10-07 21:45:30.941   320   320 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:30.953   524   743 I ActivityTaskManager: START u0 {flg=0x10000000 cmp=dev.shreyaspatil.foodium/.ui.main.MainActivity} from uid 10075
+10-07 21:45:30.953   524   545 D EventSequenceValidator: Transition from INTENT_FAILED to INTENT_STARTED
+10-07 21:45:30.960   320   320 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:30.960   420   420 I perfetto: ing_service_impl.cc:758 Configured tracing session 5, #sources:1, duration:5000 ms, #buffers:1, total buffer size:4096 KB, total sessions:3, uid:1071 session name: ""
+10-07 21:45:30.961   418   418 I perfetto: probes_producer.cc:230  Ftrace setup (target_buf=5)
+10-07 21:45:30.974   320   320 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:30.978   524   743 W ActivityTaskManager: Tried to set launchTime (0) < mLastActivityLaunchTime (114174)
+10-07 21:45:30.988   524   545 D EventSequenceValidator: Transition from INTENT_STARTED to ACTIVITY_LAUNCHED
+10-07 21:45:30.992   320   320 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:31.001  2220  2220 D LifecycleMonitor: Lifecycle status change: dev.shreyaspatil.foodium.ui.main.MainActivity@218270c in: PRE_ON_CREATE
+10-07 21:45:31.009   320   320 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:31.017   319   319 D goldfish-address-space: claimShared: Ask to claim region [0x3fcfd2000 0x3fd7bb000]
+10-07 21:45:31.024   320   320 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:31.073   320   320 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:31.082  2220  2220 D LifecycleMonitor: Lifecycle status change: dev.shreyaspatil.foodium.ui.main.MainActivity@218270c in: CREATED
+10-07 21:45:31.086  2220  2220 E ConnectivityManager: NetworkCallback was already registered
+10-07 21:45:31.086   524   816 D ConnectivityService: requestNetwork for uid/pid:10075/2220 NetworkRequest [ TRACK_DEFAULT id=19, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10075 AdministratorUids: [] RequestorUid: 10075 RequestorPackageName: dev.shreyaspatil.foodium] ]
+10-07 21:45:31.087   524   619 D ConnectivityService: NetReassign [19 : null → 100]
+10-07 21:45:31.087   841   841 D PhoneSwitcherNetworkRequstListener: got request NetworkRequest [ TRACK_DEFAULT id=19, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10075 AdministratorUids: [] RequestorUid: 10075 RequestorPackageName: dev.shreyaspatil.foodium] ] with score 20 and providerId 2
+10-07 21:45:31.088   524   614 D WifiNetworkFactory: got request NetworkRequest [ TRACK_DEFAULT id=19, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10075 AdministratorUids: [] RequestorUid: 10075 RequestorPackageName: dev.shreyaspatil.foodium] ] with score 20 and providerId 2
+10-07 21:45:31.088   524   614 D UntrustedWifiNetworkFactory: got request NetworkRequest [ TRACK_DEFAULT id=19, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10075 AdministratorUids: [] RequestorUid: 10075 RequestorPackageName: dev.shreyaspatil.foodium] ] with score 20 and providerId 2
+10-07 21:45:31.099  2220  2220 D LifecycleMonitor: Lifecycle status change: dev.shreyaspatil.foodium.ui.main.MainActivity@218270c in: STARTED
+10-07 21:45:31.104  2220  2220 D LifecycleMonitor: Lifecycle status change: dev.shreyaspatil.foodium.ui.main.MainActivity@218270c in: RESUMED
+10-07 21:45:31.104   841   841 D Telephony: isEmergencyPreferredAccount: subId=1, activeData=1
+10-07 21:45:31.104   841   841 D Telephony: isEmergencyPreferredAccount: Device does not require preference.
+10-07 21:45:31.170   319   319 D goldfish-address-space: claimShared: Ask to claim region [0x3fd7bb000 0x3fdfa4000]
+10-07 21:45:31.202   524   545 D EventSequenceValidator: Transition from ACTIVITY_LAUNCHED to ACTIVITY_FINISHED
+10-07 21:45:31.203   524   553 D ArtManagerInternalImpl: /data/misc/iorapd/dev.shreyaspatil.foodium/1/dev.shreyaspatil.foodium.ui.main.MainActivity/compiled_traces/compiled_trace.pb doesn't exist
+10-07 21:45:31.210   524   553 I ActivityTaskManager: Displayed dev.shreyaspatil.foodium/.ui.main.MainActivity: +247ms
+10-07 21:45:31.227   320   320 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:31.273   320   320 I chatty  : uid=1000(system) composer@2.3-se identical 3 lines
+10-07 21:45:31.773   320   320 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:31.778  2220  2220 I ViewInteraction: Performing 'Wait up to 10000 ms for RecyclerView(2131296604) to have >= 1 items.' action on view view.getRootView() to equal view
+10-07 21:45:31.782  2220  2220 I ViewInteraction: Performing 'actionOnItemAtPosition performing ViewAction: single click on item at position: 0' action on view view.getId() is <2131296604/dev.shreyaspatil.foodium:id/postsRecyclerView>
+10-07 21:45:31.791   320   320 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:31.865   524   631 W AS.SfxHelper: MediaPlayer IOException: java.io.FileNotFoundException: /system/media/audio/ui/Effect_Tick.ogg: open failed: ENOENT (No such file or directory)
+10-07 21:45:31.865   524  1107 I ActivityTaskManager: START u0 {cmp=dev.shreyaspatil.foodium/.ui.details.PostDetailsActivity (has extras)} from uid 10075
+10-07 21:45:31.865   524   545 D EventSequenceValidator: Transition from ACTIVITY_FINISHED to INTENT_STARTED
+10-07 21:45:31.868   420   420 I perfetto: ing_service_impl.cc:758 Configured tracing session 6, #sources:1, duration:5000 ms, #buffers:1, total buffer size:4096 KB, total sessions:4, uid:1071 session name: ""
+10-07 21:45:31.869   418   418 I perfetto: probes_producer.cc:230  Ftrace setup (target_buf=6)
+10-07 21:45:31.875   320   320 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:31.876   524   545 D EventSequenceValidator: Transition from INTENT_STARTED to INTENT_FAILED
+10-07 21:45:31.886  2220  2220 D LifecycleMonitor: Lifecycle status change: dev.shreyaspatil.foodium.ui.main.MainActivity@218270c in: PAUSED
+10-07 21:45:31.887   524  1107 W ActivityTaskManager: Tried to set launchTime (0) < mLastActivityLaunchTime (114739)
+10-07 21:45:31.892   320   320 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:31.907   320   320 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:31.911   185   185 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.allocator@4.0::IAllocator/default in either framework or device manifest.
+10-07 21:45:31.912  2220  2262 W Gralloc4: allocator 3.x is not supported
+10-07 21:45:31.915   319   319 D goldfish-address-space: claimShared: Ask to claim region [0x3fdfa4000 0x3fdfd2000]
+10-07 21:45:31.919  2220  2220 W ThreadedRenderer: Error reading image: -30001!
+10-07 21:45:31.931  2220  2220 D LifecycleMonitor: Lifecycle status change: dev.shreyaspatil.foodium.ui.details.PostDetailsActivity@f87e05c in: PRE_ON_CREATE
+10-07 21:45:32.010  2220  2220 D LifecycleMonitor: Lifecycle status change: dev.shreyaspatil.foodium.ui.details.PostDetailsActivity@f87e05c in: CREATED
+10-07 21:45:32.018  2220  2220 D LifecycleMonitor: Lifecycle status change: dev.shreyaspatil.foodium.ui.details.PostDetailsActivity@f87e05c in: STARTED
+10-07 21:45:32.029  2220  2220 D LifecycleMonitor: Lifecycle status change: dev.shreyaspatil.foodium.ui.details.PostDetailsActivity@f87e05c in: RESUMED
+10-07 21:45:32.041   320   320 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:32.059   320   320 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:32.087   319   319 D goldfish-address-space: claimShared: Ask to claim region [0x3fcfd2000 0x3fd7bb000]
+10-07 21:45:32.091   320   320 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:32.093   769  2032 D NetworkMonitor/100: PROBE_HTTPS https://www.google.com/generate_204 Probe failed with exception java.net.UnknownHostException: Unable to resolve host "www.google.com": No address associated with hostname
+10-07 21:45:32.095   769  2031 D NetworkMonitor/100: isCaptivePortal: isSuccessful()=false isPortal()=false RedirectUrl=null isPartialConnectivity()=false Time=40051ms
+10-07 21:45:32.097   524   619 D ConnectivityService: [100 WIFI] validation failed
+10-07 21:45:32.107   320   320 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:32.115  2220  2244 I aspatil.foodiu: Waiting for a blocking GC ProfileSaver
+10-07 21:45:32.144  2220  2220 D ViewRootImpl[PostDetailsActivity]: changeCanvasOpacity: opaque=true
+10-07 21:45:32.158   320   320 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:32.174   320   320 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:32.184   524   553 I ActivityTaskManager: Displayed dev.shreyaspatil.foodium/.ui.details.PostDetailsActivity: +316ms
+10-07 21:45:32.190   320   320 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:32.208   320   320 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:32.217  2220  2220 D LifecycleMonitor: Lifecycle status change: dev.shreyaspatil.foodium.ui.main.MainActivity@218270c in: STOPPED
+10-07 21:45:32.224   320   320 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:32.241   320   320 I chatty  : uid=1000(system) composer@2.3-se identical 1 line
+10-07 21:45:32.257   320   320 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:32.414   297  1540 W resolv  : SSL_connect ssl error =5, mark 0xf0064: Connection refused
+10-07 21:45:32.414   297  1540 W resolv  : Validation failed
+10-07 21:45:32.432  2220  2220 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle)}' assertion on view view.getId() is <2131296603/dev.shreyaspatil.foodium:id/post_title>
+10-07 21:45:32.433  2220  2248 I TestRunner: finished: clickFirstItem_opens_PostDetailsActivity(dev.shreyaspatil.foodium.ui.main.MainActivityTest)
+10-07 21:45:32.440  2220  2220 I MonitoringInstr: Activities that are still in CREATED to STOPPED: 2
+10-07 21:45:32.440  2220  2220 I MonitoringInstr: Finishing activity: dev.shreyaspatil.foodium.ui.details.PostDetailsActivity@f87e05c
+10-07 21:45:32.445   319   319 D goldfish-address-space: claimShared: Ask to claim region [0x3fd7bb000 0x3fdfa4000]
+10-07 21:45:32.453  2220  2220 I MonitoringInstr: Finishing activity: dev.shreyaspatil.foodium.ui.main.MainActivity@218270c
+10-07 21:45:32.461  2220  2248 I MonitoringInstr: Unstopped activity count: 1
+10-07 21:45:32.462  2220  2220 D LifecycleMonitor: Lifecycle status change: dev.shreyaspatil.foodium.ui.details.PostDetailsActivity@f87e05c in: PAUSED
+10-07 21:45:32.469   524  2278 D HostConnection: HostConnection::get() New Host Connection established 0x75567b3e4010, tid 2278
+10-07 21:45:32.471  2220  2220 D LifecycleMonitor: Lifecycle status change: dev.shreyaspatil.foodium.ui.main.MainActivity@218270c in: DESTROYED
+10-07 21:45:32.475   320   320 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:32.483   524  2278 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_native_sync_v3 ANDROID_EMU_native_sync_v4 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_YUV_Cache ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_sync_buffer_data ANDROID_EMU_read_color_buffer_dma GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+10-07 21:45:32.486   524  2278 W OpenGLRenderer: Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+10-07 21:45:32.487   524  2278 D EGL_emulation: eglCreateContext: 0x75566b489180: maj 3 min 0 rcv 3
+10-07 21:45:32.491   320   320 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:32.491   524  2278 D EGL_emulation: eglMakeCurrent: 0x75566b489180: ver 3 0 (tinfo 0x75560b47b600) (first time)
+10-07 21:45:32.513  2220  2248 I MonitoringInstr: Unstopped activity count: 1
+10-07 21:45:32.525   320   320 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:32.535   319   319 D goldfish-address-space: claimShared: Ask to claim region [0x3fdfa4000 0x3fe78d000]
+10-07 21:45:32.542   320   320 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:32.557   320   320 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:32.564  2220  2248 I MonitoringInstr: Unstopped activity count: 1
+10-07 21:45:32.574   320   320 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:32.592   320   320 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:32.593  2220  2220 D LifecycleMonitor: Lifecycle status change: dev.shreyaspatil.foodium.ui.details.PostDetailsActivity@f87e05c in: STOPPED
+10-07 21:45:32.598  2220  2220 D LifecycleMonitor: Lifecycle status change: dev.shreyaspatil.foodium.ui.details.PostDetailsActivity@f87e05c in: DESTROYED
+10-07 21:45:32.607   320   320 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:32.616  2220  2248 I TestRunner: started: postsRecyclerView_isDisplayed_onLaunch(dev.shreyaspatil.foodium.ui.main.MainActivityTest)
+10-07 21:45:32.626   320   403 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:32.629   524   814 I ActivityTaskManager: START u0 {flg=0x10000000 cmp=dev.shreyaspatil.foodium/.ui.main.MainActivity} from uid 10075
+10-07 21:45:32.629   524   545 D EventSequenceValidator: Transition from INTENT_FAILED to INTENT_STARTED
+10-07 21:45:32.632   420   420 I perfetto: ing_service_impl.cc:758 Configured tracing session 7, #sources:1, duration:5000 ms, #buffers:1, total buffer size:4096 KB, total sessions:5, uid:1071 session name: ""
+10-07 21:45:32.633   418   418 I perfetto: probes_producer.cc:230  Ftrace setup (target_buf=7)
+10-07 21:45:32.637   524   545 D EventSequenceValidator: Transition from INTENT_STARTED to ACTIVITY_LAUNCHED
+10-07 21:45:32.640   524   817 W ActivityTaskManager: Tried to set launchTime (0) < mLastActivityLaunchTime (115647)
+10-07 21:45:32.642   320   403 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:32.661   320   403 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:32.662  2220  2220 D LifecycleMonitor: Lifecycle status change: dev.shreyaspatil.foodium.ui.main.MainActivity@770c3fe in: PRE_ON_CREATE
+10-07 21:45:32.674   320   403 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:32.683   319   319 D goldfish-address-space: claimShared: Ask to claim region [0x3fcfd2000 0x3fd7bb000]
+10-07 21:45:32.693   320   403 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:32.724   320   403 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:32.731  2220  2220 D LifecycleMonitor: Lifecycle status change: dev.shreyaspatil.foodium.ui.main.MainActivity@770c3fe in: CREATED
+10-07 21:45:32.735  2220  2220 E ConnectivityManager: NetworkCallback was already registered
+10-07 21:45:32.736   524   817 D ConnectivityService: requestNetwork for uid/pid:10075/2220 NetworkRequest [ TRACK_DEFAULT id=20, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10075 AdministratorUids: [] RequestorUid: 10075 RequestorPackageName: dev.shreyaspatil.foodium] ]
+10-07 21:45:32.736   524   619 D ConnectivityService: NetReassign [20 : null → 100]
+10-07 21:45:32.737   524   614 D WifiNetworkFactory: got request NetworkRequest [ TRACK_DEFAULT id=20, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10075 AdministratorUids: [] RequestorUid: 10075 RequestorPackageName: dev.shreyaspatil.foodium] ] with score 20 and providerId 2
+10-07 21:45:32.737   524   614 D UntrustedWifiNetworkFactory: got request NetworkRequest [ TRACK_DEFAULT id=20, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10075 AdministratorUids: [] RequestorUid: 10075 RequestorPackageName: dev.shreyaspatil.foodium] ] with score 20 and providerId 2
+10-07 21:45:32.737   841   841 D PhoneSwitcherNetworkRequstListener: got request NetworkRequest [ TRACK_DEFAULT id=20, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10075 AdministratorUids: [] RequestorUid: 10075 RequestorPackageName: dev.shreyaspatil.foodium] ] with score 20 and providerId 2
+10-07 21:45:32.749  2220  2220 D LifecycleMonitor: Lifecycle status change: dev.shreyaspatil.foodium.ui.main.MainActivity@770c3fe in: STARTED
+10-07 21:45:32.751   841   841 D Telephony: isEmergencyPreferredAccount: subId=1, activeData=1
+10-07 21:45:32.751   841   841 D Telephony: isEmergencyPreferredAccount: Device does not require preference.
+10-07 21:45:32.754  2220  2220 D LifecycleMonitor: Lifecycle status change: dev.shreyaspatil.foodium.ui.main.MainActivity@770c3fe in: RESUMED
+10-07 21:45:32.832   418   418 I perfetto: probes_producer.cc:329  Producer stop (id=3)
+10-07 21:45:32.833   319   319 D goldfish-address-space: claimShared: Ask to claim region [0x3fdfa4000 0x3fe78d000]
+10-07 21:45:32.833   420   420 I perfetto: ng_service_impl.cc:1948 Tracing session 3 ended, total sessions:4
+10-07 21:45:32.859   524   553 D ArtManagerInternalImpl: /data/misc/iorapd/dev.shreyaspatil.foodium/1/dev.shreyaspatil.foodium.ui.main.MainActivity/compiled_traces/compiled_trace.pb doesn't exist
+10-07 21:45:32.860   524   545 D EventSequenceValidator: Transition from ACTIVITY_LAUNCHED to ACTIVITY_FINISHED
+10-07 21:45:32.863   524   553 I ActivityTaskManager: Displayed dev.shreyaspatil.foodium/.ui.main.MainActivity: +225ms
+10-07 21:45:32.876   320   403 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:32.909   320   403 I chatty  : uid=1000(system) HwBinder:320_2 identical 2 lines
+10-07 21:45:32.925   320   403 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:33.056  1090  2078 E WakeLock: GCM_HB_ALARM release without a matched acquire!
+10-07 21:45:33.056  1090  2078 W WakeLock: GCM_HB_ALARM counter does not exist
+10-07 21:45:33.065  1090  2309 E WakeLock: GCM_HB_ALARM release without a matched acquire!
+10-07 21:45:33.065  1090  2309 W WakeLock: GCM_HB_ALARM counter does not exist
+10-07 21:45:33.204   297  1600 W resolv  : SSL_connect ssl error =5, mark 0xf0065: Connection refused
+10-07 21:45:33.206   297  1600 W resolv  : Validation failed
+10-07 21:45:33.377   524   817 I ActivityManager: Killing 1385:com.android.dynsystem/1000 (adj 985): empty #17
+10-07 21:45:33.417   298   298 I Zygote  : Process 1385 exited due to signal 9 (Killed)
+10-07 21:45:33.424   320   403 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:33.429  2220  2220 I ViewInteraction: Checking 'MatchesViewAssertion{viewMatcher=(view has effective visibility <VISIBLE> and view.getGlobalVisibleRect() to return non-empty rectangle)}' assertion on view view.getId() is <2131296604/dev.shreyaspatil.foodium:id/postsRecyclerView>
+10-07 21:45:33.431  2220  2248 I TestRunner: finished: postsRecyclerView_isDisplayed_onLaunch(dev.shreyaspatil.foodium.ui.main.MainActivityTest)
+10-07 21:45:33.436  2220  2220 I MonitoringInstr: Activities that are still in CREATED to STOPPED: 1
+10-07 21:45:33.436  2220  2220 I MonitoringInstr: Finishing activity: dev.shreyaspatil.foodium.ui.main.MainActivity@770c3fe
+10-07 21:45:33.439   320   403 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:33.445   319   319 D goldfish-address-space: claimShared: Ask to claim region [0x3fcfd2000 0x3fd7bb000]
+10-07 21:45:33.452   524   556 I libprocessgroup: Successfully killed process cgroup uid 1000 pid 1385 in 73ms
+10-07 21:45:33.454  2220  2248 I MonitoringInstr: Unstopped activity count: 1
+10-07 21:45:33.459   320   403 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:33.466  2220  2220 D LifecycleMonitor: Lifecycle status change: dev.shreyaspatil.foodium.ui.main.MainActivity@770c3fe in: PAUSED
+10-07 21:45:33.476   524  2278 D HostConnection: HostConnection::get() New Host Connection established 0x75567b3e3ad0, tid 2278
+10-07 21:45:33.482   524  2278 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_native_sync_v3 ANDROID_EMU_native_sync_v4 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_YUV_Cache ANDROID_EMU_has_shared_slots_host_memory_allocator ANDROID_EMU_sync_buffer_data ANDROID_EMU_read_color_buffer_dma GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+10-07 21:45:33.483   524  2278 W OpenGLRenderer: Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+10-07 21:45:33.484   524  2278 D EGL_emulation: eglCreateContext: 0x75566b461e80: maj 3 min 0 rcv 3
+10-07 21:45:33.485   524  2278 D EGL_emulation: eglMakeCurrent: 0x75566b461e80: ver 3 0 (tinfo 0x75560b47b600) (first time)
+10-07 21:45:33.490   320   403 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:33.500   319   319 D goldfish-address-space: claimShared: Ask to claim region [0x3fe78d000 0x3fef76000]
+10-07 21:45:33.506  2220  2248 I MonitoringInstr: Unstopped activity count: 1
+10-07 21:45:33.507   320   403 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:33.523   320   403 I chatty  : uid=1000(system) HwBinder:320_2 identical 1 line
+10-07 21:45:33.542   320   403 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:33.552  2220  2220 D LifecycleMonitor: Lifecycle status change: dev.shreyaspatil.foodium.ui.main.MainActivity@770c3fe in: STOPPED
+10-07 21:45:33.559   320   403 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:33.559  2220  2248 I TestRunner: run finished: 3 tests, 0 failed, 0 ignored
+10-07 21:45:33.562  2220  2220 D LifecycleMonitor: Lifecycle status change: dev.shreyaspatil.foodium.ui.main.MainActivity@770c3fe in: DESTROYED
+10-07 21:45:33.574   320   403 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:34.116   524  1000 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+10-07 21:45:35.263   524  1107 I ActivityManager: Killing 1453:com.android.managedprovisioning/u0a38 (adj 985): empty #17
+10-07 21:45:33.590   320   403 I chatty  : uid=1000(system) HwBinder:320_2 identical 1 line
+10-07 21:45:33.609   320   403 W EmuHWC2 : No layers, exit, buffer 0x0
+10-07 21:45:35.298   298   298 I Zygote  : Process 1453 exited due to signal 9 (Killed)
+10-07 21:45:35.334   524   556 I libprocessgroup: Successfully killed process cgroup uid 10038 pid 1453 in 70ms
+10-07 21:45:35.392   418   418 I perfetto: probes_producer.cc:329  Producer stop (id=4)
+10-07 21:45:35.395   420   420 I perfetto: ng_service_impl.cc:1948 Tracing session 4 ended, total sessions:3
+10-07 21:45:35.964   418   418 I perfetto: probes_producer.cc:329  Producer stop (id=5)
+10-07 21:45:35.965   420   420 I perfetto: ng_service_impl.cc:1948 Tracing session 5 ended, total sessions:2
+10-07 21:45:36.873   418   418 I perfetto: probes_producer.cc:329  Producer stop (id=6)
+10-07 21:45:36.876   420   420 I perfetto: ng_service_impl.cc:1948 Tracing session 6 ended, total sessions:1
+10-07 21:45:37.636   418   418 I perfetto: probes_producer.cc:329  Producer stop (id=7)
+10-07 21:45:37.638   420   420 I perfetto: ng_service_impl.cc:1948 Tracing session 7 ended, total sessions:0
+10-07 21:45:37.641   418   418 I perfetto: ftrace_procfs.cc:183    disabled ftrace
+10-07 21:45:37.617     0     0 W perfetto: disabled ftrace
+10-07 21:45:41.744   769   769 E DnsResolver: resNetworkResult:android.system.ErrnoException: resNetworkResult failed: ETIMEDOUT (Connection timed out)
+10-07 21:45:41.744   769   769 I chatty  : uid=1073(network_stack) com.android.networkstack.process identical 1 line
+10-07 21:45:41.744   769   769 E DnsResolver: resNetworkResult:android.system.ErrnoException: resNetworkResult failed: ETIMEDOUT (Connection timed out)
+10-07 21:45:41.745   769  2289 D NetworkMonitor/101: PROBE_DNS www.google.com 10019ms FAIL in type ADDRCONFIG android.net.DnsResolver$DnsException: android.system.ErrnoException: resNetworkResult failed: ETIMEDOUT (Connection timed out)
+10-07 21:45:41.746   769   769 E DnsResolver: resNetworkResult:android.system.ErrnoException: resNetworkResult failed: ETIMEDOUT (Connection timed out)
+10-07 21:45:41.746   769  2290 D NetworkMonitor/101: PROBE_DNS connectivitycheck.gstatic.com 10020ms FAIL in type ADDRCONFIG android.net.DnsResolver$DnsException: android.system.ErrnoException: resNetworkResult failed: ETIMEDOUT (Connection timed out)
+10-07 21:45:44.123   769   769 E DnsResolver: resNetworkResult:android.system.ErrnoException: resNetworkResult failed: ETIMEDOUT (Connection timed out)
+10-07 21:45:44.125   769   769 I chatty  : uid=1073(network_stack) com.android.networkstack.process identical 1 line
+10-07 21:45:44.126   769   769 E DnsResolver: resNetworkResult:android.system.ErrnoException: resNetworkResult failed: ETIMEDOUT (Connection timed out)
+10-07 21:45:44.127   769  2313 D NetworkMonitor/100: PROBE_DNS connectivitycheck.gstatic.com 10023ms FAIL in type ADDRCONFIG android.net.DnsResolver$DnsException: android.system.ErrnoException: resNetworkResult failed: ETIMEDOUT (Connection timed out)
+10-07 21:45:44.129   769   769 E DnsResolver: resNetworkResult:android.system.ErrnoException: resNetworkResult failed: ETIMEDOUT (Connection timed out)
+10-07 21:45:44.129   769  2312 D NetworkMonitor/100: PROBE_DNS www.google.com 10025ms FAIL in type ADDRCONFIG android.net.DnsResolver$DnsException: android.system.ErrnoException: resNetworkResult failed: ETIMEDOUT (Connection timed out)
+10-07 21:45:45.255  1090  1515 E Uploader: Clearcut transport failed to make network request. Use 20091 milliseconds.
+10-07 21:45:45.314   524   596 W ActivityManager: Unable to start service Intent { act=com.google.android.gms.drive.ApiService.RESET_AFTER_BOOT flg=0x4 cmp=com.google.android.gms/.drive.api.ApiService (has extras) } U=0: not found
+10-07 21:45:45.350   524  1107 D WifiNl80211Manager: Scan result ready event
+10-07 21:45:45.350   524  1107 D WifiNative: Scan result ready event
+10-07 21:45:45.369  1326  1759 I TelephonySpam: TelephonySpamChimeraService - Running Telephony Spam Chimera Service
+10-07 21:45:45.465  1326  1758 I Checkin : [CheckinChimeraService] Check queued to run. Is task waiting: false
+10-07 21:45:45.465  1326  1758 I Checkin : [CheckinChimeraService] Starting Checkin Task: RetryTaskTag Reason : 1 Force : false UserId: 0
+10-07 21:45:45.499  1326  1758 I Checkin : [EventLogChimeraService] Opted in for usage reporting: false
+10-07 21:45:45.502  1326  1758 I Checkin : [EventLogChimeraService] Opted in for usage reporting: false
+10-07 21:45:45.503  1326  1758 I Checkin : [EventLogChimeraService] Accumulating logs since 1759851863159
+10-07 21:45:45.482     0     0 D logd    : logdr: UID=10057 GID=10057 PID=1326 n tail=0 logMask=4 pid=0 start=0ns timeout=0ns
+10-07 21:45:45.516  1326  1758 I CheckinRequestBuilder: Checkin reason type: 1 attempt count: 1 [CONTEXT service_id=130 ]
+10-07 21:45:53.610  2220  2248 W InfraTrack: Analytics post: Espresso=3.4.0 failed. 
+10-07 21:45:53.612  2220  2248 W InfraTrack: Analytics post: AndroidJUnitRunner=1.4.0 failed. 
+10-07 21:45:53.613  2220  2248 I MonitoringInstr: waitForActivitiesToComplete() took: 0ms
+10-07 21:45:53.615   524  1107 I ActivityManager: Force stopping dev.shreyaspatil.foodium appid=10075 user=0: finished inst
+10-07 21:45:53.615   524  1107 I ActivityManager: Killing 2220:dev.shreyaspatil.foodium/u0a75 (adj 0): stop dev.shreyaspatil.foodium due to finished inst
+10-07 21:45:53.617  2199  2199 I app_process: System.exit called, status: 0
+10-07 21:45:53.617  2199  2199 I AndroidRuntime: VM exiting with result code 0.
+10-07 21:45:53.637   298   298 I Zygote  : Process 2220 exited due to signal 9 (Killed)
+10-07 21:45:53.613     0     0 I binder  : undelivered TRANSACTION_COMPLETE
+10-07 21:45:53.615     0     0 I binder  : undelivered transaction 72269, process died.
+10-07 21:45:53.645   524  1064 D ConnectivityService: ConnectivityService NetworkRequestInfo binderDied(NetworkRequest [ LISTEN id=18, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&FOREGROUND Uid: 10075 AdministratorUids: [] RequestorUid: 10075 RequestorPackageName: dev.shreyaspatil.foodium] ], android.os.BinderProxy@c77b67a)
+10-07 21:45:53.646   524   545 W ActivityManager: setHasOverlayUi called on unknown pid: 2220
+10-07 21:45:53.647   524  1107 D ConnectivityService: ConnectivityService NetworkRequestInfo binderDied(NetworkRequest [ TRACK_DEFAULT id=17, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10075 AdministratorUids: [] RequestorUid: 10075 RequestorPackageName: dev.shreyaspatil.foodium] ], android.os.BinderProxy@4ee0e2b)
+10-07 21:45:53.648   524   619 D ConnectivityService: releasing NetworkRequest [ TRACK_DEFAULT id=17, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10075 AdministratorUids: [] RequestorUid: 10075 RequestorPackageName: dev.shreyaspatil.foodium] ] (release request)
+10-07 21:45:53.649   524   743 D ConnectivityService: ConnectivityService NetworkRequestInfo binderDied(NetworkRequest [ TRACK_DEFAULT id=19, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10075 AdministratorUids: [] RequestorUid: 10075 RequestorPackageName: dev.shreyaspatil.foodium] ], android.os.BinderProxy@1ef5288)
+10-07 21:45:53.649   524   619 D ConnectivityService: releasing NetworkRequest [ TRACK_DEFAULT id=19, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10075 AdministratorUids: [] RequestorUid: 10075 RequestorPackageName: dev.shreyaspatil.foodium] ] (release request)
+10-07 21:45:53.649   524   743 D ConnectivityService: ConnectivityService NetworkRequestInfo binderDied(NetworkRequest [ TRACK_DEFAULT id=20, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10075 AdministratorUids: [] RequestorUid: 10075 RequestorPackageName: dev.shreyaspatil.foodium] ], android.os.BinderProxy@b3bc421)
+10-07 21:45:53.650   524   619 D ConnectivityService: releasing NetworkRequest [ TRACK_DEFAULT id=20, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED Uid: 10075 AdministratorUids: [] RequestorUid: 10075 RequestorPackageName: dev.shreyaspatil.foodium] ] (release request)
+10-07 21:45:53.662   524   556 I libprocessgroup: Successfully killed process cgroup uid 10075 pid 2220 in 46ms
+10-07 21:45:53.663   841   841 D Telephony: isEmergencyPreferredAccount: subId=1, activeData=1
+10-07 21:45:53.663   841   841 D Telephony: isEmergencyPreferredAccount: Device does not require preference.
+10-07 21:45:53.684   841   841 D Telephony: isEmergencyPreferredAccount: subId=1, activeData=1
+10-07 21:45:53.684   841   841 D Telephony: isEmergencyPreferredAccount: Device does not require preference.
+10-07 21:45:53.684   841   841 D Telephony: isEmergencyPreferredAccount: subId=1, activeData=1
+10-07 21:45:53.684   841   841 D Telephony: isEmergencyPreferredAccount: Device does not require preference.
+10-07 21:45:53.678     0     0 D logd    : logdr: UID=2000 GID=2000 PID=2334 n tail=0 logMask=99 pid=0 start=0ns timeout=0ns
