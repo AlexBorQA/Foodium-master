@@ -20,3 +20,11 @@
 **/.gradle/
 **/.cxx/
 **/.externalNativeBuild/
+
+# Additional ignores
+**/build/
+.vscode/
+*.keystore
+*.jks
+*.hprof
+*.log
