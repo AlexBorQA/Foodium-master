@@ -26,6 +26,12 @@ jobs:
       - name: Run unit tests
         run: ./gradlew :app:testDebugUnitTest --stacktrace --warning-mode all
 
+      - name: Run ktlintCheck
+        run: ./gradlew ktlintCheck --stacktrace --warning-mode all
+
+      - name: Run Android Lint (debug)
+        run: ./gradlew :app:lintDebug --stacktrace --warning-mode all
+
       - name: Upload unit test reports
         if: always()
         uses: actions/upload-artifact@v4
@@ -34,6 +40,23 @@ jobs:
           path: |
             app/build/reports/tests/testDebugUnitTest
             app/build/test-results/testDebugUnitTest
+
+      - name: Upload ktlint report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ktlint-report
+          path: |
+            **/build/reports/ktlint/**
+
+      - name: Upload Android Lint report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: android-lint-report
+          path: |
+            app/build/reports/lint-results-debug.html
+            app/build/reports/lint-results-debug.xml
 
   android-tests:
     needs: unit-tests
