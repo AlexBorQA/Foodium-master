@@ -28,6 +28,7 @@ plugins {
     id("kotlin-kapt")
     id("dagger.hilt.android.plugin")
     id("org.jlleitschuh.gradle.ktlint")
+    id("jacoco")
 }
 
 android {
@@ -65,6 +66,10 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+        }
+        getByName("debug") {
+            // Enable code coverage for androidTest on debug variant
+            isTestCoverageEnabled = true
         }
     }
 
@@ -176,6 +181,94 @@ val copyDebugApkToProd by tasks.register<org.gradle.api.tasks.Copy>("copyDebugAp
 afterEvaluate {
     tasks.named("assembleDebug").configure {
         finalizedBy(copyDebugApkToProd)
+    }
+}
+
+// Jacoco configuration and reports (unit + androidTest)
+jacoco {
+    toolVersion = "0.8.8"
+}
+
+tasks.withType<org.gradle.testing.jacoco.tasks.JacocoReport>().configureEach {
+    reports {
+        xml.required.set(true)
+        csv.required.set(false)
+        html.required.set(true)
+    }
+}
+
+fun coverageClassDirs() = files(
+    fileTree("$buildDir/tmp/kotlin-classes/debug") {
+        exclude(
+            "**/R.class",
+            "**/R$*.class",
+            "**/BuildConfig.*",
+            "**/*Manifest*.*",
+            "**/*Test*.*",
+            "**/*Dagger*.*",
+            "**/*Hilt*.*",
+            "**/*_Factory.*",
+            "**/*_MembersInjector.*",
+            "**/*_Provide*Factory.*",
+            "**/dagger/**",
+            "**/hilt_aggregated_deps/**",
+            "**/databinding/**",
+            "**/android/databinding/**",
+            "**/androidx/databinding/**",
+            "**/BR.class"
+        )
+    },
+    fileTree("$buildDir/intermediates/javac/debug/classes") {
+        exclude(
+            "**/R.class",
+            "**/R$*.class",
+            "**/BuildConfig.*",
+            "**/*Manifest*.*",
+            "**/*Test*.*",
+            "**/*Dagger*.*",
+            "**/*Hilt*.*",
+            "**/*_Factory.*",
+            "**/*_MembersInjector.*",
+            "**/*_Provide*Factory.*",
+            "**/dagger/**",
+            "**/hilt_aggregated_deps/**",
+            "**/databinding/**",
+            "**/android/databinding/**",
+            "**/androidx/databinding/**",
+            "**/BR.class"
+        )
+    }
+)
+
+val coverageSourceDirs = files("src/main/java", "src/main/kotlin")
+
+tasks.register<org.gradle.testing.jacoco.tasks.JacocoReport>("jacocoUnitTestReport") {
+    group = "verification"
+    description = "Generates Jacoco coverage report for unit tests"
+    dependsOn("testDebugUnitTest")
+
+    classDirectories.setFrom(coverageClassDirs())
+    sourceDirectories.setFrom(coverageSourceDirs)
+    executionData.setFrom(fileTree(buildDir) { include("**/testDebugUnitTest.exec") })
+
+    reports {
+        html.outputLocation.set(file("$buildDir/reports/jacoco/jacocoUnitTestReport/html"))
+        xml.outputLocation.set(file("$buildDir/reports/jacoco/jacocoUnitTestReport/jacoco-unit.xml"))
+    }
+}
+
+tasks.register<org.gradle.testing.jacoco.tasks.JacocoReport>("jacocoAndroidTestReport") {
+    group = "verification"
+    description = "Generates Jacoco coverage report for android instrumentation tests"
+    dependsOn("connectedDebugAndroidTest")
+
+    classDirectories.setFrom(coverageClassDirs())
+    sourceDirectories.setFrom(coverageSourceDirs)
+    executionData.setFrom(fileTree("$buildDir/outputs/code_coverage/debugAndroidTest/connected") { include("**/*.ec") })
+
+    reports {
+        html.outputLocation.set(file("$buildDir/reports/jacoco/jacocoAndroidTestReport/html"))
+        xml.outputLocation.set(file("$buildDir/reports/jacoco/jacocoAndroidTestReport/jacoco-androidTest.xml"))
     }
 }
 

@@ -89,6 +89,7 @@ jobs:
             adb shell settings put global animator_duration_scale 0
             ./gradlew :app:assembleDebug :app:assembleDebugAndroidTest --stacktrace --warning-mode all
             ./gradlew :app:connectedDebugAndroidTest --stacktrace --warning-mode all
+            ./gradlew :app:jacocoAndroidTestReport --stacktrace --warning-mode all
 
       - name: Upload androidTest reports
         if: always()
@@ -98,6 +99,7 @@ jobs:
           path: |
             app/build/reports/androidTests/connected
             app/build/outputs/androidTest-results
+            app/build/reports/jacoco/jacocoAndroidTestReport
 
       - name: Upload APKs
         if: always()
@@ -107,5 +109,13 @@ jobs:
           path: |
             app/build/outputs/apk/debug/app-debug.apk
             app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk
+
+      - name: Upload unit coverage report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: unit-coverage-report
+          path: |
+            app/build/reports/jacoco/jacocoUnitTestReport
 
 
