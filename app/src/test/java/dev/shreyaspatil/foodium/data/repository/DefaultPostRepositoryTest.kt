@@ -14,9 +14,12 @@ import kotlinx.coroutines.flow.toList
 import kotlinx.coroutines.runBlocking
 import org.junit.Test
 import retrofit2.Response
+ 
 
 @ExperimentalCoroutinesApi
 class DefaultPostRepositoryTest {
+
+    
 
     private class FakeDao : PostsDao {
         private val posts = mutableListOf<Post>()
@@ -32,6 +35,7 @@ class DefaultPostRepositoryTest {
 
     @Test
     fun getAllPosts_emitsLocalThenRemoteSaved() = runBlocking {
+        
         val initial = listOf<Post>()
         val remote = listOf(Post(1, "t", "a", "b", imageUrl = ""))
         val dao = FakeDao().apply { addPosts(initial) }
@@ -42,7 +46,7 @@ class DefaultPostRepositoryTest {
         val states = mutableListOf<Resource<List<Post>>>()
         repo.getAllPosts().take(2).toList(states)
 
-        // First emission from local (empty), then after remote save, local again with 1 item
+        
         assertThat(states.size).isAtLeast(2)
         assertThat((states.first() as Resource.Success).data).isEmpty()
         assertThat((states.last() as Resource.Success).data).hasSize(1)

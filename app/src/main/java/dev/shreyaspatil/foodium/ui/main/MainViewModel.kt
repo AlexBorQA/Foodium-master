@@ -30,6 +30,7 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import dev.shreyaspatil.foodium.data.repository.PostRepository
 import dev.shreyaspatil.foodium.model.Post
 import dev.shreyaspatil.foodium.model.State
+import dev.shreyaspatil.foodium.util.AppIdle
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch
@@ -49,9 +50,11 @@ class MainViewModel @Inject constructor(private val postRepository: PostReposito
 
     fun getPosts() {
         viewModelScope.launch {
+            AppIdle.increment()
             postRepository.getAllPosts()
                 .map { resource -> State.fromResource(resource) }
                 .collect { state -> _posts.value = state }
+            AppIdle.decrement()
         }
     }
 }

@@ -28,5 +28,3 @@ import androidx.lifecycle.ViewModel
 
 class AboutViewModel : ViewModel()
 
-
-

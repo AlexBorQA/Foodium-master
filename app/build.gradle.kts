@@ -93,6 +93,11 @@ tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().configureEach 
     }
 }
 
+// Configure Allure results directory for unit tests
+tasks.withType<Test>().configureEach {
+    systemProperty("allure.results.directory", "$buildDir/allure-results")
+}
+
 dependencies {
     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
 
@@ -159,11 +164,20 @@ dependencies {
     androidTestImplementation(Testing.espressoContrib)
     androidTestImplementation(Hilt.hiltAndroid)
     androidTestImplementation(Hilt.hiltTesting)
+    androidTestImplementation("io.qameta.allure:allure-kotlin-model:2.2.6")
+    androidTestImplementation("io.qameta.allure:allure-kotlin-commons:2.2.6")
+    androidTestImplementation("io.qameta.allure:allure-kotlin-junit4:2.2.6")
+    androidTestImplementation("io.qameta.allure:allure-kotlin-android:2.2.6")
     kaptAndroidTest(Hilt.daggerCompiler)
 
     // Additional unit test tools
     testImplementation("org.robolectric:robolectric:4.6.1")
     testImplementation("androidx.test:core:1.3.0")
+
+    // Allure for unit tests (Kotlin JUnit4)
+    testImplementation("io.qameta.allure:allure-kotlin-model:2.2.6")
+    testImplementation("io.qameta.allure:allure-kotlin-commons:2.2.6")
+    testImplementation("io.qameta.allure:allure-kotlin-junit4:2.2.6")
 }
 
 ktlint {
@@ -249,11 +263,21 @@ tasks.register<org.gradle.testing.jacoco.tasks.JacocoReport>("jacocoUnitTestRepo
 
     classDirectories.setFrom(coverageClassDirs())
     sourceDirectories.setFrom(coverageSourceDirs)
-    executionData.setFrom(fileTree(buildDir) { include("**/testDebugUnitTest.exec") })
+    executionData.setFrom(
+        fileTree(buildDir) {
+            include("**/testDebugUnitTest.exec")
+        }
+    )
 
     reports {
-        html.outputLocation.set(file("$buildDir/reports/jacoco/jacocoUnitTestReport/html"))
-        xml.outputLocation.set(file("$buildDir/reports/jacoco/jacocoUnitTestReport/jacoco-unit.xml"))
+        html.outputLocation.set(
+            file("$buildDir/reports/jacoco/jacocoUnitTestReport/html")
+        )
+        xml.outputLocation.set(
+            file(
+                "$buildDir/reports/jacoco/jacocoUnitTestReport/jacoco-unit.xml"
+            )
+        )
     }
 }
 
@@ -264,11 +288,21 @@ tasks.register<org.gradle.testing.jacoco.tasks.JacocoReport>("jacocoAndroidTestR
 
     classDirectories.setFrom(coverageClassDirs())
     sourceDirectories.setFrom(coverageSourceDirs)
-    executionData.setFrom(fileTree("$buildDir/outputs/code_coverage/debugAndroidTest/connected") { include("**/*.ec") })
+    executionData.setFrom(
+        fileTree("$buildDir/outputs/code_coverage/debugAndroidTest/connected") {
+            include("**/*.ec")
+        }
+    )
 
     reports {
-        html.outputLocation.set(file("$buildDir/reports/jacoco/jacocoAndroidTestReport/html"))
-        xml.outputLocation.set(file("$buildDir/reports/jacoco/jacocoAndroidTestReport/jacoco-androidTest.xml"))
+        html.outputLocation.set(
+            file("$buildDir/reports/jacoco/jacocoAndroidTestReport/html")
+        )
+        xml.outputLocation.set(
+            file(
+                "$buildDir/reports/jacoco/jacocoAndroidTestReport/jacoco-androidTest.xml"
+            )
+        )
     }
 }
 
@@ -280,9 +314,24 @@ tasks.register("disableDeviceAnimations") {
     group = "verification"
     description = "Disable window/transition/animator animations on the target device"
     doLast {
-        exec { commandLine(adbPath, "-s", deviceSerial.get(), "shell", "settings", "put", "global", "window_animation_scale", "0") }
-        exec { commandLine(adbPath, "-s", deviceSerial.get(), "shell", "settings", "put", "global", "transition_animation_scale", "0") }
-        exec { commandLine(adbPath, "-s", deviceSerial.get(), "shell", "settings", "put", "global", "animator_duration_scale", "0") }
+        exec {
+            commandLine(
+                adbPath, "-s", deviceSerial.get(), "shell", "settings", "put",
+                "global", "window_animation_scale", "0"
+            )
+        }
+        exec {
+            commandLine(
+                adbPath, "-s", deviceSerial.get(), "shell", "settings", "put",
+                "global", "transition_animation_scale", "0"
+            )
+        }
+        exec {
+            commandLine(
+                adbPath, "-s", deviceSerial.get(), "shell", "settings", "put",
+                "global", "animator_duration_scale", "0"
+            )
+        }
     }
 }
 
@@ -291,10 +340,18 @@ tasks.register("installDebugAndTestsOnDevice") {
     description = "Install app debug and androidTest APKs on the target device"
     dependsOn("assembleDebug", "assembleDebugAndroidTest")
     doLast {
-        val debugApk = layout.buildDirectory.file("outputs/apk/debug/app-debug.apk").get().asFile.absolutePath
-        val testApk = layout.buildDirectory.file("outputs/apk/androidTest/debug/app-debug-androidTest.apk").get().asFile.absolutePath
-        exec { commandLine(adbPath, "-s", deviceSerial.get(), "install", "-r", "-d", debugApk) }
-        exec { commandLine(adbPath, "-s", deviceSerial.get(), "install", "-r", "-d", testApk) }
+        val debugApk = layout.buildDirectory
+            .file("outputs/apk/debug/app-debug.apk")
+            .get().asFile.absolutePath
+        val testApk = layout.buildDirectory
+            .file("outputs/apk/androidTest/debug/app-debug-androidTest.apk")
+            .get().asFile.absolutePath
+        exec {
+            commandLine(adbPath, "-s", deviceSerial.get(), "install", "-r", "-d", debugApk)
+        }
+        exec {
+            commandLine(adbPath, "-s", deviceSerial.get(), "install", "-r", "-d", testApk)
+        }
     }
 }
 
@@ -324,6 +381,195 @@ tasks.register("runMainActivityTestOnDevice") {
 
 tasks.register("androidTestApi30") {
     group = "verification"
-    description = "Disable animations, install APKs, and run MainActivityTest on the device (use -PdeviceSerial)"
+    description = "Run MainActivityTest on device (use -PdeviceSerial)"
     dependsOn("runMainActivityTestOnDevice")
+}
+
+// --- Allure reports (unit + androidTest) and copy to root reports/ ---
+
+// Pull allure-results from device after connected tests
+val pullAndroidTestAllureResults by tasks.register<DefaultTask>("pullAndroidTestAllureResults") {
+    group = "verification"
+    description = "Pull /sdcard/allure-results from device to build/allure-results-androidTest"
+    dependsOn("connectedDebugAndroidTest")
+    doLast {
+        val outDir = file("$buildDir/allure-results-androidTest")
+        outDir.mkdirs()
+        exec {
+            commandLine(adbPath, "-s", deviceSerial.get(), "pull", "/sdcard/allure-results", outDir.absolutePath)
+            isIgnoreExitValue = true
+        }
+        exec {
+            commandLine(
+                adbPath, "-s", deviceSerial.get(), "pull",
+                "/sdcard/Android/data/dev.shreyaspatil.foodium.test/files/allure-results",
+                outDir.absolutePath
+            )
+            isIgnoreExitValue = true
+        }
+    }
+}
+
+// Allure CLI configuration for generating reports via JavaExec
+val allureCli by configurations.creating
+
+dependencies {
+    add("allureCli", "io.qameta.allure:allure-commandline:2.13.9")
+}
+
+// Generate Allure HTML for unit tests using Allure CLI
+tasks.register<JavaExec>("generateAllureUnitReport") {
+    group = "verification"
+    description = "Generate Allure HTML report for unit tests using CLI"
+    dependsOn("testDebugUnitTest")
+    val inputDir = file("$buildDir/allure-results")
+    val outDir = file("$buildDir/reports/allure/unit")
+    classpath = allureCli
+    mainClass.set("io.qameta.allure.CommandLine")
+    onlyIf { inputDir.exists() && (inputDir.list()?.isNotEmpty() == true) }
+    args("generate", inputDir.absolutePath, "-c", "-o", outDir.absolutePath)
+}
+
+// Generate Allure HTML for androidTest using Allure CLI
+tasks.register<JavaExec>("generateAllureAndroidTestReport") {
+    group = "verification"
+    description = "Generate Allure HTML report for androidTest using CLI"
+    dependsOn(pullAndroidTestAllureResults)
+    val inputDir = file("$buildDir/allure-results-androidTest/allure-results")
+    val outDir = file("$buildDir/reports/allure/androidTest")
+    classpath = allureCli
+    mainClass.set("io.qameta.allure.CommandLine")
+    onlyIf { inputDir.exists() && (inputDir.list()?.isNotEmpty() == true) }
+    args("generate", inputDir.absolutePath, "-c", "-o", outDir.absolutePath)
+}
+
+// Copy Jacoco HTML reports to root reports/
+tasks.register<org.gradle.api.tasks.Copy>("copyJacocoReportsToRoot") {
+    group = "verification"
+    description = "Copy Jacoco HTML reports to root reports/"
+    dependsOn("jacocoUnitTestReport", "jacocoAndroidTestReport")
+    from("$buildDir/reports/jacoco/jacocoUnitTestReport/html")
+    into("${rootDir}/reports/jacoco/unit")
+    doLast {
+        copy {
+            from("$buildDir/reports/jacoco/jacocoAndroidTestReport/html")
+            into("${rootDir}/reports/jacoco/androidTest")
+        }
+    }
+}
+
+// Copy Allure HTML reports to root reports/
+tasks.register<DefaultTask>("copyAllureReportsToRoot") {
+    group = "verification"
+    description = "Copy Allure HTML reports (unit + androidTest) to root reports/"
+    dependsOn("generateAllureUnitReport", "generateAllureAndroidTestReport")
+    doLast {
+        copy {
+            from("$buildDir/reports/allure/unit")
+            into("${rootDir}/reports/allure/unit")
+        }
+        copy {
+            from("$buildDir/reports/allure/androidTest")
+            into("${rootDir}/reports/allure/androidTest")
+        }
+    }
+}
+
+// Copy only Allure unit HTML to root reports/
+tasks.register<DefaultTask>("copyAllureUnitReportsToRoot") {
+    group = "verification"
+    description = "Copy Allure unit HTML report to root reports/"
+    dependsOn("generateAllureUnitReport")
+    doLast {
+        copy {
+            from("$buildDir/reports/allure/unit")
+            into("${rootDir}/reports/allure/unit")
+        }
+    }
+}
+
+// Copy only Allure androidTest HTML to root reports/
+tasks.register<DefaultTask>("copyAllureAndroidTestReportsToRoot") {
+    group = "verification"
+    description = "Copy Allure androidTest HTML report to root reports/"
+    dependsOn("generateAllureAndroidTestReport")
+    doLast {
+        copy {
+            from("$buildDir/reports/allure/androidTest")
+            into("${rootDir}/reports/allure/androidTest")
+        }
+    }
+}
+
+// Pull allure-results from device after running am instrument (runMainActivityTestOnDevice)
+val pullAndroidTestAllureResultsFromAm by tasks.register<DefaultTask>("pullAndroidTestAllureResultsFromAm") {
+    group = "verification"
+    description = "Pull Allure results after am instrument (runMainActivityTestOnDevice)"
+    dependsOn("runMainActivityTestOnDevice")
+    doLast {
+        val outDir = file("$buildDir/allure-results-androidTest")
+        outDir.mkdirs()
+        exec {
+            commandLine(adbPath, "-s", deviceSerial.get(), "pull", "/sdcard/allure-results", outDir.absolutePath)
+            isIgnoreExitValue = true
+        }
+        exec {
+            commandLine(
+                adbPath, "-s", deviceSerial.get(), "pull",
+                "/sdcard/Android/data/dev.shreyaspatil.foodium.test/files/allure-results",
+                outDir.absolutePath
+            )
+            isIgnoreExitValue = true
+        }
+    }
+}
+
+// Generate Allure HTML for androidTest using results pulled after am instrument
+tasks.register<JavaExec>("generateAllureAndroidTestReportFromAm") {
+    group = "verification"
+    description = "Generate Allure HTML for androidTest from am instrument results"
+    dependsOn(pullAndroidTestAllureResultsFromAm)
+    val inputDir = file("$buildDir/allure-results-androidTest/allure-results")
+    val outDir = file("$buildDir/reports/allure/androidTest")
+    classpath = allureCli
+    mainClass.set("io.qameta.allure.CommandLine")
+    onlyIf { inputDir.exists() && (inputDir.list()?.isNotEmpty() == true) }
+    args("generate", inputDir.absolutePath, "-c", "-o", outDir.absolutePath)
+}
+
+tasks.register<DefaultTask>("copyAllureAndroidTestReportsToRootFromAm") {
+    group = "verification"
+    description = "Copy Allure androidTest HTML (from am instrument) to root reports/"
+    dependsOn("generateAllureAndroidTestReportFromAm")
+    doLast {
+        copy {
+            from("$buildDir/reports/allure/androidTest")
+            into("${rootDir}/reports/allure/androidTest")
+        }
+    }
+}
+
+// Copy only Jacoco androidTest HTML to root reports/
+tasks.register<org.gradle.api.tasks.Copy>("copyJacocoAndroidTestReportToRoot") {
+    group = "verification"
+    description = "Copy Jacoco androidTest HTML report to root reports/"
+    dependsOn("jacocoAndroidTestReport")
+    from("$buildDir/reports/jacoco/jacocoAndroidTestReport/html")
+    into("${rootDir}/reports/jacoco/androidTest")
+}
+
+// Copy only Jacoco unit HTML to root reports/
+tasks.register<org.gradle.api.tasks.Copy>("copyJacocoUnitTestReportToRoot") {
+    group = "verification"
+    description = "Copy Jacoco unit HTML report to root reports/"
+    dependsOn("jacocoUnitTestReport")
+    from("$buildDir/reports/jacoco/jacocoUnitTestReport/html")
+    into("${rootDir}/reports/jacoco/unit")
+}
+
+// Aggregate: build all reports and copy to root
+tasks.register("buildAllReports") {
+    group = "verification"
+    description = "Generate Allure (unit+androidTest) and Jacoco reports, copy to root reports/"
+    dependsOn("generateAllureUnitReport", "generateAllureAndroidTestReport", "jacocoUnitTestReport", "jacocoAndroidTestReport", "copyAllureReportsToRoot", "copyJacocoReportsToRoot")
 }

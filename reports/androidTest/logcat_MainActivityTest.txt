@@ -1,0 +1,188 @@
+--------- beginning of main
+10-08 21:58:46.710  5255  5255 I abb     : StartCommandInProcess(73657474696e67730067657400676c6f settings.get.glo [truncated])
+10-08 21:58:46.715  5255  5260 I abb     : oneway function results will be dropped but finished with status OK and parcel size 4
+10-08 21:58:46.719  5255  5255 I abb     : StartCommandInProcess(7061636b61676500696e7374616c6c00 package.install. [truncated])
+10-08 21:58:46.714   550   550 W Binder:550_1D: type=1400 audit(0.0:556): avc: denied { getopt } for scontext=u:r:system_server:s0 tcontext=u:r:shell:s0 tclass=unix_stream_socket permissive=0
+--------- beginning of system
+10-08 21:58:46.849   550   704 W RuleEvaluation: Integrity rule files are not available.
+10-08 21:58:46.851   550   621 I PackageManager: Integrity check passed for file:///data/app/vmdl2015121486.tmp
+10-08 21:58:46.859   550   621 D CompatibilityChangeReporter: Compat change id reported: 135549675; UID 10081; state: ENABLED
+10-08 21:58:46.892   550   621 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+10-08 21:58:46.892   550   621 D PackageManager: Clear ephemeral installer activity
+10-08 21:58:46.903   550   621 V BackupManagerService: [UserID:0] restoreAtInstall pkg=dev.shreyaspatil.foodium token=16 restoreSet=0
+10-08 21:58:46.904   550   621 V BackupManagerService: [UserID:0] Finishing install immediately
+10-08 21:58:46.714   550   550 I chatty  : uid=1000(system) Binder:550_3 identical 2 lines
+10-08 21:58:46.790   550   550 W Binder:550_1D: type=1400 audit(0.0:559): avc: denied { getopt } for scontext=u:r:system_server:s0 tcontext=u:r:shell:s0 tclass=unix_stream_socket permissive=0
+10-08 21:58:46.907   449   449 E installd: Couldn't opendir /data/app/vmdl2015121486.tmp: No such file or directory
+10-08 21:58:46.907   449   449 E installd: Failed to delete /data/app/vmdl2015121486.tmp: No such file or directory
+--------- beginning of kernel
+10-08 21:58:46.889     0     0 W audit   : audit_lost=12 audit_rate_limit=5 audit_backlog_limit=64
+10-08 21:58:46.893     0     0 E audit   : rate limit exceeded
+10-08 21:58:46.902   550   550 W Binder:550_1D: type=1400 audit(0.0:560): avc: denied { getopt } for scontext=u:r:system_server:s0 tcontext=u:r:shell:s0 tclass=unix_stream_socket permissive=0
+10-08 21:58:46.909  5255  5260 I abb     : oneway function results will be dropped but finished with status OK and parcel size 4
+10-08 21:58:46.912  1224  1224 I MediaProvider: Invalidating LocalCallingIdentity cache for package dev.shreyaspatil.foodium. Reason: package android.intent.action.PACKAGE_ADDED
+10-08 21:58:46.913   550   605 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:dev.shreyaspatil.foodium flg=0x4000010 (has extras) } to com.android.packageinstaller/.PackageInstalledReceiver
+10-08 21:58:46.913   550   605 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:dev.shreyaspatil.foodium flg=0x4000010 (has extras) } to com.google.android.gms/.games.chimera.GamesSystemBroadcastReceiverProxy
+10-08 21:58:46.913   550   605 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:dev.shreyaspatil.foodium flg=0x4000010 (has extras) } to com.google.android.gms/.gass.chimera.PackageChangeBroadcastReceiver
+10-08 21:58:46.913   550   605 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:dev.shreyaspatil.foodium flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+10-08 21:58:46.919   550   694 I InputReader: Reconfiguring input devices, changes=KEYBOARD_LAYOUTS | 
+10-08 21:58:46.928   831   831 V AvrcpMediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_ADDED
+10-08 21:58:46.929   831   831 D AvrcpMediaPlayerList: Name of package changed: dev.shreyaspatil.foodium
+10-08 21:58:46.929   550   596 I RoleManagerService: Granting default roles...
+10-08 21:58:46.932   550   604 W TextServicesManagerService: no available spell checker services found
+10-08 21:58:46.902   550   550 W Binder:550_1D: type=1400 audit(0.0:561): avc: denied { getopt } for scontext=u:r:system_server:s0 tcontext=u:r:shell:s0 tclass=unix_stream_socket permissive=0
+10-08 21:58:46.956   837  5286 I PermissionControllerServiceImpl: Updating user sensitive for uid 10081
+10-08 21:58:46.975  5255  5255 I abb     : StartCommandInProcess(73657474696e67730067657400676c6f settings.get.glo [truncated])
+10-08 21:58:46.978  1613  5657 I Auth    : [SupervisedAccountIntentOperation] onHandleIntent(): android.intent.action.PACKAGE_ADDED
+10-08 21:58:46.978  1613  5657 I Auth    : [SupervisedAccountIntentOperation] This operation is disabled
+10-08 21:58:46.980  1613  5665 I ChromeSync: [Sync,SyncIntentOperation] Handling the intent: Intent { act=android.intent.action.PACKAGE_ADDED dat=package:dev.shreyaspatil.foodium flg=0x4000010 cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+10-08 21:58:46.982   550   550 I Telecom : DefaultDialerCache: Refreshing default dialer for user 0: now null: DDC.oR@ALY
+10-08 21:58:46.986  1322  5661 W GCM     : Unexpected forwarded intent: Intent { act=android.intent.action.PACKAGE_ADDED dat=package:dev.shreyaspatil.foodium flg=0x4000010 cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) }
+10-08 21:58:46.988  1613  5657 I FontsPackageChangeOp: Package dev.shreyaspatil.foodium has no metadata
+10-08 21:58:46.990   550   550 V BackupManagerConstants: getFullBackupIntervalMilliseconds(...) returns 86400000
+10-08 21:58:46.990   550   550 V BackupManagerConstants: getFullBackupRequiredNetworkType(...) returns 2
+10-08 21:58:46.990   550   550 V BackupManagerConstants: getFullBackupRequireCharging(...) returns true
+10-08 21:58:46.991   837  5655 W Role    : Cannot get ApplicationInfo for default holder: com.android.gallery3d
+10-08 21:58:46.993  5255  5260 I abb     : oneway function results will be dropped but finished with status OK and parcel size 4
+10-08 21:58:47.005  5255  5255 I abb     : StartCommandInProcess(7061636b61676500696e7374616c6c00 package.install. [truncated])
+10-08 21:58:47.006   550   604 W Searchables: No global search activity found
+10-08 21:58:47.013   550   885 W ActivityManager: Unable to start service Intent { act=com.google.android.gms.auth.key.retrieval.service.START pkg=com.google.android.gms } U=0: not found
+10-08 21:58:47.022  1322  5656 W GCM     : Unexpected forwarded intent: Intent { act=android.intent.action.PACKAGE_ADDED dat=package:dev.shreyaspatil.foodium flg=0x4000010 cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) }
+10-08 21:58:47.024   550   604 W VoiceInteractionManager: no available voice recognition services found for user 0
+10-08 21:58:47.025   550  5148 W ActivityManager: Unbind failed: could not find connection for android.os.BinderProxy@dee6b8c
+10-08 21:58:47.025  1613  1722 E GmsClient: unable to connect to service: com.google.android.gms.auth.key.retrieval.service.START on com.google.android.gms
+10-08 21:58:47.041  1613  5665 I ChromeSync: [Persistence,AffiliationManager] One of affiliation or grouping data for android://P__4PTFfP2dG52tXapPV8njOOQZ_LK12DKun0SlUMvfklvVpGz9ol1YR4PHpOCvf7y6dkvQqcEcQh2jh7ahj9g==@dev.shreyaspatil.foodium/ was not found. Marking affiliation data as stale...
+10-08 21:58:47.042  1034  1034 D CarrierSvcBindHelper: No carrier app for: 0
+10-08 21:58:47.086  1034  1034 D CarrierConfigLoader: mHandler: 9 phoneId: 0
+10-08 21:58:47.117   837  5655 W Role    : Cannot get ApplicationInfo for default holder: com.android.dialer
+10-08 21:58:47.166  1613  2193 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.gms componentName=AppsCorpus serviceId=36 [CONTEXT service_id=21 ]
+10-08 21:58:47.173   550   560 I system_server: Background concurrent copying GC freed 83446(4366KB) AllocSpace objects, 59(3088KB) LOS objects, 49% free, 10MB/21MB, paused 1.315ms total 266.307ms
+10-08 21:58:47.204  1613  5429 W Icing   : No valid account for uploading user actions [CONTEXT service_id=21 ]
+10-08 21:58:47.230  1613  5429 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0 [CONTEXT service_id=21 ]
+10-08 21:58:47.234  1613  1951 I Icing   : IndexChimeraService.getServiceInterface callingPackage=com.google.android.gms componentName=null serviceId=30 [CONTEXT service_id=21 ]
+10-08 21:58:47.241  1613  5543 W Icing   : No valid account for uploading user actions [CONTEXT service_id=21 ]
+10-08 21:58:47.250  1613  5543 I Icing   : Usage reports ok 0, Failed Usage reports 0, indexed 0, rejected 0 [CONTEXT service_id=21 ]
+10-08 21:58:47.292   550   704 W RuleEvaluation: Integrity rule files are not available.
+10-08 21:58:47.293   550   621 I PackageManager: Integrity check passed for file:///data/app/vmdl305512877.tmp
+10-08 21:58:47.302   550   621 D CompatibilityChangeReporter: Compat change id reported: 135549675; UID 10082; state: ENABLED
+10-08 21:58:47.327   550   621 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+10-08 21:58:47.327   550   621 D PackageManager: Clear ephemeral installer activity
+10-08 21:58:47.339   550   621 V BackupManagerService: [UserID:0] restoreAtInstall pkg=dev.shreyaspatil.foodium.test token=17 restoreSet=0
+10-08 21:58:47.340   550   621 V BackupManagerService: [UserID:0] Finishing install immediately
+10-08 21:58:47.343   449   449 E installd: Couldn't opendir /data/app/vmdl305512877.tmp: No such file or directory
+10-08 21:58:47.343   449   449 E installd: Failed to delete /data/app/vmdl305512877.tmp: No such file or directory
+10-08 21:58:47.344  5255  5674 I abb     : oneway function results will be dropped but finished with status OK and parcel size 4
+10-08 21:58:47.347  1224  1224 I MediaProvider: Invalidating LocalCallingIdentity cache for package dev.shreyaspatil.foodium.test. Reason: package android.intent.action.PACKAGE_ADDED
+10-08 21:58:47.351   550   605 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:dev.shreyaspatil.foodium.test flg=0x4000010 (has extras) } to com.android.packageinstaller/.PackageInstalledReceiver
+10-08 21:58:47.352   831   831 V AvrcpMediaPlayerList: mPackageChangedBroadcastReceiver: action: android.intent.action.PACKAGE_ADDED
+10-08 21:58:47.352   550   604 W TextServicesManagerService: no available spell checker services found
+10-08 21:58:47.352   831   831 D AvrcpMediaPlayerList: Name of package changed: dev.shreyaspatil.foodium.test
+10-08 21:58:47.353   550   605 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:dev.shreyaspatil.foodium.test flg=0x4000010 (has extras) } to com.google.android.gms/.games.chimera.GamesSystemBroadcastReceiverProxy
+10-08 21:58:47.353   550   605 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:dev.shreyaspatil.foodium.test flg=0x4000010 (has extras) } to com.google.android.gms/.gass.chimera.PackageChangeBroadcastReceiver
+10-08 21:58:47.353   550   605 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:dev.shreyaspatil.foodium.test flg=0x4000010 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+10-08 21:58:47.358   550   694 I InputReader: Reconfiguring input devices, changes=KEYBOARD_LAYOUTS | 
+10-08 21:58:47.361   837   870 I PermissionControllerServiceImpl: Updating user sensitive for uid 10082
+10-08 21:58:47.405  1322  5656 W GCM     : Unexpected forwarded intent: Intent { act=android.intent.action.PACKAGE_ADDED dat=package:dev.shreyaspatil.foodium.test flg=0x4000010 cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) }
+10-08 21:58:47.408  1613  5658 I Auth    : [SupervisedAccountIntentOperation] onHandleIntent(): android.intent.action.PACKAGE_ADDED
+10-08 21:58:47.408  1613  5658 I Auth    : [SupervisedAccountIntentOperation] This operation is disabled
+10-08 21:58:47.408  1613  5658 I ChromeSync: [Sync,SyncIntentOperation] Handling the intent: Intent { act=android.intent.action.PACKAGE_ADDED dat=package:dev.shreyaspatil.foodium.test flg=0x4000010 cmp=com.google.android.gms/.chimera.GmsIntentOperationService (has extras) }.
+10-08 21:58:47.411  1322  5659 W GCM     : Unexpected forwarded intent: Intent { act=android.intent.action.PACKAGE_ADDED dat=package:dev.shreyaspatil.foodium.test flg=0x4000010 cmp=com.google.android.gms/.chimera.PersistentIntentOperationService (has extras) }
+10-08 21:58:47.413  1613  5669 I FontsPackageChangeOp: Package dev.shreyaspatil.foodium.test has no metadata
+10-08 21:58:47.431   550   550 I Telecom : DefaultDialerCache: Refreshing default dialer for user 0: now null: DDC.oR@ALk
+10-08 21:58:47.450  1613  5658 I ChromeSync: [Persistence,AffiliationManager] One of affiliation or grouping data for android://P__4PTFfP2dG52tXapPV8njOOQZ_LK12DKun0SlUMvfklvVpGz9ol1YR4PHpOCvf7y6dkvQqcEcQh2jh7ahj9g==@dev.shreyaspatil.foodium.test/ was not found. Marking affiliation data as stale...
+10-08 21:58:47.459   550   550 V BackupManagerConstants: getFullBackupIntervalMilliseconds(...) returns 86400000
+10-08 21:58:47.459   550   550 V BackupManagerConstants: getFullBackupRequiredNetworkType(...) returns 2
+10-08 21:58:47.459   550   550 V BackupManagerConstants: getFullBackupRequireCharging(...) returns true
+10-08 21:58:47.460   550   604 W Searchables: No global search activity found
+10-08 21:58:47.470  1034  1034 D CarrierSvcBindHelper: No carrier app for: 0
+10-08 21:58:47.539   550   604 W VoiceInteractionManager: no available voice recognition services found for user 0
+10-08 21:58:47.545   550   560 I system_server: Background concurrent copying GC freed 41926(2014KB) AllocSpace objects, 12(496KB) LOS objects, 49% free, 11MB/22MB, paused 1.881ms total 202.073ms
+10-08 21:58:47.549  1034  1034 D CarrierConfigLoader: mHandler: 9 phoneId: 0
+10-08 21:58:47.921   550   596 I RoleManagerService: Granting default roles...
+10-08 21:58:47.937   837  5655 W Role    : Cannot get ApplicationInfo for default holder: com.android.gallery3d
+10-08 21:58:47.989   837  5655 W Role    : Cannot get ApplicationInfo for default holder: com.android.dialer
+10-08 21:58:48.038  5678  5678 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+10-08 21:58:48.042  5678  5678 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.profilebootclasspath"
+10-08 21:58:48.043  5678  5678 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_apex_image"
+10-08 21:58:48.043  5678  5678 I AndroidRuntime: Using default boot image
+10-08 21:58:48.043  5678  5678 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.disable_lock_profiling"
+10-08 21:58:48.043  5678  5678 I AndroidRuntime: Leaving lock profiling enabled
+10-08 21:58:48.043  5678  5678 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_generational_cc"
+10-08 21:58:48.046  5678  5678 I app_process: Core platform API reporting enabled, enforcing=false
+10-08 21:58:48.038  5678  5678 W app_process: type=1400 audit(0.0:570): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=1143 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+10-08 21:58:48.042  5678  5678 I chatty  : uid=2000(shell) app_process identical 2 lines
+10-08 21:58:48.042  5678  5678 W app_process: type=1400 audit(0.0:573): avc: denied { read } for name="u:object_r:device_config_runtime_native_boot_prop:s0" dev="tmpfs" ino=1143 scontext=u:r:shell:s0 tcontext=u:object_r:device_config_runtime_native_boot_prop:s0 tclass=file permissive=0
+10-08 21:58:48.129  5678  5678 D app_process: Time zone APEX ICU file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
+10-08 21:58:48.129  5678  5678 D app_process: I18n APEX ICU file found: /apex/com.android.i18n/etc/icu/icudt66l.dat
+10-08 21:58:48.135  5678  5678 W app_process: Unexpected CPU variant for X86 using defaults: x86_64
+10-08 21:58:48.137  5678  5678 I app_process: The ClassLoaderContext is a special shared library.
+10-08 21:58:48.155  5678  5678 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
+10-08 21:58:48.161  5678  5678 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+10-08 21:58:48.169   550  4415 I ActivityManager: Force stopping dev.shreyaspatil.foodium appid=10081 user=0: start instr
+10-08 21:58:48.171   550  4415 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10081; state: DISABLED
+10-08 21:58:48.171   550   606 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10081; state: ENABLED
+10-08 21:58:48.178   308   308 D Zygote  : Forked child process 5693
+10-08 21:58:48.186  5693  5693 I aspatil.foodiu: Late-enabling -Xcheck:jni
+10-08 21:58:48.187   550   606 I ActivityManager: Start proc 5693:dev.shreyaspatil.foodium/u0a81 for added application dev.shreyaspatil.foodium
+10-08 21:58:48.202  5693  5693 I aspatil.foodiu: Unquickening 12 vdex files!
+10-08 21:58:48.204  5693  5693 W aspatil.foodiu: Unexpected CPU variant for X86 using defaults: x86_64
+10-08 21:58:48.217   418   432 I adbd    : jdwp connection from 5693
+10-08 21:58:48.241  1613  3810 I Icing   : Indexing com.google.android.gms-apps from com.google.android.gms [CONTEXT service_id=21 ]
+10-08 21:58:48.267  1613  3810 I Icing   : Indexing com.google.android.gms-internal.3p:MobileApplication from com.google.android.gms [CONTEXT service_id=21 ]
+10-08 21:58:48.275  1613  3810 I Icing   : Indexing done com.google.android.gms-apps [CONTEXT service_id=21 ]
+10-08 21:58:48.278  1613  3810 I Icing   : Indexing done com.google.android.gms-internal.3p:MobileApplication [CONTEXT service_id=21 ]
+10-08 21:58:48.279  5693  5693 I aspatil.foodiu: The ClassLoaderContext is a special shared library.
+10-08 21:58:48.280  5693  5693 I chatty  : uid=10081(dev.shreyaspatil.foodium) identical 1 line
+10-08 21:58:48.283  5693  5693 I aspatil.foodiu: The ClassLoaderContext is a special shared library.
+10-08 21:58:48.435   830   830 I wpa_supplicant: wlan0: CTRL-EVENT-BEACON-LOSS 
+10-08 21:58:48.548  1613  3810 I Icing   : Indexing com.google.android.gms-apps from com.google.android.gms [CONTEXT service_id=21 ]
+10-08 21:58:48.551  1613  3810 I Icing   : Indexing done com.google.android.gms-apps [CONTEXT service_id=21 ]
+10-08 21:58:48.786  5693  5693 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+10-08 21:58:48.786  5693  5693 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+10-08 21:58:48.787  5693  5693 I aspatil.foodiu: The ClassLoaderContext is a special shared library.
+10-08 21:58:48.789  5693  5693 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+10-08 21:58:48.789  5693  5693 D ApplicationLoaders: Returning zygote-cached class loader: /system/framework/android.test.base.jar
+10-08 21:58:48.790  5693  5693 I aspatil.foodiu: The ClassLoaderContext is a special shared library.
+10-08 21:58:48.793  5693  5693 I chatty  : uid=10081(dev.shreyaspatil.foodium) identical 2 lines
+10-08 21:58:48.797  5693  5693 I aspatil.foodiu: The ClassLoaderContext is a special shared library.
+10-08 21:58:49.279  5693  5693 W aspatil.foodiu: Accessing hidden method Landroid/app/Instrumentation;->execStartActivity(Landroid/content/Context;Landroid/os/IBinder;Landroid/os/IBinder;Landroid/app/Activity;Landroid/content/Intent;ILandroid/os/Bundle;)Landroid/app/Instrumentation$ActivityResult; (greylist, linking, allowed)
+10-08 21:58:49.279  5693  5693 W aspatil.foodiu: Accessing hidden method Landroid/app/Instrumentation;->execStartActivity(Landroid/content/Context;Landroid/os/IBinder;Landroid/os/IBinder;Ljava/lang/String;Landroid/content/Intent;ILandroid/os/Bundle;)Landroid/app/Instrumentation$ActivityResult; (greylist, linking, allowed)
+10-08 21:58:49.287  5693  5693 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-08 21:58:49.288  5693  5693 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+10-08 21:58:49.290  5693  5693 I MultiDex: VM with version 2.1.0 has multidex support
+10-08 21:58:49.290  5693  5693 I MultiDex: Installing application
+10-08 21:58:49.290  5693  5693 I MultiDex: VM has multidex support, MultiDex support library is disabled.
+10-08 21:58:49.304  5693  5693 I MonitoringInstr: Instrumentation started!
+10-08 21:58:49.320  5693  5693 V TestEventClient: No service name argument was given (testDiscoveryService, testRunEventService or orchestratorService)
+10-08 21:58:49.323  5693  5693 I MonitoringInstr: No JSBridge.
+10-08 21:58:49.337  5693  5715 I UsageTrackerFacilitator: Usage tracking enabled
+10-08 21:58:49.358  5693  5715 D TestExecutor: Adding listener androidx.test.internal.runner.listener.LogRunListener
+10-08 21:58:49.358  5693  5715 D TestExecutor: Adding listener androidx.test.internal.runner.listener.InstrumentationResultPrinter
+10-08 21:58:49.358  5693  5715 D TestExecutor: Adding listener androidx.test.internal.runner.listener.ActivityFinisherRunListener
+10-08 21:58:49.359  5693  5715 I TestRunner: run started: 3 tests
+10-08 21:58:49.380  5693  5717 V UiAutomation: Init UiAutomation@421fe9d[id=5, flags=0]
+10-08 21:58:49.392   329   329 W EmuHWC2 : No layers, exit, buffer 0x0
+10-08 21:58:49.408   329   329 W EmuHWC2 : No layers, exit, buffer 0x0
+10-08 21:58:49.412  1224  1244 I MediaProvider: Invalidating LocalCallingIdentity cache for package dev.shreyaspatil.foodium. Reason: op android:read_external_storage
+10-08 21:58:49.412  5723  5725 I cmd     : oneway function results will be dropped but finished with status OK and parcel size 4
+10-08 21:58:49.413  1224  1244 I MediaProvider: Invalidating LocalCallingIdentity cache for package dev.shreyaspatil.foodium. Reason: op android:read_external_storage
+10-08 21:58:49.413   550   596 I ActivityManager: Killing 5693:dev.shreyaspatil.foodium/u0a81 (adj 0): MANAGE_EXTERNAL_STORAGE changed.
+10-08 21:58:49.416   550   596 W ActivityManager: Crash of app dev.shreyaspatil.foodium running instrumentation ComponentInfo{dev.shreyaspatil.foodium.test/dev.shreyaspatil.foodium.CustomTestRunner}
+10-08 21:58:49.417   550   596 I ActivityManager: Force stopping dev.shreyaspatil.foodium appid=10081 user=0: finished inst
+10-08 21:58:49.418  5678  5692 W Binder  : Caught a RuntimeException from the binder stub implementation.
+10-08 21:58:49.418  5678  5692 W Binder  : java.lang.SecurityException: Calling from not trusted UID!
+10-08 21:58:49.418  5678  5692 W Binder  : 	at android.app.UiAutomationConnection.throwIfCalledByNotTrustedUidLocked(UiAutomationConnection.java:525)
+10-08 21:58:49.418  5678  5692 W Binder  : 	at android.app.UiAutomationConnection.shutdown(UiAutomationConnection.java:429)
+10-08 21:58:49.418  5678  5692 W Binder  : 	at android.app.IUiAutomationConnection$Stub.onTransact(IUiAutomationConnection.java:390)
+10-08 21:58:49.418  5678  5692 W Binder  : 	at android.os.Binder.execTransactInternal(Binder.java:1159)
+10-08 21:58:49.418  5678  5692 W Binder  : 	at android.os.Binder.execTransact(Binder.java:1123)
+10-08 21:58:49.422  5678  5678 I app_process: System.exit called, status: 0
+10-08 21:58:49.422  5678  5678 I AndroidRuntime: VM exiting with result code 0.
+10-08 21:58:49.430   550  4415 W WindowManager: removeWindowToken: Attempted to remove non-existing token: android.os.Binder@eb7e99
+10-08 21:58:49.434   550  4415 V UiAutomationManager: UiAutomation service owner died
+10-08 21:58:49.441   329   329 W EmuHWC2 : No layers, exit, buffer 0x0
+10-08 21:58:49.444   308   308 I Zygote  : Process 5693 exited due to signal 9 (Killed)
+10-08 21:58:49.422     0     0 I binder  : undelivered transaction 322757, process died.
+10-08 21:58:49.459   550   607 I libprocessgroup: Successfully killed process cgroup uid 10081 pid 5693 in 43ms
+10-08 21:58:49.459   329   329 W EmuHWC2 : No layers, exit, buffer 0x0
+10-08 21:58:49.465     0     0 D logd    : logdr: UID=2000 GID=2000 PID=5728 n tail=0 logMask=99 pid=0 start=0ns timeout=0ns

@@ -47,16 +47,22 @@ class AboutActivity : BaseActivity<AboutViewModel, ActivityAboutBinding>() {
     }
 
     private fun initView() {
-        val versionText = "v${BuildConfig.VERSION_NAME} (${BuildConfig.VERSION_CODE}) ${BuildConfig.BUILD_TYPE}"
+        val versionText =
+            "v${BuildConfig.VERSION_NAME} (${BuildConfig.VERSION_CODE}) ${BuildConfig.BUILD_TYPE}"
         mViewBinding.textVersion.text = versionText
 
         mViewBinding.buttonRepo.setOnClickListener {
-            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/PatilShreyas/Foodium"))
+            val intent = Intent(
+                Intent.ACTION_VIEW,
+                Uri.parse("https://github.com/PatilShreyas/Foodium")
+            )
             startActivity(intent)
         }
 
         mViewBinding.buttonShare.setOnClickListener {
-            val text = "Foodium – ${BuildConfig.VERSION_NAME}. Repo: https://github.com/PatilShreyas/Foodium"
+            val text =
+                "Foodium – ${BuildConfig.VERSION_NAME}. Repo: " +
+                    "https://github.com/PatilShreyas/Foodium"
             val share = Intent(Intent.ACTION_SEND).apply {
                 type = "text/plain"
                 putExtra(Intent.EXTRA_TEXT, text)
@@ -69,8 +75,6 @@ class AboutActivity : BaseActivity<AboutViewModel, ActivityAboutBinding>() {
         }
     }
 
-    override fun getViewBinding(): ActivityAboutBinding = ActivityAboutBinding.inflate(layoutInflater)
+    override fun getViewBinding(): ActivityAboutBinding =
+        ActivityAboutBinding.inflate(layoutInflater)
 }
-
-
-

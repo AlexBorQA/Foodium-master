@@ -22,5 +22,3 @@ class FakePostRepository @Inject constructor() : PostRepository {
         return flowOf(Post(postId, "Title $postId", "Author", "Body"))
     }
 }
-
-

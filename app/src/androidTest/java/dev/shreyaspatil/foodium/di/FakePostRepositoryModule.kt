@@ -20,5 +20,3 @@ abstract class FakePostRepositoryModule {
     @ActivityRetainedScoped
     abstract fun bindPostRepository(impl: FakePostRepository): PostRepository
 }
-
-

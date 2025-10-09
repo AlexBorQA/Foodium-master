@@ -1,9 +1,11 @@
 <manifest package="dev.shreyaspatil.foodium" xmlns:android="http://schemas.android.com/apk/res/android">
-    <application android:name="dagger.hilt.android.testing.HiltTestApplication">
+    <application
+        android:name="dagger.hilt.android.testing.HiltTestApplication"
+        android:requestLegacyExternalStorage="true">
         <activity
             android:name=".ui.main.MainActivity"
             android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar"
-            android:exported="true"/>
+            android:exported="true" />
     </application>
 </manifest>
 

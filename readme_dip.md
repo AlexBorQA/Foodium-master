@@ -43,18 +43,18 @@ JAVA_HOME=$(/usr/libexec/java_home -v 11) ./gradlew :app:connectedDebugAndroidTe
 Запуск на API 30 (c отключением анимаций)
 ```bash
 # Uses Gradle helper tasks added in app/build.gradle.kts
-JAVA_HOME=$(/usr/libexec/java_home -v 11) ./gradlew :app:androidTestApi30 -PdeviceSerial=emulator-5556 --no-daemon
+JAVA_HOME=$(/usr/libexec/java_home -v 11) ./gradlew :app:androidTestApi30 -PdeviceSerial=emulator-5554 --no-daemon
 ```
 
 Скрипт‑помощник
 ```bash
-# Run one/all tests on a specific device (default emulator-5556)
+# Run one/all tests on a specific device (default emulator-5554)
 ./scripts/run-android-tests.sh [serial] [posts|click|about|all]
 ```
 
 Запуск UI приложения на эмуляторе
 ```bash
-/Users/borodovskikhmail.ru/Library/Android/sdk/platform-tools/adb -s emulator-5556 \
+/Users/borodovskikhmail.ru/Library/Android/sdk/platform-tools/adb -s emulator-5554 \
   shell am start -n dev.shreyaspatil.foodium/.ui.main.MainActivity
 ```
 
@@ -70,7 +70,7 @@ JAVA_HOME=$(/usr/libexec/java_home -v 11) ./gradlew :app:androidTestApi30 -Pdevi
     ```
   - Запуск (скрипт):
     ```bash
-    ./scripts/run-android-tests.sh emulator-5556 posts
+    ./scripts/run-android-tests.sh emulator-5554 posts
     ```
   - Ожидаемый результат: элемент `R.id.postsRecyclerView` отображается на экране.
 
@@ -84,7 +84,7 @@ JAVA_HOME=$(/usr/libexec/java_home -v 11) ./gradlew :app:androidTestApi30 -Pdevi
     ```
   - Запуск (скрипт):
     ```bash
-    ./scripts/run-android-tests.sh emulator-5556 click
+    ./scripts/run-android-tests.sh emulator-5554 click
     ```
   - Ожидаемый результат: открывается `PostDetailsActivity`, виден `R.id.post_title`.
 
@@ -98,9 +98,9 @@ JAVA_HOME=$(/usr/libexec/java_home -v 11) ./gradlew :app:androidTestApi30 -Pdevi
     ```
   - Запуск (скрипт):
     ```bash
-    ./scripts/run-android-tests.sh emulator-5556 about
+    ./scripts/run-android-tests.sh emulator-5554 about
     ```
-  - Ожидаемый результат: открывается `AboutActivity`, отображается строка `R.string.about_us_title`.
+  - Ожидаемый результат: открывается `AboutActivity`, выбирается пункт меню `R.string.action_about`.
 
 - Все три теста сразу
   - Gradle (весь класс):
@@ -110,7 +110,58 @@ JAVA_HOME=$(/usr/libexec/java_home -v 11) ./gradlew :app:androidTestApi30 -Pdevi
     ```
   - Скрипт:
     ```bash
-    ./scripts/run-android-tests.sh emulator-5556 all
+    ./scripts/run-android-tests.sh emulator-5554 all
     ```
+
+### Покрытие кода (Jacoco)
+
+- Юнит‑тесты (HTML/XML отчёт):
+```bash
+JAVA_HOME=$(/usr/libexec/java_home -v 11) ./gradlew :app:jacocoUnitTestReport --no-daemon
+```
+Отчёт: `app/build/reports/jacoco/jacocoUnitTestReport/html/index.html`
+Копия в корне: `reports/jacoco/unit/index.html`
+
+- Инструментальные тесты (HTML/XML отчёт):
+```bash
+JAVA_HOME=$(/usr/libexec/java_home -v 11) ./gradlew :app:jacocoAndroidTestReport --no-daemon
+```
+Отчёт: `app/build/reports/jacoco/jacocoAndroidTestReport/html/index.html`
+Копия в корне: `reports/jacoco/androidTest/index.html`
+
+### Отчёты Allure
+
+- Юнит‑тесты → HTML отчёт Allure и копия в корень:
+```bash
+JAVA_HOME=$(/usr/libexec/java_home -v 11) ./gradlew \
+  :app:testDebugUnitTest \
+  :app:generateAllureUnitReport \
+  :app:copyAllureUnitReportsToRoot --no-daemon
+```
+Отчёт: `app/build/reports/allure/unit/index.html`
+Копия в корне: `reports/allure/unit/index.html`
+
+- Инструментальные тесты (вариант через connected):
+```bash
+JAVA_HOME=$(/usr/libexec/java_home -v 11) ./gradlew \
+  :app:connectedDebugAndroidTest \
+  :app:pullAndroidTestAllureResults \
+  :app:generateAllureAndroidTestReport \
+  :app:copyAllureReportsToRoot --no-daemon
+```
+Отчёт: `app/build/reports/allure/androidTest/index.html`
+Копия в корне: `reports/allure/androidTest/index.html`
+
+- Инструментальные тесты (вариант direct `am instrument`, укажи serial):
+```bash
+JAVA_HOME=$(/usr/libexec/java_home -v 11) ./gradlew \
+  :app:installDebugAndTestsOnDevice \
+  :app:disableDeviceAnimations \
+  :app:runMainActivityTestOnDevice \
+  :app:pullAndroidTestAllureResultsFromAm \
+  :app:generateAllureAndroidTestReportFromAm \
+  :app:copyAllureAndroidTestReportsToRootFromAm \
+  -PdeviceSerial=emulator-5554 --no-daemon
+```
 
 
