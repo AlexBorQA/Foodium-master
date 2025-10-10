@@ -1,3 +1,18 @@
+### Готовый пакет для сдачи
+
+- **Архив**: `dist/Foodium_diplom.zip`
+- **Содержимое**:
+  - `reports/`: HTML‑отчёты тестов и покрытия (Jacoco)
+  - `app/prod/`: APK (`app-debug.apk`, `app-release-signed-debug.apk`)
+  - Сводка покрытия: `reports/COVERAGE.md`
+
+При необходимости пересобрать архив:
+```bash
+JAVA_HOME=$(/usr/libexec/java_home -v 11) ./gradlew :app:testDebugUnitTest :app:connectedDebugAndroidTest --no-daemon
+JAVA_HOME=$(/usr/libexec/java_home -v 11) ./gradlew :app:jacocoUnitTestReport :app:jacocoAndroidTestReport :app:copyJacocoReportsToRoot --no-daemon
+mkdir -p dist/Foodium_diplom && cp -R reports dist/Foodium_diplom/ && cp -R app/prod dist/Foodium_diplom/ && cd dist && zip -r Foodium_diplom.zip Foodium_diplom
+```
+
 ### Сборка и тесты (macOS)
 
 Предварительные требования
@@ -131,37 +146,43 @@ JAVA_HOME=$(/usr/libexec/java_home -v 11) ./gradlew :app:jacocoAndroidTestReport
 
 ### Отчёты Allure
 
-- Юнит‑тесты → HTML отчёт Allure и копия в корень:
-```bash
-JAVA_HOME=$(/usr/libexec/java_home -v 11) ./gradlew \
-  :app:testDebugUnitTest \
-  :app:generateAllureUnitReport \
-  :app:copyAllureUnitReportsToRoot --no-daemon
-```
-Отчёт: `app/build/reports/allure/unit/index.html`
-Копия в корне: `reports/allure/unit/index.html`
+Важно: не открывайте HTML отчёты напрямую через `file://` — браузер может блокировать загрузку данных. Используйте локальный сервер (`allure open`).
 
-- Инструментальные тесты (вариант через connected):
+- Подготовка CLI (если нет глобального `allure`):
 ```bash
-JAVA_HOME=$(/usr/libexec/java_home -v 11) ./gradlew \
-  :app:connectedDebugAndroidTest \
-  :app:pullAndroidTestAllureResults \
-  :app:generateAllureAndroidTestReport \
-  :app:copyAllureReportsToRoot --no-daemon
+JAVA_HOME=$(/usr/libexec/java_home -v 11) ./gradlew :app:downloadAllureCli :app:unpackAllureCli --no-daemon
 ```
-Отчёт: `app/build/reports/allure/androidTest/index.html`
-Копия в корне: `reports/allure/androidTest/index.html`
 
-- Инструментальные тесты (вариант direct `am instrument`, укажи serial):
-```bash
-JAVA_HOME=$(/usr/libexec/java_home -v 11) ./gradlew \
-  :app:installDebugAndTestsOnDevice \
-  :app:disableDeviceAnimations \
-  :app:runMainActivityTestOnDevice \
-  :app:pullAndroidTestAllureResultsFromAm \
-  :app:generateAllureAndroidTestReportFromAm \
-  :app:copyAllureAndroidTestReportsToRootFromAm \
-  -PdeviceSerial=emulator-5554 --no-daemon
-```
+- Генерация из JUnit XML (надёжный способ):
+  - Unit → HTML в `reports/allure/unit`:
+    ```bash
+    app/build/allure-cli/allure/allure-2.13.9/bin/allure generate app/build/test-results/testDebugUnitTest -c -o reports/allure/unit
+    ```
+  - AndroidTest → HTML в `reports/allure/androidTest`:
+    ```bash
+    app/build/allure-cli/allure/allure-2.13.9/bin/allure generate app/build/outputs/androidTest-results/connected/flavors/debugAndroidTest -c -o reports/allure/androidTest
+    ```
+
+- Запуск отчётов (локальный сервер):
+  - Через локальный CLI в проекте:
+    ```bash
+    app/build/allure-cli/allure/allure-2.13.9/bin/allure open reports/allure/unit -p 5252
+    app/build/allure-cli/allure/allure-2.13.9/bin/allure open reports/allure/androidTest -p 5253
+    ```
+  - Или через глобальный `allure`:
+    ```bash
+    allure open reports/allure/unit -p 5252
+    allure open reports/allure/androidTest -p 5253
+    ```
+
+- Альтернативно (через Gradle задачи; может зависеть от окружения):
+  - Unit:
+    ```bash
+    JAVA_HOME=$(/usr/libexec/java_home -v 11) ./gradlew :app:testDebugUnitTest :app:generateAllureUnitReport :app:copyAllureUnitReportsToRoot --no-daemon
+    ```
+  - AndroidTest (после connected):
+    ```bash
+    JAVA_HOME=$(/usr/libexec/java_home -v 11) ./gradlew :app:connectedDebugAndroidTest :app:pullAndroidTestAllureResults :app:generateAllureAndroidTestReport :app:copyAllureAndroidTestReportsToRoot --no-daemon
+    ```
 
 

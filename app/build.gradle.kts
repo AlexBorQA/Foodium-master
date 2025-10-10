@@ -29,6 +29,7 @@ plugins {
     id("dagger.hilt.android.plugin")
     id("org.jlleitschuh.gradle.ktlint")
     id("jacoco")
+    id("io.qameta.allure") version "2.11.2"
 }
 
 android {
@@ -84,6 +85,20 @@ android {
 
     testOptions {
         unitTests.isIncludeAndroidResources = true
+    }
+}
+
+allure {
+    report {
+        version.set("2.13.9")
+    }
+    adapter {
+        autoconfigure.set(true)
+        frameworks {
+            junit4 {
+                enabled.set(true)
+            }
+        }
     }
 }
 
@@ -162,6 +177,7 @@ dependencies {
     androidTestImplementation(Testing.rules)
     androidTestImplementation(Testing.coreKtx)
     androidTestImplementation(Testing.espressoContrib)
+    androidTestImplementation("androidx.test.uiautomator:uiautomator:2.2.0")
     androidTestImplementation(Hilt.hiltAndroid)
     androidTestImplementation(Hilt.hiltTesting)
     androidTestImplementation("io.qameta.allure:allure-kotlin-model:2.2.6")
@@ -178,6 +194,8 @@ dependencies {
     testImplementation("io.qameta.allure:allure-kotlin-model:2.2.6")
     testImplementation("io.qameta.allure:allure-kotlin-commons:2.2.6")
     testImplementation("io.qameta.allure:allure-kotlin-junit4:2.2.6")
+    // Classic Allure JUnit4 adapter (stable for JVM tests)
+    testImplementation("io.qameta.allure:allure-junit4:2.13.9")
 }
 
 ktlint {
@@ -385,6 +403,28 @@ tasks.register("androidTestApi30") {
     dependsOn("runMainActivityTestOnDevice")
 }
 
+// Run ALL androidTest via Allure runner on target device
+tasks.register("runAndroidTestsAllureOnDevice") {
+    group = "verification"
+    description = "Run all androidTest via AllureHiltTestRunner on the target device"
+    dependsOn("installDebugAndTestsOnDevice", "disableDeviceAnimations")
+    doLast {
+        exec {
+            commandLine(
+                adbPath,
+                "-s",
+                deviceSerial.get(),
+                "shell",
+                "am",
+                "instrument",
+                "-w",
+                "-r",
+                "dev.shreyaspatil.foodium.test/dev.shreyaspatil.foodium.AllureHiltTestRunner"
+            )
+        }
+    }
+}
+
 // --- Allure reports (unit + androidTest) and copy to root reports/ ---
 
 // Pull allure-results from device after connected tests
@@ -441,6 +481,113 @@ tasks.register<JavaExec>("generateAllureAndroidTestReport") {
     mainClass.set("io.qameta.allure.CommandLine")
     onlyIf { inputDir.exists() && (inputDir.list()?.isNotEmpty() == true) }
     args("generate", inputDir.absolutePath, "-c", "-o", outDir.absolutePath)
+}
+
+// Generate Allure HTML for unit tests directly from JUnit XML
+tasks.register<JavaExec>("generateAllureUnitReportFromJUnitXml") {
+    group = "verification"
+    description = "Generate Allure HTML for unit tests from JUnit XML"
+    dependsOn("testDebugUnitTest")
+    val inputDir = file("$buildDir/test-results/testDebugUnitTest")
+    val outDir = file("$buildDir/reports/allure/unit")
+    classpath = allureCli
+    mainClass.set("io.qameta.allure.CommandLine")
+    onlyIf { inputDir.exists() && (inputDir.list()?.isNotEmpty() == true) }
+    args("generate", inputDir.absolutePath, "-c", "-o", outDir.absolutePath)
+}
+
+// Generate Allure HTML for androidTest directly from connected JUnit XML
+tasks.register<JavaExec>("generateAllureAndroidTestReportFromXml") {
+    group = "verification"
+    description = "Generate Allure HTML for androidTest from connected JUnit XML"
+    dependsOn("connectedDebugAndroidTest")
+    val inputDir = file("$buildDir/outputs/androidTest-results/connected")
+    val outDir = file("$buildDir/reports/allure/androidTest")
+    classpath = allureCli
+    mainClass.set("io.qameta.allure.CommandLine")
+    onlyIf { inputDir.exists() && (inputDir.list()?.isNotEmpty() == true) }
+    args("generate", inputDir.absolutePath, "-c", "-o", outDir.absolutePath)
+}
+
+tasks.register<DefaultTask>("copyAllureReportsFromXmlToRoot") {
+    group = "verification"
+    description = "Copy Allure HTML (from XML) to root reports/"
+    dependsOn("generateAllureUnitReportFromJUnitXml", "generateAllureAndroidTestReportFromXml")
+    doLast {
+        copy {
+            from("$buildDir/reports/allure/unit")
+            into("${rootDir}/reports/allure/unit")
+        }
+        copy {
+            from("$buildDir/reports/allure/androidTest")
+            into("${rootDir}/reports/allure/androidTest")
+        }
+    }
+}
+
+// --- Alternative path: download Allure CLI (zip) and run binary ---
+tasks.register("downloadAllureCli") {
+    group = "verification"
+    description = "Download Allure CLI zip"
+    doLast {
+        val outDir = file("$buildDir/allure-cli").apply { mkdirs() }
+        val zipFile = file("$buildDir/allure-cli/allure.zip")
+        ant.withGroovyBuilder {
+            "get"(
+                mapOf(
+                    "src" to "https://repo1.maven.org/maven2/io/qameta/allure/allure-commandline/2.13.9/allure-commandline-2.13.9.zip",
+                    "dest" to zipFile.absolutePath,
+                    "usetimestamp" to true
+                )
+            )
+        }
+    }
+}
+
+tasks.register<Copy>("unpackAllureCli") {
+    group = "verification"
+    description = "Unpack Allure CLI zip"
+    dependsOn("downloadAllureCli")
+    from({ zipTree(file("$buildDir/allure-cli/allure.zip")) })
+    into("$buildDir/allure-cli/allure")
+}
+
+tasks.register<Exec>("generateAllureUnitReportViaBin") {
+    group = "verification"
+    description = "Generate Allure unit HTML via downloaded CLI binary (from JUnit XML)"
+    dependsOn("testDebugUnitTest", "unpackAllureCli")
+    doFirst {
+        file("$buildDir/reports/allure/unit").mkdirs()
+    }
+    val bin = file("$buildDir/allure-cli/allure/allure-2.13.9/bin/allure").absolutePath
+    commandLine(bin, "generate", file("$buildDir/test-results/testDebugUnitTest").absolutePath, "-c", "-o", file("$buildDir/reports/allure/unit").absolutePath)
+}
+
+tasks.register<Exec>("generateAllureAndroidTestReportViaBin") {
+    group = "verification"
+    description = "Generate Allure androidTest HTML via downloaded CLI binary (from connected JUnit XML)"
+    dependsOn("connectedDebugAndroidTest", "unpackAllureCli")
+    doFirst {
+        file("$buildDir/reports/allure/androidTest").mkdirs()
+    }
+    val bin = file("$buildDir/allure-cli/allure/allure-2.13.9/bin/allure").absolutePath
+    commandLine(bin, "generate", file("$buildDir/outputs/androidTest-results/connected").absolutePath, "-c", "-o", file("$buildDir/reports/allure/androidTest").absolutePath)
+}
+
+tasks.register("copyAllureReportsViaBinToRoot") {
+    group = "verification"
+    description = "Copy Allure HTML (via bin) to root reports/"
+    dependsOn("generateAllureUnitReportViaBin", "generateAllureAndroidTestReportViaBin")
+    doLast {
+        copy {
+            from("$buildDir/reports/allure/unit")
+            into("${rootDir}/reports/allure/unit")
+        }
+        copy {
+            from("$buildDir/reports/allure/androidTest")
+            into("${rootDir}/reports/allure/androidTest")
+        }
+    }
 }
 
 // Copy Jacoco HTML reports to root reports/

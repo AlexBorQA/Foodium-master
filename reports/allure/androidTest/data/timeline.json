@@ -1,0 +1,22 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "localhost",
+    "children" : [ {
+      "name" : "No tests found.",
+      "uid" : "fc137899d444529d",
+      "parentUid" : "be30f600e0434356d35178c8efd2dc81",
+      "status" : "failed",
+      "time" : {
+        "start" : 1760069949000,
+        "stop" : 1760069949001,
+        "duration" : 1
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "be30f600e0434356d35178c8efd2dc81"
+  } ]
+}

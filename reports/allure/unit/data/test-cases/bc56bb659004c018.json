@@ -1,0 +1,52 @@
+{
+  "uid" : "bc56bb659004c018",
+  "name" : "getPostsTest",
+  "historyId" : "dev.shreyaspatil.foodium.data.remote.api.FoodiumServiceTest:dev.shreyaspatil.foodium.data.remote.api.FoodiumServiceTest#getPostsTest",
+  "time" : {
+    "start" : 1760074093000,
+    "stop" : 1760074096080,
+    "duration" : 3080
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "resultFormat",
+    "value" : "junit"
+  }, {
+    "name" : "suite",
+    "value" : "dev.shreyaspatil.foodium.data.remote.api.FoodiumServiceTest"
+  }, {
+    "name" : "host",
+    "value" : "MacBook-Pro-Alexey.local"
+  }, {
+    "name" : "testClass",
+    "value" : "dev.shreyaspatil.foodium.data.remote.api.FoodiumServiceTest"
+  }, {
+    "name" : "package",
+    "value" : "dev.shreyaspatil.foodium.data.remote.api.FoodiumServiceTest"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "bc56bb659004c018.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,136 @@
+{
+  "dev.shreyaspatil.foodium.data.repository.NetworkBoundRepositoryTest:dev.shreyaspatil.foodium.data.repository.NetworkBoundRepositoryTest#emitsErrorWhenRemoteFails" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "4139d7296d23a852",
+      "status" : "passed",
+      "time" : {
+        "start" : 1760074079000,
+        "stop" : 1760074079681,
+        "duration" : 681
+      }
+    } ]
+  },
+  "dev.shreyaspatil.foodium.data.remote.api.FoodiumServiceTest:dev.shreyaspatil.foodium.data.remote.api.FoodiumServiceTest#getPostsTest" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "bc56bb659004c018",
+      "status" : "passed",
+      "time" : {
+        "start" : 1760074093000,
+        "stop" : 1760074096080,
+        "duration" : 3080
+      }
+    } ]
+  },
+  "dev.shreyaspatil.foodium.util.AllureKotlinSmokeTest:dev.shreyaspatil.foodium.util.AllureKotlinSmokeTest#initializationError" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "3d55e7a4d5652fe",
+      "status" : "failed",
+      "statusDetails" : "org.junit.runners.model.InvalidTestClassError: Invalid test class 'dev.shreyaspatil.foodium.util.AllureKotlinSmokeTest':\n  1. The @Rule 'allure' must implement MethodRule or TestRule.",
+      "time" : {
+        "start" : 1760074079000,
+        "stop" : 1760074079014,
+        "duration" : 14
+      }
+    } ]
+  },
+  "dev.shreyaspatil.foodium.data.local.dao.PostsDaoUnitTest:dev.shreyaspatil.foodium.data.local.dao.PostsDaoUnitTest#addAndQueryPosts" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "f0cb334e0ca2165e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1760074081000,
+        "stop" : 1760074092635,
+        "duration" : 11635
+      }
+    } ]
+  },
+  "dev.shreyaspatil.foodium.ui.details.PostDetailsViewModelTest:dev.shreyaspatil.foodium.ui.details.PostDetailsViewModelTest#exposesPostFromRepository" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "baf0af16dbf773b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1760074077000,
+        "stop" : 1760074078635,
+        "duration" : 1635
+      }
+    } ]
+  },
+  "dev.shreyaspatil.foodium.data.repository.DefaultPostRepositoryTest:dev.shreyaspatil.foodium.data.repository.DefaultPostRepositoryTest#getAllPosts_emitsLocalThenRemoteSaved" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e1bffd5fb91bd568",
+      "status" : "passed",
+      "time" : {
+        "start" : 1760074079000,
+        "stop" : 1760074079036,
+        "duration" : 36
+      }
+    } ]
+  },
+  "dev.shreyaspatil.foodium.ui.main.MainViewModelTest:dev.shreyaspatil.foodium.ui.main.MainViewModelTest#getPosts_emitsLoadingThenSuccess" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "70c25e9c361a9d2f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1760074078000,
+        "stop" : 1760074078254,
+        "duration" : 254
+      }
+    } ]
+  }
+}

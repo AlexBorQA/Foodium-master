@@ -1,0 +1,21 @@
+{
+  "com.android.build.gradle.internal.testing.ConnectedDevice:com.android.build.gradle.internal.testing.ConnectedDevice#No tests found." : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "fc137899d444529d",
+      "status" : "failed",
+      "time" : {
+        "start" : 1760069949000,
+        "stop" : 1760069949001,
+        "duration" : 1
+      }
+    } ]
+  }
+}

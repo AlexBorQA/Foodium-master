@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "org.junit.runners.model.InvalidTestClassError: Invalid test class 'dev.shreyaspatil.foodium.util.AllureKotlinSmokeTest':\n  1. The @Rule 'allure' must implement MethodRule or TestRule.",
+      "children" : [ {
+        "name" : "initializationError",
+        "uid" : "3d55e7a4d5652fe",
+        "parentUid" : "de6c8c38d239d405e8401f21037b4343",
+        "status" : "failed",
+        "time" : {
+          "start" : 1760074079000,
+          "stop" : 1760074079014,
+          "duration" : 14
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "de6c8c38d239d405e8401f21037b4343"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

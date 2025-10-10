@@ -1,0 +1,52 @@
+{
+  "uid" : "4139d7296d23a852",
+  "name" : "emitsErrorWhenRemoteFails",
+  "historyId" : "dev.shreyaspatil.foodium.data.repository.NetworkBoundRepositoryTest:dev.shreyaspatil.foodium.data.repository.NetworkBoundRepositoryTest#emitsErrorWhenRemoteFails",
+  "time" : {
+    "start" : 1760074079000,
+    "stop" : 1760074079681,
+    "duration" : 681
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "resultFormat",
+    "value" : "junit"
+  }, {
+    "name" : "suite",
+    "value" : "dev.shreyaspatil.foodium.data.repository.NetworkBoundRepositoryTest"
+  }, {
+    "name" : "host",
+    "value" : "MacBook-Pro-Alexey.local"
+  }, {
+    "name" : "testClass",
+    "value" : "dev.shreyaspatil.foodium.data.repository.NetworkBoundRepositoryTest"
+  }, {
+    "name" : "package",
+    "value" : "dev.shreyaspatil.foodium.data.repository.NetworkBoundRepositoryTest"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4139d7296d23a852.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,22 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "com.android.build.gradle.internal.testing.ConnectedDevice",
+    "children" : [ {
+      "name" : "No tests found.",
+      "uid" : "fc137899d444529d",
+      "parentUid" : "544fb6b0956e77e6fe53fcd85bd7c54f",
+      "status" : "failed",
+      "time" : {
+        "start" : 1760069949000,
+        "stop" : 1760069949001,
+        "duration" : 1
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "com.android.build.gradle.internal.testing.ConnectedDevice"
+  } ]
+}

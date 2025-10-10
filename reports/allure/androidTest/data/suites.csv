@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"failed","Fri Oct 10 09:19:09 ALMT 2025","Fri Oct 10 09:19:09 ALMT 2025","1","","com.android.build.gradle.internal.testing.ConnectedDevice","","com.android.build.gradle.internal.testing.ConnectedDevice","","No tests found.",""

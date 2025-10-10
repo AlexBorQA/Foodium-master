@@ -1,0 +1,52 @@
+{
+  "uid" : "f0cb334e0ca2165e",
+  "name" : "addAndQueryPosts",
+  "historyId" : "dev.shreyaspatil.foodium.data.local.dao.PostsDaoUnitTest:dev.shreyaspatil.foodium.data.local.dao.PostsDaoUnitTest#addAndQueryPosts",
+  "time" : {
+    "start" : 1760074081000,
+    "stop" : 1760074092635,
+    "duration" : 11635
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "resultFormat",
+    "value" : "junit"
+  }, {
+    "name" : "suite",
+    "value" : "dev.shreyaspatil.foodium.data.local.dao.PostsDaoUnitTest"
+  }, {
+    "name" : "host",
+    "value" : "MacBook-Pro-Alexey.local"
+  }, {
+    "name" : "testClass",
+    "value" : "dev.shreyaspatil.foodium.data.local.dao.PostsDaoUnitTest"
+  }, {
+    "name" : "package",
+    "value" : "dev.shreyaspatil.foodium.data.local.dao.PostsDaoUnitTest"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f0cb334e0ca2165e.json",
+  "parameterValues" : [ ]
+}

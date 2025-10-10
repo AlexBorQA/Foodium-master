@@ -7,5 +7,10 @@
             android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar"
             android:exported="true" />
     </application>
+    <instrumentation
+        android:name="dev.shreyaspatil.foodium.AllureHiltTestRunner"
+        android:targetPackage="dev.shreyaspatil.foodium"
+        android:functionalTest="false"
+        android:handleProfiling="false" />
 </manifest>
 
