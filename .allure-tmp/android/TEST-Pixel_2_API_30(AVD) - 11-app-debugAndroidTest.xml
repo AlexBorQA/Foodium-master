@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="dev.shreyaspatil.foodium.blackbox.BlackBoxUiAutomatorTest" tests="9" failures="0" errors="0" skipped="0" time="17.0" timestamp="2025-10-11T11:05:44" hostname="localhost">
+  <properties>
+    <property name="device" value="Pixel_2_API_30(AVD) - 11" />
+    <property name="flavor" value="debugAndroidTest" />
+    <property name="project" value="app" />
+  </properties>
+  <testcase name="listIsScrollable_showsItems" classname="dev.shreyaspatil.foodium.blackbox.BlackBoxUiAutomatorTest" time="2.77" />
+  <testcase name="openAboutFromOverflow_showsAboutScreen" classname="dev.shreyaspatil.foodium.blackbox.BlackBoxUiAutomatorTest" time="3.131" />
+  <testcase name="aboutError_showsToast" classname="dev.shreyaspatil.foodium.blackbox.BlackBoxUiAutomatorTest" time="3.555" />
+  <testcase name="openDetailsFromList_showsDetails" classname="dev.shreyaspatil.foodium.blackbox.BlackBoxUiAutomatorTest" time="3.053" />
+  <testcase name="select_post_by_id" classname="dev.shreyaspatil.foodium.data.local.dao.PostsDaoTest" time="0.06" />
+  <testcase name="insert_and_select_posts" classname="dev.shreyaspatil.foodium.data.local.dao.PostsDaoTest" time="0.025" />
+  <testcase name="aboutMenu_opens_AboutActivity" classname="dev.shreyaspatil.foodium.ui.main.MainActivityTest" time="1.372" />
+  <testcase name="clickFirstItem_opens_PostDetailsActivity" classname="dev.shreyaspatil.foodium.ui.main.MainActivityTest" time="1.311" />
+  <testcase name="postsRecyclerView_isDisplayed_onLaunch" classname="dev.shreyaspatil.foodium.ui.main.MainActivityTest" time="1.048" />
+</testsuite>

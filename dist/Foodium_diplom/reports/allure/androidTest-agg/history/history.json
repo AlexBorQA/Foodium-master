@@ -1,0 +1,268 @@
+{
+  "dev.shreyaspatil.foodium.blackbox.BlackBoxUiAutomatorTest:dev.shreyaspatil.foodium.blackbox.BlackBoxUiAutomatorTest#openDetailsFromList_showsDetails" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "fa7f77a976cb6930",
+      "status" : "passed",
+      "time" : {
+        "start" : 1760162744000,
+        "stop" : 1760162747053,
+        "duration" : 3053
+      }
+    } ]
+  },
+  "dev.shreyaspatil.foodium.blackbox.BlackBoxUiAutomatorTest:dev.shreyaspatil.foodium.ui.main.MainActivityTest#clickFirstItem_opens_PostDetailsActivity" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e604747c8eee4569",
+      "status" : "passed",
+      "time" : {
+        "start" : 1760162744000,
+        "stop" : 1760162745311,
+        "duration" : 1311
+      }
+    } ]
+  },
+  "dev.shreyaspatil.foodium.data.local.dao.PostsDaoTest:dev.shreyaspatil.foodium.data.local.dao.PostsDaoTest#select_post_by_id" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e70b173f6bb74618",
+      "status" : "passed",
+      "time" : {
+        "start" : 1760163097000,
+        "stop" : 1760163097114,
+        "duration" : 114
+      }
+    } ]
+  },
+  "dev.shreyaspatil.foodium.blackbox.BlackBoxUiAutomatorTest:dev.shreyaspatil.foodium.data.local.dao.PostsDaoTest#insert_and_select_posts" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "a15ad67a77e89622",
+      "status" : "passed",
+      "time" : {
+        "start" : 1760162744000,
+        "stop" : 1760162744025,
+        "duration" : 25
+      }
+    } ]
+  },
+  "dev.shreyaspatil.foodium.blackbox.BlackBoxUiAutomatorTest:dev.shreyaspatil.foodium.ui.main.MainActivityTest#aboutMenu_opens_AboutActivity" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c940bcac392f00cf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1760162744000,
+        "stop" : 1760162745372,
+        "duration" : 1372
+      }
+    } ]
+  },
+  "dev.shreyaspatil.foodium.ui.main.MainActivityTest:dev.shreyaspatil.foodium.ui.main.MainActivityTest#clickFirstItem_opens_PostDetailsActivity" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "34ef13f9db89886",
+      "status" : "passed",
+      "time" : {
+        "start" : 1760162996000,
+        "stop" : 1760162997425,
+        "duration" : 1425
+      }
+    } ]
+  },
+  "dev.shreyaspatil.foodium.data.local.dao.PostsDaoTest:dev.shreyaspatil.foodium.data.local.dao.PostsDaoTest#insert_and_select_posts" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "6a3e4df7c37243ec",
+      "status" : "passed",
+      "time" : {
+        "start" : 1760163097000,
+        "stop" : 1760163097000,
+        "duration" : 0
+      }
+    } ]
+  },
+  "dev.shreyaspatil.foodium.ui.main.MainActivityTest:dev.shreyaspatil.foodium.ui.main.MainActivityTest#aboutMenu_opens_AboutActivity" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "731225010919c237",
+      "status" : "passed",
+      "time" : {
+        "start" : 1760162996000,
+        "stop" : 1760162997859,
+        "duration" : 1859
+      }
+    } ]
+  },
+  "dev.shreyaspatil.foodium.ui.main.MainActivityTest:dev.shreyaspatil.foodium.ui.main.MainActivityTest#postsRecyclerView_isDisplayed_onLaunch" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "842d800debd0fdc7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1760162996000,
+        "stop" : 1760162996831,
+        "duration" : 831
+      }
+    } ]
+  },
+  "dev.shreyaspatil.foodium.blackbox.BlackBoxUiAutomatorTest:dev.shreyaspatil.foodium.blackbox.BlackBoxUiAutomatorTest#openAboutFromOverflow_showsAboutScreen" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c96b0aa5b4ad9b9f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1760162744000,
+        "stop" : 1760162747131,
+        "duration" : 3131
+      }
+    } ]
+  },
+  "dev.shreyaspatil.foodium.blackbox.BlackBoxUiAutomatorTest:dev.shreyaspatil.foodium.data.local.dao.PostsDaoTest#select_post_by_id" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "630199ef39b0fde5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1760162744000,
+        "stop" : 1760162744060,
+        "duration" : 60
+      }
+    } ]
+  },
+  "dev.shreyaspatil.foodium.blackbox.BlackBoxUiAutomatorTest:dev.shreyaspatil.foodium.blackbox.BlackBoxUiAutomatorTest#aboutError_showsToast" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "911d7accf191e9af",
+      "status" : "passed",
+      "time" : {
+        "start" : 1760162744000,
+        "stop" : 1760162747555,
+        "duration" : 3555
+      }
+    } ]
+  },
+  "dev.shreyaspatil.foodium.blackbox.BlackBoxUiAutomatorTest:dev.shreyaspatil.foodium.ui.main.MainActivityTest#postsRecyclerView_isDisplayed_onLaunch" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "9b12f6ce7b86eb3a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1760162744000,
+        "stop" : 1760162745048,
+        "duration" : 1048
+      }
+    } ]
+  },
+  "dev.shreyaspatil.foodium.blackbox.BlackBoxUiAutomatorTest:dev.shreyaspatil.foodium.blackbox.BlackBoxUiAutomatorTest#listIsScrollable_showsItems" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b13c354cf13dc6ac",
+      "status" : "passed",
+      "time" : {
+        "start" : 1760162744000,
+        "stop" : 1760162746770,
+        "duration" : 2770
+      }
+    } ]
+  }
+}

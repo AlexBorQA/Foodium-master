@@ -1,0 +1,140 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "dev.shreyaspatil.foodium",
+    "children" : [ {
+      "name" : "ui",
+      "children" : [ {
+        "name" : "details.PostDetailsViewModelTest",
+        "children" : [ {
+          "name" : "exposesPostFromRepository",
+          "uid" : "baf0af16dbf773b",
+          "parentUid" : "c8073bb76b544f5ca93079aaf5c4e0aa",
+          "status" : "passed",
+          "time" : {
+            "start" : 1760074077000,
+            "stop" : 1760074078635,
+            "duration" : 1635
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "details.PostDetailsViewModelTest"
+      }, {
+        "name" : "main.MainViewModelTest",
+        "children" : [ {
+          "name" : "getPosts_emitsLoadingThenSuccess",
+          "uid" : "70c25e9c361a9d2f",
+          "parentUid" : "0e548de9c76117408967125bd82dd1ad",
+          "status" : "passed",
+          "time" : {
+            "start" : 1760074078000,
+            "stop" : 1760074078254,
+            "duration" : 254
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "main.MainViewModelTest"
+      } ],
+      "uid" : "948cf62b6c082ed652e55160645e9dea"
+    }, {
+      "name" : "data",
+      "children" : [ {
+        "name" : "repository",
+        "children" : [ {
+          "name" : "NetworkBoundRepositoryTest",
+          "children" : [ {
+            "name" : "emitsErrorWhenRemoteFails",
+            "uid" : "4139d7296d23a852",
+            "parentUid" : "616c56adeeb6e3064a5f8654fc5056b0",
+            "status" : "passed",
+            "time" : {
+              "start" : 1760074079000,
+              "stop" : 1760074079681,
+              "duration" : 681
+            },
+            "flaky" : false,
+            "newFailed" : false,
+            "parameters" : [ ]
+          } ],
+          "uid" : "616c56adeeb6e3064a5f8654fc5056b0"
+        }, {
+          "name" : "DefaultPostRepositoryTest",
+          "children" : [ {
+            "name" : "getAllPosts_emitsLocalThenRemoteSaved",
+            "uid" : "e1bffd5fb91bd568",
+            "parentUid" : "4da4fe93af5956b458ff9764513be82c",
+            "status" : "passed",
+            "time" : {
+              "start" : 1760074079000,
+              "stop" : 1760074079036,
+              "duration" : 36
+            },
+            "flaky" : false,
+            "newFailed" : false,
+            "parameters" : [ ]
+          } ],
+          "uid" : "4da4fe93af5956b458ff9764513be82c"
+        } ],
+        "uid" : "1ceef804ade43ab917391dc94a14ed1f"
+      }, {
+        "name" : "local.dao.PostsDaoUnitTest",
+        "children" : [ {
+          "name" : "addAndQueryPosts",
+          "uid" : "f0cb334e0ca2165e",
+          "parentUid" : "1b5958a8698cbf90117870e8a9eaeec5",
+          "status" : "passed",
+          "time" : {
+            "start" : 1760074081000,
+            "stop" : 1760074092635,
+            "duration" : 11635
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "local.dao.PostsDaoUnitTest"
+      }, {
+        "name" : "remote.api.FoodiumServiceTest",
+        "children" : [ {
+          "name" : "getPostsTest",
+          "uid" : "bc56bb659004c018",
+          "parentUid" : "cf9198c6b458c7ccacdfa9c75660a5ea",
+          "status" : "passed",
+          "time" : {
+            "start" : 1760074093000,
+            "stop" : 1760074096080,
+            "duration" : 3080
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "remote.api.FoodiumServiceTest"
+      } ],
+      "uid" : "27dbd0dffecb15d830c85e897878d9ac"
+    }, {
+      "name" : "util.AllureKotlinSmokeTest",
+      "children" : [ {
+        "name" : "initializationError",
+        "uid" : "3d55e7a4d5652fe",
+        "parentUid" : "2d8ce5f0ecf0a9c1d88aeacb9eb0f6f2",
+        "status" : "failed",
+        "time" : {
+          "start" : 1760074079000,
+          "stop" : 1760074079014,
+          "duration" : 14
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "util.AllureKotlinSmokeTest"
+    } ],
+    "uid" : "dev.shreyaspatil.foodium"
+  } ]
+}

@@ -1,0 +1,52 @@
+{
+  "uid" : "baf0af16dbf773b",
+  "name" : "exposesPostFromRepository",
+  "historyId" : "dev.shreyaspatil.foodium.ui.details.PostDetailsViewModelTest:dev.shreyaspatil.foodium.ui.details.PostDetailsViewModelTest#exposesPostFromRepository",
+  "time" : {
+    "start" : 1760074077000,
+    "stop" : 1760074078635,
+    "duration" : 1635
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "resultFormat",
+    "value" : "junit"
+  }, {
+    "name" : "suite",
+    "value" : "dev.shreyaspatil.foodium.ui.details.PostDetailsViewModelTest"
+  }, {
+    "name" : "host",
+    "value" : "MacBook-Pro-Alexey.local"
+  }, {
+    "name" : "testClass",
+    "value" : "dev.shreyaspatil.foodium.ui.details.PostDetailsViewModelTest"
+  }, {
+    "name" : "package",
+    "value" : "dev.shreyaspatil.foodium.ui.details.PostDetailsViewModelTest"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "baf0af16dbf773b.json",
+  "parameterValues" : [ ]
+}

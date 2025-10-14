@@ -1,0 +1,52 @@
+{
+  "uid" : "c96b0aa5b4ad9b9f",
+  "name" : "openAboutFromOverflow_showsAboutScreen",
+  "historyId" : "dev.shreyaspatil.foodium.blackbox.BlackBoxUiAutomatorTest:dev.shreyaspatil.foodium.blackbox.BlackBoxUiAutomatorTest#openAboutFromOverflow_showsAboutScreen",
+  "time" : {
+    "start" : 1760162744000,
+    "stop" : 1760162747131,
+    "duration" : 3131
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "resultFormat",
+    "value" : "junit"
+  }, {
+    "name" : "suite",
+    "value" : "dev.shreyaspatil.foodium.blackbox.BlackBoxUiAutomatorTest"
+  }, {
+    "name" : "host",
+    "value" : "localhost"
+  }, {
+    "name" : "testClass",
+    "value" : "dev.shreyaspatil.foodium.blackbox.BlackBoxUiAutomatorTest"
+  }, {
+    "name" : "package",
+    "value" : "dev.shreyaspatil.foodium.blackbox.BlackBoxUiAutomatorTest"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c96b0aa5b4ad9b9f.json",
+  "parameterValues" : [ ]
+}

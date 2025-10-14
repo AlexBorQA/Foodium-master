@@ -1,0 +1,71 @@
+[ {
+  "uid" : "baf0af16dbf773b",
+  "name" : "exposesPostFromRepository",
+  "time" : {
+    "start" : 1760074077000,
+    "stop" : 1760074078635,
+    "duration" : 1635
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3d55e7a4d5652fe",
+  "name" : "initializationError",
+  "time" : {
+    "start" : 1760074079000,
+    "stop" : 1760074079014,
+    "duration" : 14
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "70c25e9c361a9d2f",
+  "name" : "getPosts_emitsLoadingThenSuccess",
+  "time" : {
+    "start" : 1760074078000,
+    "stop" : 1760074078254,
+    "duration" : 254
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bc56bb659004c018",
+  "name" : "getPostsTest",
+  "time" : {
+    "start" : 1760074093000,
+    "stop" : 1760074096080,
+    "duration" : 3080
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e1bffd5fb91bd568",
+  "name" : "getAllPosts_emitsLocalThenRemoteSaved",
+  "time" : {
+    "start" : 1760074079000,
+    "stop" : 1760074079036,
+    "duration" : 36
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f0cb334e0ca2165e",
+  "name" : "addAndQueryPosts",
+  "time" : {
+    "start" : 1760074081000,
+    "stop" : 1760074092635,
+    "duration" : 11635
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4139d7296d23a852",
+  "name" : "emitsErrorWhenRemoteFails",
+  "time" : {
+    "start" : 1760074079000,
+    "stop" : 1760074079681,
+    "duration" : 681
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

@@ -93,10 +93,10 @@ allure {
         version.set("2.13.9")
     }
     adapter {
-        autoconfigure.set(true)
+        autoconfigure.set(false)
         frameworks {
             junit4 {
-                enabled.set(true)
+                enabled.set(false)
             }
         }
     }
@@ -180,10 +180,6 @@ dependencies {
     androidTestImplementation("androidx.test.uiautomator:uiautomator:2.2.0")
     androidTestImplementation(Hilt.hiltAndroid)
     androidTestImplementation(Hilt.hiltTesting)
-    androidTestImplementation("io.qameta.allure:allure-kotlin-model:2.2.6")
-    androidTestImplementation("io.qameta.allure:allure-kotlin-commons:2.2.6")
-    androidTestImplementation("io.qameta.allure:allure-kotlin-junit4:2.2.6")
-    androidTestImplementation("io.qameta.allure:allure-kotlin-android:2.2.6")
     kaptAndroidTest(Hilt.daggerCompiler)
 
     // Additional unit test tools

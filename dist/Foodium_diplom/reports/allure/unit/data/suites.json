@@ -1,0 +1,124 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "dev.shreyaspatil.foodium.ui.details.PostDetailsViewModelTest",
+    "children" : [ {
+      "name" : "exposesPostFromRepository",
+      "uid" : "baf0af16dbf773b",
+      "parentUid" : "d5fcfc0f48233c17b7ffd668cbcef264",
+      "status" : "passed",
+      "time" : {
+        "start" : 1760074077000,
+        "stop" : 1760074078635,
+        "duration" : 1635
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "d5fcfc0f48233c17b7ffd668cbcef264"
+  }, {
+    "name" : "dev.shreyaspatil.foodium.ui.main.MainViewModelTest",
+    "children" : [ {
+      "name" : "getPosts_emitsLoadingThenSuccess",
+      "uid" : "70c25e9c361a9d2f",
+      "parentUid" : "2684bf8d79548d808eb83933d90306f0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1760074078000,
+        "stop" : 1760074078254,
+        "duration" : 254
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "2684bf8d79548d808eb83933d90306f0"
+  }, {
+    "name" : "dev.shreyaspatil.foodium.data.repository.NetworkBoundRepositoryTest",
+    "children" : [ {
+      "name" : "emitsErrorWhenRemoteFails",
+      "uid" : "4139d7296d23a852",
+      "parentUid" : "cb8b7d2257fae2d66643e44aa0d64049",
+      "status" : "passed",
+      "time" : {
+        "start" : 1760074079000,
+        "stop" : 1760074079681,
+        "duration" : 681
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "cb8b7d2257fae2d66643e44aa0d64049"
+  }, {
+    "name" : "dev.shreyaspatil.foodium.util.AllureKotlinSmokeTest",
+    "children" : [ {
+      "name" : "initializationError",
+      "uid" : "3d55e7a4d5652fe",
+      "parentUid" : "e892156d6e6f9ee2713f003ff815ad57",
+      "status" : "failed",
+      "time" : {
+        "start" : 1760074079000,
+        "stop" : 1760074079014,
+        "duration" : 14
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "e892156d6e6f9ee2713f003ff815ad57"
+  }, {
+    "name" : "dev.shreyaspatil.foodium.data.repository.DefaultPostRepositoryTest",
+    "children" : [ {
+      "name" : "getAllPosts_emitsLocalThenRemoteSaved",
+      "uid" : "e1bffd5fb91bd568",
+      "parentUid" : "41b1e6c971d156e4e120c05d0223a925",
+      "status" : "passed",
+      "time" : {
+        "start" : 1760074079000,
+        "stop" : 1760074079036,
+        "duration" : 36
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "41b1e6c971d156e4e120c05d0223a925"
+  }, {
+    "name" : "dev.shreyaspatil.foodium.data.local.dao.PostsDaoUnitTest",
+    "children" : [ {
+      "name" : "addAndQueryPosts",
+      "uid" : "f0cb334e0ca2165e",
+      "parentUid" : "c4a0bc6115227716e23914c8db021caf",
+      "status" : "passed",
+      "time" : {
+        "start" : 1760074081000,
+        "stop" : 1760074092635,
+        "duration" : 11635
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "c4a0bc6115227716e23914c8db021caf"
+  }, {
+    "name" : "dev.shreyaspatil.foodium.data.remote.api.FoodiumServiceTest",
+    "children" : [ {
+      "name" : "getPostsTest",
+      "uid" : "bc56bb659004c018",
+      "parentUid" : "f5d4c253d440d119ceddd418b9a6a1eb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1760074093000,
+        "stop" : 1760074096080,
+        "duration" : 3080
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "f5d4c253d440d119ceddd418b9a6a1eb"
+  } ]
+}

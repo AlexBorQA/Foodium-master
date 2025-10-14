@@ -1,0 +1,37 @@
+{
+  "total" : 3,
+  "items" : [ {
+    "uid" : "b6ac8288854aab96fdc25f0a8a3a3e91",
+    "name" : "dev.shreyaspatil.foodium.blackbox.BlackBoxUiAutomatorTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 9,
+      "unknown" : 0,
+      "total" : 9
+    }
+  }, {
+    "uid" : "94a8b6f2e44cc536bc9d6c6d695a4071",
+    "name" : "dev.shreyaspatil.foodium.ui.main.MainActivityTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 3,
+      "unknown" : 0,
+      "total" : 3
+    }
+  }, {
+    "uid" : "a77deae8808942997c11aff166cd2639",
+    "name" : "dev.shreyaspatil.foodium.data.local.dao.PostsDaoTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    }
+  } ]
+}

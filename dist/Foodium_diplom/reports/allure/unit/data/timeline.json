@@ -1,0 +1,100 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "MacBook-Pro-Alexey.local",
+    "children" : [ {
+      "name" : "initializationError",
+      "uid" : "3d55e7a4d5652fe",
+      "parentUid" : "cd7ba5675ebd148dd21cf3c2d5005c52",
+      "status" : "failed",
+      "time" : {
+        "start" : 1760074079000,
+        "stop" : 1760074079014,
+        "duration" : 14
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "getPostsTest",
+      "uid" : "bc56bb659004c018",
+      "parentUid" : "cd7ba5675ebd148dd21cf3c2d5005c52",
+      "status" : "passed",
+      "time" : {
+        "start" : 1760074093000,
+        "stop" : 1760074096080,
+        "duration" : 3080
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "addAndQueryPosts",
+      "uid" : "f0cb334e0ca2165e",
+      "parentUid" : "cd7ba5675ebd148dd21cf3c2d5005c52",
+      "status" : "passed",
+      "time" : {
+        "start" : 1760074081000,
+        "stop" : 1760074092635,
+        "duration" : 11635
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "exposesPostFromRepository",
+      "uid" : "baf0af16dbf773b",
+      "parentUid" : "cd7ba5675ebd148dd21cf3c2d5005c52",
+      "status" : "passed",
+      "time" : {
+        "start" : 1760074077000,
+        "stop" : 1760074078635,
+        "duration" : 1635
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "emitsErrorWhenRemoteFails",
+      "uid" : "4139d7296d23a852",
+      "parentUid" : "cd7ba5675ebd148dd21cf3c2d5005c52",
+      "status" : "passed",
+      "time" : {
+        "start" : 1760074079000,
+        "stop" : 1760074079681,
+        "duration" : 681
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "getPosts_emitsLoadingThenSuccess",
+      "uid" : "70c25e9c361a9d2f",
+      "parentUid" : "cd7ba5675ebd148dd21cf3c2d5005c52",
+      "status" : "passed",
+      "time" : {
+        "start" : 1760074078000,
+        "stop" : 1760074078254,
+        "duration" : 254
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "getAllPosts_emitsLocalThenRemoteSaved",
+      "uid" : "e1bffd5fb91bd568",
+      "parentUid" : "cd7ba5675ebd148dd21cf3c2d5005c52",
+      "status" : "passed",
+      "time" : {
+        "start" : 1760074079000,
+        "stop" : 1760074079036,
+        "duration" : 36
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "cd7ba5675ebd148dd21cf3c2d5005c52"
+  } ]
+}

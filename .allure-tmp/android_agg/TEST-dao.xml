@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="dev.shreyaspatil.foodium.data.local.dao.PostsDaoTest" tests="2" failures="0" errors="0" skipped="0" time="0.0" timestamp="2025-10-11T11:11:37" hostname="localhost">
+  <properties>
+    <property name="device" value="Pixel_2_API_30(AVD) - 11" />
+    <property name="flavor" value="debugAndroidTest" />
+    <property name="project" value="app" />
+  </properties>
+  <testcase name="select_post_by_id" classname="dev.shreyaspatil.foodium.data.local.dao.PostsDaoTest" time="0.114" />
+  <testcase name="insert_and_select_posts" classname="dev.shreyaspatil.foodium.data.local.dao.PostsDaoTest" time="0.0" />
+</testsuite>

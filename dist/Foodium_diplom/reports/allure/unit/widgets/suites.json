@@ -1,0 +1,81 @@
+{
+  "total" : 7,
+  "items" : [ {
+    "uid" : "e892156d6e6f9ee2713f003ff815ad57",
+    "name" : "dev.shreyaspatil.foodium.util.AllureKotlinSmokeTest",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "d5fcfc0f48233c17b7ffd668cbcef264",
+    "name" : "dev.shreyaspatil.foodium.ui.details.PostDetailsViewModelTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "2684bf8d79548d808eb83933d90306f0",
+    "name" : "dev.shreyaspatil.foodium.ui.main.MainViewModelTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "cb8b7d2257fae2d66643e44aa0d64049",
+    "name" : "dev.shreyaspatil.foodium.data.repository.NetworkBoundRepositoryTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "41b1e6c971d156e4e120c05d0223a925",
+    "name" : "dev.shreyaspatil.foodium.data.repository.DefaultPostRepositoryTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "c4a0bc6115227716e23914c8db021caf",
+    "name" : "dev.shreyaspatil.foodium.data.local.dao.PostsDaoUnitTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "f5d4c253d440d119ceddd418b9a6a1eb",
+    "name" : "dev.shreyaspatil.foodium.data.remote.api.FoodiumServiceTest",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  } ]
+}

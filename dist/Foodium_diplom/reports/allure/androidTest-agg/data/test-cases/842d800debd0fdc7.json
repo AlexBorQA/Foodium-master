@@ -1,0 +1,52 @@
+{
+  "uid" : "842d800debd0fdc7",
+  "name" : "postsRecyclerView_isDisplayed_onLaunch",
+  "historyId" : "dev.shreyaspatil.foodium.ui.main.MainActivityTest:dev.shreyaspatil.foodium.ui.main.MainActivityTest#postsRecyclerView_isDisplayed_onLaunch",
+  "time" : {
+    "start" : 1760162996000,
+    "stop" : 1760162996831,
+    "duration" : 831
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "resultFormat",
+    "value" : "junit"
+  }, {
+    "name" : "suite",
+    "value" : "dev.shreyaspatil.foodium.ui.main.MainActivityTest"
+  }, {
+    "name" : "host",
+    "value" : "localhost"
+  }, {
+    "name" : "testClass",
+    "value" : "dev.shreyaspatil.foodium.ui.main.MainActivityTest"
+  }, {
+    "name" : "package",
+    "value" : "dev.shreyaspatil.foodium.ui.main.MainActivityTest"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "842d800debd0fdc7.json",
+  "parameterValues" : [ ]
+}

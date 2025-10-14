@@ -56,10 +56,10 @@ import dev.shreyaspatil.foodium.ui.main.viewholder.PostViewHolder
     companion object {
 <span class="fc" id="L57">        private val DIFF_CALLBACK = object : DiffUtil.ItemCallback&lt;Post&gt;() {</span>
             override fun areItemsTheSame(oldItem: Post, newItem: Post): Boolean =
-<span class="nc" id="L59">                oldItem.id == newItem.id</span>
+<span class="fc" id="L59">                oldItem.id == newItem.id</span>
 
             override fun areContentsTheSame(oldItem: Post, newItem: Post): Boolean =
-<span class="nc" id="L62">                oldItem == newItem</span>
+<span class="fc" id="L62">                oldItem == newItem</span>
         }
     }
 }

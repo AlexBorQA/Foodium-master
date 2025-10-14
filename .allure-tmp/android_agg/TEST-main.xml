@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="dev.shreyaspatil.foodium.ui.main.MainActivityTest" tests="3" failures="0" errors="0" skipped="0" time="4.0" timestamp="2025-10-11T11:09:56" hostname="localhost">
+  <properties>
+    <property name="device" value="Pixel_2_API_30(AVD) - 11" />
+    <property name="flavor" value="debugAndroidTest" />
+    <property name="project" value="app" />
+  </properties>
+  <testcase name="aboutMenu_opens_AboutActivity" classname="dev.shreyaspatil.foodium.ui.main.MainActivityTest" time="1.859" />
+  <testcase name="clickFirstItem_opens_PostDetailsActivity" classname="dev.shreyaspatil.foodium.ui.main.MainActivityTest" time="1.425" />
+  <testcase name="postsRecyclerView_isDisplayed_onLaunch" classname="dev.shreyaspatil.foodium.ui.main.MainActivityTest" time="0.831" />
+</testsuite>

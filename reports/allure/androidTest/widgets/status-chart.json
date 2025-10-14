@@ -1,11 +1,91 @@
 [ {
-  "uid" : "fc137899d444529d",
-  "name" : "No tests found.",
+  "uid" : "9cb11bcc671638b0",
+  "name" : "listIsScrollable_showsItems",
   "time" : {
-    "start" : 1760069949000,
-    "stop" : 1760069949001,
-    "duration" : 1
+    "start" : 1760162744000,
+    "stop" : 1760162746770,
+    "duration" : 2770
   },
-  "status" : "failed",
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e643e87078037fd5",
+  "name" : "select_post_by_id",
+  "time" : {
+    "start" : 1760162744000,
+    "stop" : 1760162744060,
+    "duration" : 60
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e7e795e8b88908b1",
+  "name" : "openDetailsFromList_showsDetails",
+  "time" : {
+    "start" : 1760162744000,
+    "stop" : 1760162747053,
+    "duration" : 3053
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "942c85b279fdb925",
+  "name" : "aboutMenu_opens_AboutActivity",
+  "time" : {
+    "start" : 1760162744000,
+    "stop" : 1760162745372,
+    "duration" : 1372
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "efe7439857e5160a",
+  "name" : "aboutError_showsToast",
+  "time" : {
+    "start" : 1760162744000,
+    "stop" : 1760162747555,
+    "duration" : 3555
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a0fe9eb0e7f6de4e",
+  "name" : "openAboutFromOverflow_showsAboutScreen",
+  "time" : {
+    "start" : 1760162744000,
+    "stop" : 1760162747131,
+    "duration" : 3131
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4b13214567be71d2",
+  "name" : "clickFirstItem_opens_PostDetailsActivity",
+  "time" : {
+    "start" : 1760162744000,
+    "stop" : 1760162745311,
+    "duration" : 1311
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c7df9079612bce36",
+  "name" : "postsRecyclerView_isDisplayed_onLaunch",
+  "time" : {
+    "start" : 1760162744000,
+    "stop" : 1760162745048,
+    "duration" : 1048
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "32e6cfc3f06f17c0",
+  "name" : "insert_and_select_posts",
+  "time" : {
+    "start" : 1760162744000,
+    "stop" : 1760162744025,
+    "duration" : 25
+  },
+  "status" : "passed",
   "severity" : "normal"
 } ]

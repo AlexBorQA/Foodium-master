@@ -1,0 +1,187 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "postsRecyclerView_isDisplayed_onLaunch",
+    "uid" : "9b12f6ce7b86eb3a",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1760162744000,
+      "stop" : 1760162745048,
+      "duration" : 1048
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "openAboutFromOverflow_showsAboutScreen",
+    "uid" : "c96b0aa5b4ad9b9f",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1760162744000,
+      "stop" : 1760162747131,
+      "duration" : 3131
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "select_post_by_id",
+    "uid" : "630199ef39b0fde5",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1760162744000,
+      "stop" : 1760162744060,
+      "duration" : 60
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "listIsScrollable_showsItems",
+    "uid" : "b13c354cf13dc6ac",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1760162744000,
+      "stop" : 1760162746770,
+      "duration" : 2770
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "insert_and_select_posts",
+    "uid" : "a15ad67a77e89622",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1760162744000,
+      "stop" : 1760162744025,
+      "duration" : 25
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "openDetailsFromList_showsDetails",
+    "uid" : "fa7f77a976cb6930",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1760162744000,
+      "stop" : 1760162747053,
+      "duration" : 3053
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "aboutMenu_opens_AboutActivity",
+    "uid" : "c940bcac392f00cf",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1760162744000,
+      "stop" : 1760162745372,
+      "duration" : 1372
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "clickFirstItem_opens_PostDetailsActivity",
+    "uid" : "e604747c8eee4569",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1760162744000,
+      "stop" : 1760162745311,
+      "duration" : 1311
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "aboutError_showsToast",
+    "uid" : "911d7accf191e9af",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1760162744000,
+      "stop" : 1760162747555,
+      "duration" : 3555
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "postsRecyclerView_isDisplayed_onLaunch",
+    "uid" : "842d800debd0fdc7",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1760162996000,
+      "stop" : 1760162996831,
+      "duration" : 831
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "clickFirstItem_opens_PostDetailsActivity",
+    "uid" : "34ef13f9db89886",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1760162996000,
+      "stop" : 1760162997425,
+      "duration" : 1425
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "aboutMenu_opens_AboutActivity",
+    "uid" : "731225010919c237",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1760162996000,
+      "stop" : 1760162997859,
+      "duration" : 1859
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "insert_and_select_posts",
+    "uid" : "6a3e4df7c37243ec",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1760163097000,
+      "stop" : 1760163097000,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "select_post_by_id",
+    "uid" : "e70b173f6bb74618",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1760163097000,
+      "stop" : 1760163097114,
+      "duration" : 114
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  } ]
+}

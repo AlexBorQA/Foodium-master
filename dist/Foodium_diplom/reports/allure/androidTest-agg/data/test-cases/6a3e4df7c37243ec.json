@@ -1,0 +1,52 @@
+{
+  "uid" : "6a3e4df7c37243ec",
+  "name" : "insert_and_select_posts",
+  "historyId" : "dev.shreyaspatil.foodium.data.local.dao.PostsDaoTest:dev.shreyaspatil.foodium.data.local.dao.PostsDaoTest#insert_and_select_posts",
+  "time" : {
+    "start" : 1760163097000,
+    "stop" : 1760163097000,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "resultFormat",
+    "value" : "junit"
+  }, {
+    "name" : "suite",
+    "value" : "dev.shreyaspatil.foodium.data.local.dao.PostsDaoTest"
+  }, {
+    "name" : "host",
+    "value" : "localhost"
+  }, {
+    "name" : "testClass",
+    "value" : "dev.shreyaspatil.foodium.data.local.dao.PostsDaoTest"
+  }, {
+    "name" : "package",
+    "value" : "dev.shreyaspatil.foodium.data.local.dao.PostsDaoTest"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "6a3e4df7c37243ec.json",
+  "parameterValues" : [ ]
+}
