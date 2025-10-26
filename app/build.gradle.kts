@@ -183,7 +183,7 @@ dependencies {
     kaptAndroidTest(Hilt.daggerCompiler)
 
     // Additional unit test tools
-    testImplementation("org.robolectric:robolectric:4.6.1")
+    testImplementation("org.robolectric:robolectric:4.16")
     testImplementation("androidx.test:core:1.3.0")
 
     // Allure for unit tests (Kotlin JUnit4)
