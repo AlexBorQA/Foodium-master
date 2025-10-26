@@ -187,9 +187,9 @@ dependencies {
     testImplementation("androidx.test:core:1.3.0")
 
     // Allure for unit tests (Kotlin JUnit4)
-    testImplementation("io.qameta.allure:allure-kotlin-model:2.2.6")
-    testImplementation("io.qameta.allure:allure-kotlin-commons:2.2.6")
-    testImplementation("io.qameta.allure:allure-kotlin-junit4:2.2.6")
+    testImplementation("io.qameta.allure:allure-kotlin-model:2.4.0")
+    testImplementation("io.qameta.allure:allure-kotlin-commons:2.4.0")
+    testImplementation("io.qameta.allure:allure-kotlin-junit4:2.4.0")
     // Classic Allure JUnit4 adapter (stable for JVM tests)
     testImplementation("io.qameta.allure:allure-junit4:2.13.9")
 }
