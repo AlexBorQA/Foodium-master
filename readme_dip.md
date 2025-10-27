@@ -63,7 +63,7 @@ JAVA_HOME=$(/usr/libexec/java_home -v 11) ./gradlew :app:androidTestApi30 -Pdevi
 
 Скрипт‑помощник
 ```bash
-# Run one/all tests on a specific device (default emulator-5554)
+# Run one/all tests on a specific device (default emulator-5556)
 ./scripts/run-android-tests.sh [serial] [posts|click|about|all]
 ```
 
@@ -172,7 +172,7 @@ JAVA_HOME=$(/usr/libexec/java_home -v 11) ./gradlew :app:downloadAllureCli :app:
   - Или через глобальный `allure`:
     ```bash
     allure open reports/allure/unit -p 5252
-    allure open reports/allure/androidTest -p 5253
+    allure open reports/allure/androidTest -p 5254
     ```
 
 - Агрегированный отчёт androidTest (все androidTest вместе; рекомендуемый для защиты):
@@ -184,6 +184,16 @@ JAVA_HOME=$(/usr/libexec/java_home -v 11) ./gradlew :app:downloadAllureCli :app:
     ```bash
     app/build/allure-cli/allure/allure-2.13.9/bin/allure open reports/allure/androidTest-agg -p 5256
     ```
+
+- Если Allure CLI недоступен (сеть/права), можно отдать отчёты как статику:
+  ```bash
+  # unit
+  cd reports/allure/unit && python3 -m http.server 5252
+  # androidTest
+  cd reports/allure/androidTest && python3 -m http.server 5254
+  # androidTest-agg
+  cd reports/allure/androidTest-agg && python3 -m http.server 5256
+  ```
 
 - Альтернативно (через Gradle задачи; может зависеть от окружения):
   - Unit:

@@ -716,3 +716,28 @@ tasks.register("buildAllReports") {
     description = "Generate Allure (unit+androidTest) and Jacoco reports, copy to root reports/"
     dependsOn("generateAllureUnitReport", "generateAllureAndroidTestReport", "jacocoUnitTestReport", "jacocoAndroidTestReport", "copyAllureReportsToRoot", "copyJacocoReportsToRoot")
 }
+
+// Open Allure reports via CLI servers (no global allure required)
+tasks.register<JavaExec>("openAllureUnitServer") {
+    group = "verification"
+    description = "Open Allure Unit report on http://localhost:5252"
+    classpath = allureCli
+    mainClass.set("io.qameta.allure.CommandLine")
+    args("open", file("${rootDir}/reports/allure/unit").absolutePath, "-p", "5252")
+}
+
+tasks.register<JavaExec>("openAllureAndroidTestServer") {
+    group = "verification"
+    description = "Open Allure androidTest report on http://localhost:5254"
+    classpath = allureCli
+    mainClass.set("io.qameta.allure.CommandLine")
+    args("open", file("${rootDir}/reports/allure/androidTest").absolutePath, "-p", "5254")
+}
+
+tasks.register<JavaExec>("openAllureAndroidTestAggServer") {
+    group = "verification"
+    description = "Open Allure aggregated androidTest report on http://localhost:5256"
+    classpath = allureCli
+    mainClass.set("io.qameta.allure.CommandLine")
+    args("open", file("${rootDir}/reports/allure/androidTest-agg").absolutePath, "-p", "5256")
+}
