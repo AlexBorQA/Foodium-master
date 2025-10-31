@@ -29,7 +29,7 @@ plugins {
     id("dagger.hilt.android.plugin")
     id("org.jlleitschuh.gradle.ktlint")
     id("jacoco")
-    id("io.qameta.allure") version "2.11.2"
+    id("io.qameta.allure") version "3.0.0"
 }
 
 android {
