@@ -191,7 +191,7 @@ dependencies {
     testImplementation("io.qameta.allure:allure-kotlin-commons:2.2.6")
     testImplementation("io.qameta.allure:allure-kotlin-junit4:2.2.6")
     // Classic Allure JUnit4 adapter (stable for JVM tests)
-    testImplementation("io.qameta.allure:allure-junit4:2.13.9")
+    testImplementation("io.qameta.allure:allure-junit4:2.35.1")
 }
 
 ktlint {
@@ -450,7 +450,7 @@ val pullAndroidTestAllureResults by tasks.register<DefaultTask>("pullAndroidTest
 val allureCli by configurations.creating
 
 dependencies {
-    add("allureCli", "io.qameta.allure:allure-commandline:2.13.9")
+    add("allureCli", "io.qameta.allure:allure-commandline:2.35.1")
 }
 
 // Generate Allure HTML for unit tests using Allure CLI
@@ -531,7 +531,7 @@ tasks.register("downloadAllureCli") {
         ant.withGroovyBuilder {
             "get"(
                 mapOf(
-                    "src" to "https://repo1.maven.org/maven2/io/qameta/allure/allure-commandline/2.13.9/allure-commandline-2.13.9.zip",
+                    "src" to "https://repo1.maven.org/maven2/io/qameta/allure/allure-commandline/2.35.1/allure-commandline-2.35.1.zip",
                     "dest" to zipFile.absolutePath,
                     "usetimestamp" to true
                 )
