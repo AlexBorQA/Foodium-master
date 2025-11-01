@@ -152,6 +152,7 @@ dependencies {
     androidTestImplementation("androidx.test:rules:1.3.0")
     androidTestImplementation("androidx.test:core-ktx:1.3.0")
     androidTestImplementation("androidx.test.espresso:espresso-contrib:3.3.0")
+    androidTestImplementation("androidx.test.uiautomator:uiautomator:2.2.0")
     // Hilt test utilities
     androidTestImplementation(Hilt.hiltAndroid)
     androidTestImplementation("com.google.dagger:hilt-android-testing:2.31-alpha")
