@@ -272,7 +272,7 @@ tasks.register("copyDebugApkToProd") {
 }
 
 // Package distribution zip with reports and APK
-tasks.register(org.gradle.api.tasks.bundling.Zip::class.java, "buildDist") {
+tasks.register<org.gradle.api.tasks.bundling.Zip>("buildDist") {
     group = "distribution"
     description = "Create dist/Foodium_diplom.zip with reports and APK"
     destinationDirectory.set(File(rootDir, "dist"))
@@ -280,7 +280,13 @@ tasks.register(org.gradle.api.tasks.bundling.Zip::class.java, "buildDist") {
     dependsOn("copyDebugApkToProd")
 
     // Include reports if already generated
-    from(File(rootDir, "reports")) { into("Foodium_diplom/reports") }
-    from(File(projectDir, "prod")) { into("Foodium_diplom/app") }
-    from(File(rootDir, "readme_dip.md")) { into("Foodium_diplom") }
+    from(File(rootDir, "reports")) {
+        into("Foodium_diplom/reports")
+    }
+    from(File(projectDir, "prod")) {
+        into("Foodium_diplom/app")
+    }
+    from(File(rootDir, "readme_dip.md")) {
+        into("Foodium_diplom")
+    }
 }
