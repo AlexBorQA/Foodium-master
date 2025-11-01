@@ -48,6 +48,8 @@ class FoodiumServiceTest {
     @JvmField
     val instantExecutorRule = InstantTaskExecutorRule()
 
+
+
     private lateinit var service: FoodiumService
 
     private lateinit var mockWebServer: MockWebServer
