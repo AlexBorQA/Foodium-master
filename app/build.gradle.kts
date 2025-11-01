@@ -41,7 +41,7 @@ android {
         versionCode = 1
         versionName = "1.0"
 
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner = "dev.shreyaspatil.foodium.CustomTestRunner"
 
         javaCompileOptions {
             annotationProcessorOptions {
@@ -75,6 +75,10 @@ android {
 
     packagingOptions {
         exclude("META-INF/*.kotlin_module")
+    }
+
+    testOptions {
+        unitTests.isIncludeAndroidResources = true
     }
 }
 
@@ -144,6 +148,15 @@ dependencies {
     // Android Testing
     androidTestImplementation(Testing.extJUnit)
     androidTestImplementation(Testing.espresso)
+    androidTestImplementation("androidx.test:runner:1.3.0")
+    androidTestImplementation("androidx.test:rules:1.3.0")
+    androidTestImplementation("androidx.test:core-ktx:1.3.0")
+    androidTestImplementation("androidx.test.espresso:espresso-contrib:3.3.0")
+    androidTestImplementation("androidx.test.uiautomator:uiautomator:2.2.0")
+    // Hilt test utilities
+    androidTestImplementation(Hilt.hiltAndroid)
+    androidTestImplementation("com.google.dagger:hilt-android-testing:2.31-alpha")
+    kaptAndroidTest(Hilt.daggerCompiler)
 }
 
 ktlint {
