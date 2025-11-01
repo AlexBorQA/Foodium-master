@@ -76,6 +76,10 @@ android {
     packagingOptions {
         exclude("META-INF/*.kotlin_module")
     }
+
+    testOptions {
+        unitTests.isIncludeAndroidResources = true
+    }
 }
 
 tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().configureEach {
@@ -140,6 +144,9 @@ dependencies {
     testImplementation(Testing.okHttp)
     testImplementation(Testing.jUnit)
     testImplementation(Testing.truth)
+    // Additional unit test tools needed by MR2
+    testImplementation("org.robolectric:robolectric:4.6.1")
+    testImplementation("androidx.test:core:1.3.0")
 
     // Android Testing
     androidTestImplementation(Testing.extJUnit)
