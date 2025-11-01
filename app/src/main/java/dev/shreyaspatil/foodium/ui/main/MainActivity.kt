@@ -27,6 +27,7 @@ package dev.shreyaspatil.foodium.ui.main
 import android.animation.Animator
 import android.animation.AnimatorListenerAdapter
 import android.content.res.Configuration
+import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
@@ -44,6 +45,7 @@ import dev.shreyaspatil.foodium.databinding.ActivityMainBinding
 import dev.shreyaspatil.foodium.model.Post
 import dev.shreyaspatil.foodium.model.State
 import dev.shreyaspatil.foodium.ui.base.BaseActivity
+import dev.shreyaspatil.foodium.ui.about.AboutActivity
 import dev.shreyaspatil.foodium.ui.details.PostDetailsActivity
 import dev.shreyaspatil.foodium.ui.main.adapter.PostListAdapter
 import dev.shreyaspatil.foodium.utils.*
@@ -162,6 +164,11 @@ class MainActivity : BaseActivity<MainViewModel, ActivityMainBinding>() {
 
                 // Change UI Mode
                 AppCompatDelegate.setDefaultNightMode(mode)
+                true
+            }
+
+            R.id.action_about -> {
+                startActivity(Intent(this, AboutActivity::class.java))
                 true
             }
 
