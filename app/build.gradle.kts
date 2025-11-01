@@ -150,3 +150,137 @@ ktlint {
     android.set(true)
     outputColorName.set("RED")
 }
+
+// --- Allure CLI (from JUnit XML) & Packaging tasks ---
+val allureVersion = "2.13.9"
+val allureBaseDir = File(buildDir, "allure-cli")
+val allureZip = File(allureBaseDir, "allure-${allureVersion}.zip")
+val allureHome = File(allureBaseDir, "allure-${allureVersion}")
+val allureBin = File(allureHome, "bin/allure").absolutePath
+
+tasks.register("downloadAllureCli") {
+    group = "verification"
+    description = "Download Allure CLI ${allureVersion}"
+    doLast {
+        allureBaseDir.mkdirs()
+        exec {
+            commandLine(
+                "bash", "-lc",
+                "set -euo pipefail; cd '${allureBaseDir.absolutePath}' && " +
+                    "curl -L -o '${allureZip.name}' 'https://repo1.maven.org/maven2/io/qameta/allure/allure-commandline/${allureVersion}/allure-commandline-${allureVersion}.zip'"
+            )
+        }
+    }
+}
+
+tasks.register("unpackAllureCli") {
+    group = "verification"
+    description = "Unpack Allure CLI"
+    dependsOn("downloadAllureCli")
+    doLast {
+        exec {
+            commandLine(
+                "bash", "-lc",
+                "set -euo pipefail; cd '${allureBaseDir.absolutePath}' && unzip -o '${allureZip.name}'"
+            )
+        }
+    }
+}
+
+fun ensureReportsDir(path: String) = File(rootDir, path).apply { mkdirs() }
+
+tasks.register("generateAllureUnitReportFromJUnitXml") {
+    group = "verification"
+    description = "Generate Allure report for unit tests from JUnit XML"
+    dependsOn("unpackAllureCli", "testDebugUnitTest")
+    doLast {
+        val resultsDir = File(buildDir, "test-results/testDebugUnitTest").absolutePath
+        val outDir = ensureReportsDir("reports/allure/unit").absolutePath
+        exec {
+            commandLine("bash", "-lc", "'${allureBin}' generate '${resultsDir}' -c -o '${outDir}'")
+        }
+    }
+}
+
+tasks.register("generateAllureAndroidTestReportFromXml") {
+    group = "verification"
+    description = "Generate Allure report for androidTest from JUnit XML"
+    dependsOn("unpackAllureCli")
+    doLast {
+        val resultsDir = File(buildDir, "outputs/androidTest-results/connected").absolutePath
+        val outDir = ensureReportsDir("reports/allure/androidTest").absolutePath
+        exec {
+            commandLine("bash", "-lc", "'${allureBin}' generate '${resultsDir}' -c -o '${outDir}'")
+        }
+    }
+}
+
+tasks.register("generateAllureAndroidTestAggReportFromXml") {
+    group = "verification"
+    description = "Generate aggregated Allure report for androidTest"
+    dependsOn("unpackAllureCli")
+    doLast {
+        val resultsDir = File(buildDir, "outputs/androidTest-results/connected").absolutePath
+        val outDir = ensureReportsDir("reports/allure/androidTest-agg").absolutePath
+        exec {
+            commandLine("bash", "-lc", "'${allureBin}' generate '${resultsDir}' -c -o '${outDir}'")
+        }
+    }
+}
+
+tasks.register("openAllureUnitServer") {
+    group = "verification"
+    description = "Open local server for Allure Unit report on :5252"
+    dependsOn("generateAllureUnitReportFromJUnitXml")
+    doLast {
+        exec { commandLine("bash", "-lc", "'${allureBin}' open '${rootDir}/reports/allure/unit' -p 5252") }
+    }
+}
+
+tasks.register("openAllureAndroidTestServer") {
+    group = "verification"
+    description = "Open local server for Allure androidTest report on :5254"
+    dependsOn("generateAllureAndroidTestReportFromXml")
+    doLast {
+        exec { commandLine("bash", "-lc", "'${allureBin}' open '${rootDir}/reports/allure/androidTest' -p 5254") }
+    }
+}
+
+tasks.register("openAllureAndroidTestAggServer") {
+    group = "verification"
+    description = "Open local server for Allure aggregated androidTest report on :5256"
+    dependsOn("generateAllureAndroidTestAggReportFromXml")
+    doLast {
+        exec { commandLine("bash", "-lc", "'${allureBin}' open '${rootDir}/reports/allure/androidTest-agg' -p 5256") }
+    }
+}
+
+// Copy debug APK into app/prod
+tasks.register("copyDebugApkToProd") {
+    group = "distribution"
+    description = "Copy app-debug.apk to app/prod/"
+    dependsOn("assembleDebug")
+    doLast {
+        val src = File(buildDir, "outputs/apk/debug/app-debug.apk")
+        val dstDir = File(projectDir, "prod").apply { mkdirs() }
+        if (src.exists()) {
+            src.copyTo(File(dstDir, "app-debug.apk"), overwrite = true)
+        } else {
+            throw GradleException("APK not found: ${src.absolutePath}")
+        }
+    }
+}
+
+// Package distribution zip with reports and APK
+tasks.register(org.gradle.api.tasks.bundling.Zip::class.java, "buildDist") {
+    group = "distribution"
+    description = "Create dist/Foodium_diplom.zip with reports and APK"
+    destinationDirectory.set(File(rootDir, "dist"))
+    archiveFileName.set("Foodium_diplom.zip")
+    dependsOn("copyDebugApkToProd")
+
+    // Include reports if already generated
+    from(File(rootDir, "reports")) { into("Foodium_diplom/reports") }
+    from(File(projectDir, "prod")) { into("Foodium_diplom/app") }
+    from(File(rootDir, "readme_dip.md")) { into("Foodium_diplom") }
+}

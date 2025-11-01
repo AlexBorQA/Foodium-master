@@ -1,3 +1,27 @@
+# Gradle
+.gradle/
+build/
+
+# Android build
+app/build/
+
+# Local configs
+local.properties
+.idea/
+.vscode/
+
+# Reports and dist artifacts
+reports/
+dist/
+
+# APKs in prod
+app/prod/*.apk
+
+# Allure CLI cache
+**/allure-cli/**
+
+# macOS
+.DS_Store
 *.iml
 .gradle
 /local.properties
